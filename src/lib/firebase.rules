@@ -1,0 +1,71 @@
+
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Users Collection:
+    // - Authenticated users can read any profile (for avatars, names, etc.).
+    // - A user can only write to their own document.
+    match /users/{userId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth.uid == userId;
+    }
+
+    // Rooms Collection:
+    // - Authenticated users can query for public rooms and read any room.
+    // - Any authenticated user can create a new room.
+    // - A room can be updated by any authenticated user (to join/leave).
+    // - Only the original creator of a room can delete it.
+    match /rooms/{roomId} {
+      allow read, create: if request.auth != null;
+      allow update: if request.auth != null;
+      allow delete: if request.auth != null && resource.data.creatorId == request.auth.uid;
+
+      // Signaling subcollections for WebRTC
+      match /offers/{offerId} {
+        allow read, write, delete: if request.auth != null;
+      }
+      match /answers/{answerId} {
+        allow read, write, delete: if request.auth != null;
+      }
+
+       // ICE Candidates subcollection
+      match /peers/{peerId}/candidates/{candidateId} {
+          allow read, write: if request.auth != null;
+      }
+    }
+    
+    // Courses Collection:
+    // - All course and task data is read-only for any authenticated user.
+    // - This prevents clients from modifying quiz questions or course content.
+    match /courses/{document=**} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+  }
+}
+
+
+// ==================================================================
+// STORAGE RULES
+// Copy and paste these rules into your Firebase Console:
+// Build > Storage > Rules
+// ==================================================================
+// rules_version = '2';
+service cloud.storage {
+  match /b/{bucket}/o {
+
+    // Avatars Folder:
+    // - Any client can read (download) avatars to display them.
+    // - A user can only write (upload, update, delete) to their own avatar path.
+    //   This is secure because it checks if the logged-in user's ID matches the
+    //   ID in the file path they are trying to write to.
+    match /avatars/{userId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}
+
+    

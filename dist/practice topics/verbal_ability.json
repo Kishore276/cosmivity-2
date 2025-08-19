@@ -1,0 +1,1567 @@
+[
+  {
+    "name": "Verbal Ability",
+    "category": "verbal",
+    "description": "Verbal aptitude section.",
+    "createdBy": "admin",
+    "lessons": [
+      {
+        "id": "lesson-1",
+        "title": "Verbal Ability \u2014 Synonym Antonym (15 MCQs)",
+        "description": "Verbal Ability \u2014 Synonym Antonym (15 MCQs)",
+        "content": "",
+        "order": 0,
+        "questions": [
+          {
+            "id": "q1",
+            "question": "Choose the synonym of \"BENEVOLENT\":",
+            "options": [
+              "A) Hostile\n B) Kind\n C) Aggressive\n D) Unjust"
+            ],
+            "answer": "Kind",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q2",
+            "question": "Choose the antonym of \"OBSCURE\":",
+            "options": [
+              "A) Clear\n B) Dull\n C) Opaque\n D) Blurry"
+            ],
+            "answer": "Clear",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q3",
+            "question": "\"CONCISE\" \u2014 Choose the synonym:",
+            "options": [
+              "A) Wordy\n B) Occupied\n C) Brief\n D) Rude"
+            ],
+            "answer": "Brief",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q4",
+            "question": "Choose the antonym of \"RELUCTANT\":",
+            "options": [
+              "A) Eager\n B) Hesitant\n C) Resistant\n D) Doubtful"
+            ],
+            "answer": "Eager",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q5",
+            "question": "Pick the synonym of \"EMINENT\":",
+            "options": [
+              "A) Notorious\n B) Obscure\n C) Famous\n D) Unknown"
+            ],
+            "answer": "Famous",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q6",
+            "question": "Antonym of \"ABUNDANT\":",
+            "options": [
+              "A) Rich\n B) Scarce\n C) Lavish\n D) Excess"
+            ],
+            "answer": "Scarce",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q7",
+            "question": "Synonym for \"AUSPICIOUS\":",
+            "options": [
+              "A) Unlucky\n B) Fortunate\n C) Serious\n D) Doubtful"
+            ],
+            "answer": "Fortunate",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q8",
+            "question": "Antonym for \"CANDID\":",
+            "options": [
+              "A) Honest\n B) Secretive\n C) Frank\n D) Open"
+            ],
+            "answer": "Secretive",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q9",
+            "question": "\"DILIGENT\" \u2014 Choose the synonym:",
+            "options": [
+              "A) Lazy\n B) Careless\n C) Hardworking\n D) Disloyal"
+            ],
+            "answer": "Hardworking",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q10",
+            "question": "Antonym of \"SERENE\":",
+            "options": [
+              "A) Calm\n B) Untroubled\n C) Agitated\n D) Peaceful"
+            ],
+            "answer": "Agitated",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q11",
+            "question": "Synonym for \"PRUDENT\":",
+            "options": [
+              "A) Reckless\n B) Careful\n C) Wasteful\n D) Hasty"
+            ],
+            "answer": "Careful",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q12",
+            "question": "Antonym of \"ENORMOUS\":",
+            "options": [
+              "A) Gigantic\n B) Tiny\n C) Huge\n D) Mammoth"
+            ],
+            "answer": "Tiny",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q13",
+            "question": "Synonym of \"AMBIGUOUS\":",
+            "options": [
+              "A) Definite\n B) Clear\n C) Vague\n D) Certain"
+            ],
+            "answer": "Vague",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q14",
+            "question": "Antonym of \"METICULOUS\":",
+            "options": [
+              "A) Detailed\n B) Careful\n C) Negligent\n D) Thorough"
+            ],
+            "answer": "Negligent",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-2",
+        "title": "Verbal Ability \u2014 Fill in the Blanks (15 MCQs)",
+        "description": "Verbal Ability \u2014 Fill in the Blanks (15 MCQs)",
+        "content": "",
+        "order": 1,
+        "questions": [
+          {
+            "id": "q15",
+            "question": "Synonym for \"VIVID\":",
+            "options": [
+              "A) Dull\n B) Bright\n C) Pale\n D) Faded"
+            ],
+            "answer": "Bright",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q16",
+            "question": "The thieves _________ the apartment while the family was on a vacation.",
+            "options": [
+              "A) broke into\n B) broke down\n C) broke up\n D) broke away"
+            ],
+            "answer": "broke into",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q17",
+            "question": "Rahim\u2019s doctor advised him to ______ as a cure for his sore throat.",
+            "options": [
+              "A) giggle\n B) babble\n C) gargle\n D) gurgle"
+            ],
+            "answer": "gargle",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q18",
+            "question": "One or two stars were still ______ in the sky.",
+            "options": [
+              "A) burning\n B) turning\n C) twinkling\n D) tinkling"
+            ],
+            "answer": "twinkling",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q19",
+            "question": "The police were on high alert on account of the ___________ convict who had killed many people.",
+            "options": [
+              "A) official\n B) eminent\n C) alternative\n D) notorious"
+            ],
+            "answer": "notorious",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-3",
+        "title": "Answer: D) for\n Explanation: The correct preposition after \"blamed\" is \"for\" \u2014 \"blamed for the failure\"",
+        "description": "Answer: D) for\n Explanation: The correct preposition after \"blamed\" is \"for\" \u2014 \"blamed for the failure\"",
+        "content": "",
+        "order": 2,
+        "questions": [
+          {
+            "id": "q20",
+            "question": "She was blamed ______ the failure.",
+            "options": [
+              "A) of\n B) on\n C) up\n D) for"
+            ],
+            "answer": "",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q21",
+            "question": "He lost control of the car and crashed _______ a wall.",
+            "options": [
+              "A) in\n B) at\n C) into\n D) on"
+            ],
+            "answer": "into",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q22",
+            "question": "John as well as Tom ______ waiting for you.",
+            "options": [
+              "A) is\n B) were\n C) have been\n D) are"
+            ],
+            "answer": "is",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q23",
+            "question": "Before the bell rang, the class was _____ to go home.",
+            "options": [
+              "A) ready\n B) all ready\n C) was already\n D) were all ready"
+            ],
+            "answer": "all ready",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q24",
+            "question": "Advertisement will ______ your sale.",
+            "options": [
+              "A) slow\n B) boost\n C) reduce\n D) block"
+            ],
+            "answer": "boost",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q25",
+            "question": "The examination will begin _______ at eight thirty.",
+            "options": [
+              "A) exactly\n B) exactlyly\n C) nearly\n D) roughly"
+            ],
+            "answer": "exactly",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q26",
+            "question": "The sky ______ as the storm approached.",
+            "options": [
+              "A) brightened\n B) clear\n C) darkened\n D) rained"
+            ],
+            "answer": "darkened",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q27",
+            "question": "Drugs and Alcohol ____ together to ____ the risk of cancer in both men and women.",
+            "options": [
+              "A) result, lower\n B) work, decrease\n C) combine, increase\n D) supply, reduce"
+            ],
+            "answer": "combine, increase",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q28",
+            "question": "We ______ ourselves for difficult times.",
+            "options": [
+              "A) reserved\n B) prepared\n C) pitied\n D) improved"
+            ],
+            "answer": "prepared",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q29",
+            "question": "The children ran ______ the room.",
+            "options": [
+              "A) into\n B) onto\n C) besides\n D) at"
+            ],
+            "answer": "into",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-4",
+        "title": "Verbal Ability \u2014 Find the Error (15 MCQs)",
+        "description": "Verbal Ability \u2014 Find the Error (15 MCQs)",
+        "content": "",
+        "order": 3,
+        "questions": [
+          {
+            "id": "q30",
+            "question": "He was fined Rs. 500 for _______ driving.",
+            "options": [
+              "A) careless\n B) reckless\n C) speedy\n D) wonderful"
+            ],
+            "answer": "reckless",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q31",
+            "question": "",
+            "options": [],
+            "answer": "B\n Explanation:\n \"Each of the students\" is singular, so it should be \"is responsible.\"",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q32",
+            "question": "",
+            "options": [],
+            "answer": "B\n Explanation:\n \"Advice\" is uncountable, so \"good advice\" (no \"a\").",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-5",
+        "title": "Answer: B\n Explanation:\n \"Neither\" takes a singular verb \u2014 use \"has finished.\"",
+        "description": "Answer: B\n Explanation:\n \"Neither\" takes a singular verb \u2014 use \"has finished.\"",
+        "content": "",
+        "order": 4,
+        "questions": [
+          {
+            "id": "q33",
+            "question": "",
+            "options": [],
+            "answer": "",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q34",
+            "question": "",
+            "options": [],
+            "answer": "A\n Explanation:\n For hypothetical conditionals, \"If I were you\" is correct.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q35",
+            "question": "",
+            "options": [],
+            "answer": "C\n Explanation:\n Correct form: \"how to swim well.\"",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q36",
+            "question": "",
+            "options": [],
+            "answer": "C\n Explanation:\n Should be \"for ten years\" for duration; \"since\" for a point in time.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q37",
+            "question": "",
+            "options": [],
+            "answer": "A\n Explanation:\n \"Unless you work hard\u2026\" (don't use \"do not\" with unless).",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q38",
+            "question": "",
+            "options": [],
+            "answer": "A\n Explanation:\n \"Scenery\" is uncountable; so \"The scenery\" (not sceneries).",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q39",
+            "question": "",
+            "options": [],
+            "answer": "B\n Explanation:\n \"Each\" takes singular verb: \"plays games.\"",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q40",
+            "question": "",
+            "options": [],
+            "answer": "B\n Explanation:\n \"The number\" (singular subject) takes \"has increased.\"",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q41",
+            "question": "",
+            "options": [],
+            "answer": "B\n Explanation:\n Use \"senior to me\" (not 'than').",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q42",
+            "question": "",
+            "options": [],
+            "answer": "B\n Explanation:\n \"Everybody\" takes singular verb: \"has read.\"",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q43",
+            "question": "",
+            "options": [],
+            "answer": "B\n Explanation:\n When \"neither\u2026nor\" joins two subjects, verb agrees with the one nearer. \"Suresh is\" is correct.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q44",
+            "question": "",
+            "options": [],
+            "answer": "B\n Explanation:\n \"Team\" is singular; should be \"has played.\"",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-6",
+        "title": "Verbal Ability \u2014 Verbal Analogies (15 MCQs)",
+        "description": "Verbal Ability \u2014 Verbal Analogies (15 MCQs)",
+        "content": "",
+        "order": 5,
+        "questions": [
+          {
+            "id": "q45",
+            "question": "",
+            "options": [],
+            "answer": "B\n Explanation:\n \"One of the best\" is always followed by the plural noun: \"players.\"",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q46",
+            "question": "",
+            "options": [],
+            "answer": "School",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q47",
+            "question": "",
+            "options": [],
+            "answer": "Hunger",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q48",
+            "question": "",
+            "options": [],
+            "answer": "Clothes",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q49",
+            "question": "",
+            "options": [],
+            "answer": "Cut",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q50",
+            "question": "",
+            "options": [],
+            "answer": "Wheels",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q51",
+            "question": "",
+            "options": [],
+            "answer": "Flower",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q52",
+            "question": "",
+            "options": [],
+            "answer": "Dog",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q53",
+            "question": "",
+            "options": [],
+            "answer": "Play",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q54",
+            "question": "",
+            "options": [],
+            "answer": "Success",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q55",
+            "question": "",
+            "options": [],
+            "answer": "School",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q56",
+            "question": "",
+            "options": [],
+            "answer": "Temperature",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q57",
+            "question": "",
+            "options": [],
+            "answer": "Tadpole",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q58",
+            "question": "",
+            "options": [],
+            "answer": "War",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q59",
+            "question": "",
+            "options": [],
+            "answer": "Magnify",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-7",
+        "title": "Verbal Ability \u2014 Sentence Correction (15 MCQs)",
+        "description": "Verbal Ability \u2014 Sentence Correction (15 MCQs)",
+        "content": "",
+        "order": 6,
+        "questions": [
+          {
+            "id": "q60",
+            "question": "",
+            "options": [],
+            "answer": "Combustion",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q61",
+            "question": "",
+            "options": [],
+            "answer": "was hit by John fell",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q62",
+            "question": "",
+            "options": [],
+            "answer": "He has been living in this city",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q63",
+            "question": "",
+            "options": [],
+            "answer": "is present today",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q64",
+            "question": "",
+            "options": [],
+            "answer": "has decided",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q65",
+            "question": "",
+            "options": [],
+            "answer": "had she arrived than",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q66",
+            "question": "",
+            "options": [],
+            "answer": "has not touched and never will touch",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q67",
+            "question": "",
+            "options": [],
+            "answer": "did not tell me the reason for",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q68",
+            "question": "",
+            "options": [],
+            "answer": "Despite",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q69",
+            "question": "",
+            "options": [],
+            "answer": "prefers tea to",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q70",
+            "question": "",
+            "options": [],
+            "answer": "has brought his books",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q71",
+            "question": "",
+            "options": [],
+            "answer": "for five years",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q72",
+            "question": "",
+            "options": [],
+            "answer": "good at English",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q73",
+            "question": "",
+            "options": [],
+            "answer": "She told me",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q74",
+            "question": "",
+            "options": [],
+            "answer": "that I bought",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-8",
+        "title": "Verbal Ability \u2014 Reading Comprehension (15 MCQs)",
+        "description": "Verbal Ability \u2014 Reading Comprehension (15 MCQs)",
+        "content": "",
+        "order": 7,
+        "questions": [
+          {
+            "id": "q75",
+            "question": "",
+            "options": [],
+            "answer": "No sooner had the teacher entered",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q76",
+            "question": "What is the main idea of the passage above?",
+            "options": [
+              "A) The world is becoming smaller in size\n B) The internet has improved global communication\n C) Technology has made people intelligent\n D) Information cannot be accessed easily"
+            ],
+            "answer": "The internet has improved global communication",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q77",
+            "question": "According to the passage, which is NOT required for photosynthesis?",
+            "options": [
+              "A) Sunlight\n B) Carbon dioxide\n C) Water\n D) Oxygen"
+            ],
+            "answer": "Oxygen",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q78",
+            "question": "What is described as India's strength in the passage?",
+            "options": [
+              "A) Agriculture\n B) Unity in diversity\n C) Military power\n D) Space technology"
+            ],
+            "answer": "Unity in diversity",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q79",
+            "question": "Which of the following is NOT mentioned as a benefit of exercise?",
+            "options": [
+              "A) Improved mood\n B) Immune system strength\n C) Increased energy\n D) Better eyesight"
+            ],
+            "answer": "Better eyesight",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q80",
+            "question": "What step is NOT mentioned in the passage as a solution to pollution?",
+            "options": [
+              "A) Planting more trees\n B) Restricting vehicle use\n C) Promoting public transport\n D) None of the above"
+            ],
+            "answer": "Promoting public transport",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q81",
+            "question": "According to the passage, Vivekananda inspired people through:",
+            "options": [
+              "A) Scientific research\n B) Spirituality and unity\n C) Writing novels\n D) Political campaigns"
+            ],
+            "answer": "Spirituality and unity",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q82",
+            "question": "What is a benefit of e-commerce mentioned in the passage?",
+            "options": [
+              "A) Better product quality\n B) 24x7 buying convenience\n C) Less traffic congestion\n D) Free internet access"
+            ],
+            "answer": "24x7 buying convenience",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q83",
+            "question": "What is one function of the Himalayas according to the passage?",
+            "options": [
+              "A) Preventing monsoon\n B) Separating continents\n C) Protecting from cold winds\n D) Causing earthquakes"
+            ],
+            "answer": "Protecting from cold winds",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q84",
+            "question": "According to the passage, renewable energy sources:",
+            "options": [
+              "A) Are expensive\n B) Cause more pollution\n C) Help reduce fossil fuel dependence\n D) Are not suitable for power generation"
+            ],
+            "answer": "Help reduce fossil fuel dependence",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q85",
+            "question": "Which is NOT a benefit of reading mentioned in the passage?",
+            "options": [
+              "A) More knowledge\n B) Improved vocabulary\n C) Critical thinking\n D) Physical fitness"
+            ],
+            "answer": "Physical fitness",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q86",
+            "question": "What problem is associated with overusing fertilizers, per the passage?",
+            "options": [
+              "A) Crop failure\n B) Drought\n C) Water pollution\n D) Soil erosion"
+            ],
+            "answer": "Water pollution",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q87",
+            "question": "Which effect of too much mobile usage is NOT mentioned in the passage?",
+            "options": [
+              "A) Addiction\n B) Health impact\n C) Increased intelligence\n D) Both A and B"
+            ],
+            "answer": "Increased intelligence",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q88",
+            "question": "What does the passage reveal about lions?",
+            "options": [
+              "A) They always hunt alone\n B) They cannot run fast\n C) They depend on teamwork\n D) They are weak"
+            ],
+            "answer": "They depend on teamwork",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q89",
+            "question": "Which of the following is NOT mentioned as an effect of global warming?",
+            "options": [
+              "A) Changing weather\n B) Food production\n C) Melting glaciers\n D) Sea level rise"
+            ],
+            "answer": "Melting glaciers",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-9",
+        "title": "Verbal Ability \u2014 Parajumbles (15 MCQs)",
+        "description": "Verbal Ability \u2014 Parajumbles (15 MCQs)",
+        "content": "",
+        "order": 8,
+        "questions": [
+          {
+            "id": "q90",
+            "question": "The main achievement of the printing press according to the passage is:",
+            "options": [
+              "A) Making paper cheap\n B) Spreading ideas\n C) Increasing book prices\n D) Discouraging reading"
+            ],
+            "answer": "Spreading ideas",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q91",
+            "question": "",
+            "options": [
+              "A) ACBD\n B) ABCD\n C) ADCB\n D) ABDC"
+            ],
+            "answer": "ACBD",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q92",
+            "question": "",
+            "options": [
+              "A) ACBD\n B) ABCD\n C) BACD\n D) CADB"
+            ],
+            "answer": "ABCD",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q93",
+            "question": "",
+            "options": [
+              "A) ABDC\n B) ADBC\n C) BACD\n D) BADC"
+            ],
+            "answer": "ADBC",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q94",
+            "question": "",
+            "options": [
+              "A) ACBD\n B) CADB\n C) ABCD\n D) CBAD"
+            ],
+            "answer": "CBAD",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q95",
+            "question": "",
+            "options": [
+              "A) ACBD\n B) ABCD\n C) ABDC\n D) BACD"
+            ],
+            "answer": "ABDC",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q96",
+            "question": "",
+            "options": [
+              "A) ACBD\n B) ABDC\n C) CADB\n D) CBAD"
+            ],
+            "answer": "CADB",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q97",
+            "question": "",
+            "options": [
+              "A) ABCD\n B) ACBD\n C) ABDC\n D) BACD"
+            ],
+            "answer": "ABDC",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q98",
+            "question": "",
+            "options": [
+              "A) ABDC\n B) ADBC\n C) ABDA\n D) ACBD"
+            ],
+            "answer": "ADBC",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q99",
+            "question": "",
+            "options": [
+              "A) ADCB\n B) BACD\n C) ABDC\n D) ABCD"
+            ],
+            "answer": "ADCB",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q100",
+            "question": "",
+            "options": [
+              "A) ACBD\n B) ABCD\n C) ABDC\n D) BACD"
+            ],
+            "answer": "ABDC",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q101",
+            "question": "",
+            "options": [
+              "A) ABCD\n B) ABDC\n C) ACBD\n D) ADAB"
+            ],
+            "answer": "ABDC",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q102",
+            "question": "",
+            "options": [
+              "A) ACBD\n B) ABCD\n C) ADCB\n D) ABDC"
+            ],
+            "answer": "ABDC",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q103",
+            "question": "",
+            "options": [
+              "A) ACBD\n B) DABC\n C) ABDC\n D) BACD"
+            ],
+            "answer": "DABC",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q104",
+            "question": "",
+            "options": [
+              "A) BACD\n B) ABCD\n C) ACBD\n D) CBAD"
+            ],
+            "answer": "BACD",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-10",
+        "title": "Verbal Ability \u2014 Meanings (Vocabulary) (15 MCQs)",
+        "description": "Verbal Ability \u2014 Meanings (Vocabulary) (15 MCQs)",
+        "content": "",
+        "order": 9,
+        "questions": [
+          {
+            "id": "q105",
+            "question": "",
+            "options": [
+              "A) ABDC\n B) ACBD\n C) ADCB\n D) BACD"
+            ],
+            "answer": "ADCB",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q106",
+            "question": "",
+            "options": [],
+            "answer": "Complicated",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q107",
+            "question": "",
+            "options": [],
+            "answer": "Courage",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q108",
+            "question": "",
+            "options": [],
+            "answer": "Present everywhere",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q109",
+            "question": "",
+            "options": [],
+            "answer": "The medicine had a benign effect.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q110",
+            "question": "",
+            "options": [],
+            "answer": "Doubtful",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q111",
+            "question": "",
+            "options": [],
+            "answer": "Outgoing",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q112",
+            "question": "",
+            "options": [],
+            "answer": "Mourn",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q113",
+            "question": "",
+            "options": [],
+            "answer": "Copying someone\u2019s work",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q114",
+            "question": "",
+            "options": [],
+            "answer": "Plain and clear",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q115",
+            "question": "",
+            "options": [],
+            "answer": "Never stopping",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q116",
+            "question": "",
+            "options": [],
+            "answer": "Short and clear",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q117",
+            "question": "",
+            "options": [],
+            "answer": "Surrender",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q118",
+            "question": "",
+            "options": [],
+            "answer": "Difficult",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q119",
+            "question": "",
+            "options": [],
+            "answer": "Friendly",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-11",
+        "title": "Verbal Ability \u2014 Cloze Test (15 MCQs)",
+        "description": "Verbal Ability \u2014 Cloze Test (15 MCQs)",
+        "content": "",
+        "order": 10,
+        "questions": [
+          {
+            "id": "q120",
+            "question": "",
+            "options": [],
+            "answer": "Willingness",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q121",
+            "question": "A) continue\n B) start\n C) refuse\n D) invite",
+            "options": [],
+            "answer": "continue",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q122",
+            "question": "A) inhale\n B) produce\n C) provide\n D) need",
+            "options": [],
+            "answer": "produce",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q123",
+            "question": "A) support\n B) educate\n C) pollute\n D) improve",
+            "options": [],
+            "answer": "pollute",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q124",
+            "question": "A) ignore\n B) increase\n C) reduce\n D) transfer",
+            "options": [],
+            "answer": "reduce",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q125",
+            "question": "A) make\n B) take\n C) create\n D) keep",
+            "options": [],
+            "answer": "keep",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q126",
+            "question": "A) gives\n B) adds\n C) provides\n D) increases",
+            "options": [],
+            "answer": "provides",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q127",
+            "question": "A) decreases\n B) improves\n C) moves\n D) wastes",
+            "options": [],
+            "answer": "improves",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q128",
+            "question": "A) close\n B) limit\n C) introduce\n D) forbid",
+            "options": [],
+            "answer": "introduce",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q129",
+            "question": "A) destroy\n B) reduce\n C) block\n D) develop",
+            "options": [],
+            "answer": "develop",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q130",
+            "question": "A) narrow\n B) lazy\n C) creative\n D) weak",
+            "options": [],
+            "answer": "creative",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q131",
+            "question": "A) asset\n B) benefit\n C) issue\n D) lesson",
+            "options": [],
+            "answer": "issue",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q132",
+            "question": "A) support\n B) mistake\n C) ignore\n D) improve",
+            "options": [],
+            "answer": "mistake",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q133",
+            "question": "A) encourage\n B) recommend\n C) ban\n D) ignore",
+            "options": [],
+            "answer": "ban",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q134",
+            "question": "A) reject\n B) encourage\n C) ban\n D) accept",
+            "options": [],
+            "answer": "encourage",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-12",
+        "title": "Verbal Ability \u2014 Idiom Phrases (15 MCQs)",
+        "description": "Verbal Ability \u2014 Idiom Phrases (15 MCQs)",
+        "content": "",
+        "order": 11,
+        "questions": [
+          {
+            "id": "q135",
+            "question": "A) awareness\n B) sorrow\n C) confusion\n D) support",
+            "options": [],
+            "answer": "awareness",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q136",
+            "question": "",
+            "options": [],
+            "answer": "To start conversation",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q137",
+            "question": "",
+            "options": [],
+            "answer": "Very rarely",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q138",
+            "question": "",
+            "options": [],
+            "answer": "Be exactly right",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q139",
+            "question": "",
+            "options": [],
+            "answer": "False show of emotion",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q140",
+            "question": "",
+            "options": [],
+            "answer": "To be treated as one treats others",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q141",
+            "question": "",
+            "options": [],
+            "answer": "A good thing that seemed bad at first",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q142",
+            "question": "",
+            "options": [],
+            "answer": "Work late at night",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q143",
+            "question": "",
+            "options": [],
+            "answer": "Revealing a secret",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q144",
+            "question": "",
+            "options": [],
+            "answer": "Stop working for the day",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q145",
+            "question": "",
+            "options": [],
+            "answer": "Feeling unwell",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q146",
+            "question": "",
+            "options": [],
+            "answer": "Start again from scratch",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q147",
+            "question": "",
+            "options": [],
+            "answer": "To act unfairly",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q148",
+            "question": "",
+            "options": [],
+            "answer": "To pretend not to listen",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q149",
+            "question": "",
+            "options": [],
+            "answer": "In trouble",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-13",
+        "title": "Verbal Ability \u2014 Critical Reasoning (15 MCQs)",
+        "description": "Verbal Ability \u2014 Critical Reasoning (15 MCQs)",
+        "content": "",
+        "order": 12,
+        "questions": [
+          {
+            "id": "q150",
+            "question": "",
+            "options": [],
+            "answer": "Very happy",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q151",
+            "question": "",
+            "options": [],
+            "answer": "No one can be a successful entrepreneur without hard work.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q152",
+            "question": "",
+            "options": [],
+            "answer": "Research shows students using phones in class have lower grades.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q153",
+            "question": "",
+            "options": [],
+            "answer": "Healthy crops can be produced without chemicals.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q154",
+            "question": "",
+            "options": [],
+            "answer": "Many traditional jobs have been automated by machines.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q155",
+            "question": "",
+            "options": [],
+            "answer": "Communication is an important part of business success.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q156",
+            "question": "",
+            "options": [],
+            "answer": "Renewable sources produce less greenhouse gas.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q157",
+            "question": "",
+            "options": [],
+            "answer": "Some fruits are apples.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q158",
+            "question": "",
+            "options": [],
+            "answer": "Most small businesses do not use computers or the internet.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q159",
+            "question": "",
+            "options": [],
+            "answer": "Any member can block a decision.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q160",
+            "question": "",
+            "options": [],
+            "answer": "Students in schools without uniforms are also disciplined.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q161",
+            "question": "",
+            "options": [],
+            "answer": "None of the above can be concluded for sure.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q162",
+            "question": "",
+            "options": [],
+            "answer": "Urban population is rising faster than roads are built.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q163",
+            "question": "",
+            "options": [],
+            "answer": "Plastic bags can be easily recycled, reducing pollution.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q164",
+            "question": "",
+            "options": [],
+            "answer": "A",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q165",
+            "question": "",
+            "options": [],
+            "answer": "Public transport can move more people per trip, reducing the number of cars on the road.",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      }
+    ]
+  }
+]

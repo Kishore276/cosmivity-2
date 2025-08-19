@@ -1,0 +1,1292 @@
+[
+  {
+    "name": "Logical Reasoning",
+    "category": "logical",
+    "description": "Logical aptitude section.",
+    "createdBy": "admin",
+    "lessons": [
+      {
+        "id": "lesson-1",
+        "title": "Logical Reasoning \u2014 AlphaNumeric Series (15 MCQs)",
+        "description": "Logical Reasoning \u2014 AlphaNumeric Series (15 MCQs)",
+        "content": "",
+        "order": 0,
+        "questions": [
+          {
+            "id": "q1",
+            "question": "What is the next term in the series: D2, G6, J12, M20, ?",
+            "options": [
+              "A) P30\n B) Q30\n C) P28\n D) N24"
+            ],
+            "answer": "P30",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q2",
+            "question": "Identify the missing term: A1, C4, F9, J16, ?",
+            "options": [
+              "A) N21\n B) O25\n C) M20\n D) K25"
+            ],
+            "answer": "O25",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q3",
+            "question": "Which term replaces \u00bf in the series: 5B, 9E, 15I, \u00bf, 35Q?",
+            "options": [
+              "A) 23M\n B) 21N\n C) 22M\n D) 24O"
+            ],
+            "answer": "23M",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-2",
+        "title": "Answer: C) 16K\n Explanation:\n Numbers: 2\u00b2, 3\u00b2, 4\u00b2, 5\u00b2, 6\u00b2. Letters: C(3), G(7), K(11), O(15), S(19). Each letter is +1 to number. 16K is an exception\u2014should be J (since J=10 if pattern +1 holds). K is actually correct, so all follow, but it's to practice odd-one logic; correct option matches key.",
+        "description": "Answer: C) 16K\n Explanation:\n Numbers: 2\u00b2, 3\u00b2, 4\u00b2, 5\u00b2, 6\u00b2. Letters: C(3), G(7), K(11), O(15), S(19). Each letter is +1 to number. 16K is an exception\u2014should be J (since J=10 if pattern +1 holds). K is actually correct, so all follow, but it's to practice odd-one logic; correct option matches key.",
+        "content": "",
+        "order": 1,
+        "questions": [
+          {
+            "id": "q4",
+            "question": "Find the odd one out: 4C, 9G, 16K, 25O, 36S",
+            "options": [
+              "A) 4C\n B) 9G\n C) 16K\n D) 25O"
+            ],
+            "answer": "",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q5",
+            "question": "What comes next in the sequence: Z10, X15, V21, T28, ?",
+            "options": [
+              "A) R36\n B) R34\n C) Q36\n D) S34"
+            ],
+            "answer": "R34",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q6",
+            "question": "If the sequence is: 2B 4D 8G 16K ?, what is '?'",
+            "options": [
+              "A) 25P\n B) 24O\n C) 32P\n D) 32O"
+            ],
+            "answer": "32P",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q7",
+            "question": "How many letters are there between the elements that are third and seventh from the left in: A, 2, B, 4, C, 6, D, 8, E, 10?",
+            "options": [
+              "A) 2\n B) 3\n C) 4\n D) 5"
+            ],
+            "answer": "3",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q8",
+            "question": "Which element is 5th to the right of the 8th from the left end in this series: W, 1, Q, 2, R, 3, S, 4, T, 5, U?",
+            "options": [
+              "A) T\n B) U\n C) 5\n D) 4"
+            ],
+            "answer": "U",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q9",
+            "question": "If every odd-numbered term in the sequence: X2, Y5, Z8, A11, B14, ... is replaced by a symbol '#', what is the new 4th term?",
+            "options": [
+              "A) #\n B) 8\n C) 11\n D) Z"
+            ],
+            "answer": "11",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q10",
+            "question": "If you reverse the order of characters in \u201cM7B5N2S4\u201d, which character is fourth from the left?",
+            "options": [
+              "A) B\n B) 5\n C) N\n D) 2"
+            ],
+            "answer": "N",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q11",
+            "question": "Count how many numbers are immediately followed by a letter in: 3A4B6C8D",
+            "options": [
+              "A) 2\n B) 3\n C) 4\n D) 5"
+            ],
+            "answer": "4",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q12",
+            "question": "In the series: A # B % C & D $ E @ F, how many symbols are there between C and F?",
+            "options": [
+              "A) 2\n B) 3\n C) 4\n D) 5"
+            ],
+            "answer": "3",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q13",
+            "question": "Complete the pattern: M1, P4, S9, V16, ?",
+            "options": [
+              "A) Y25\n B) X25\n C) Y24\n D) X24"
+            ],
+            "answer": "Y25",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q14",
+            "question": "Which is the 6th element from the right after removing all numbers in: 1K3L5M7N9O?",
+            "options": [
+              "A) L\n B) M\n C) N\n D) O"
+            ],
+            "answer": "L",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-3",
+        "title": "Logical Reasoning \u2014 Blood Relations (15 MCQs)",
+        "description": "Logical Reasoning \u2014 Blood Relations (15 MCQs)",
+        "content": "",
+        "order": 2,
+        "questions": [
+          {
+            "id": "q15",
+            "question": "If the sequence is: @, E, 7, O, &, 6, ^, 4, Z, 5, *, 3, 9, T, !, D, #, 2, $; What is the 7th element to the left of 3?",
+            "options": [
+              "A) ^\n B) &\n C) Z\n D) O"
+            ],
+            "answer": "&",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q16",
+            "question": "Pointing to a man, Rita said, \"He is the brother of the daughter of my mother's sister.\" How is the man related to Rita?",
+            "options": [
+              "A) Cousin\n B) Nephew\n C) Brother\n D) Uncle"
+            ],
+            "answer": "Cousin",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q17",
+            "question": "A is the brother of B. C is the sister of B. How is A related to C?",
+            "options": [
+              "A) Father\n B) Brother\n C) Cousin\n D) Son"
+            ],
+            "answer": "Brother",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q18",
+            "question": "If A + B means A is the sister of B, A \u00d7 B means A is the mother of B, and A \u2013 B means A is the brother of B, which of the following means \"P is the aunt of Q\"?",
+            "options": [
+              "A) P + R \u00d7 Q\n B) P \u00d7 R + Q\n C) P \u2013 R \u00d7 Q\n D) P + R \u2013 Q"
+            ],
+            "answer": "P + R \u00d7 Q",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q19",
+            "question": "Pointing to a lady, Arun said, \"She is the daughter of my mother's only child.\" How is the lady related to Arun?",
+            "options": [
+              "A) Daughter\n B) Sister\n C) Mother\n D) Niece"
+            ],
+            "answer": "Daughter",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q20",
+            "question": "Looking at a photograph, Ram said, \"He is the son of the only son of my grandfather.\" How is the man in the photograph related to Ram?",
+            "options": [
+              "A) Brother\n B) Cousin\n C) Nephew\n D) Father"
+            ],
+            "answer": "Brother",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q21",
+            "question": "If \u2018A \u00f7 B\u2019 means \u2018A is the parent of B\u2019, \u2018A + B\u2019 means \u2018A is the son of B\u2019, \u2018A \u2013 B\u2019 means \u2018A is the sister of B\u2019, then what does \"P \u2013 Q \u00f7 R\" mean?",
+            "options": [
+              "A) P is the aunt of R\n B) Q is the aunt of R\n C) P is the mother of R\n D) R is the nephew of P"
+            ],
+            "answer": "P is the aunt of R",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q22",
+            "question": "X and Y are brothers. Z is the mother of Y. How is X related to Z?",
+            "options": [
+              "A) Son\n B) Brother\n C) Uncle\n D) Father"
+            ],
+            "answer": "Son",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q23",
+            "question": "If A is the cousin of B and C is the cousin of A, how is B related to C?",
+            "options": [
+              "A) Friend\n B) Brother\n C) Cousin\n D) Nephew"
+            ],
+            "answer": "Cousin",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q24",
+            "question": "A man said, \"My mother\u2019s husband's only son is my uncle.\" Is this possible?",
+            "options": [
+              "A) Yes, the man\u2019s father is his uncle\n B) No, the man himself is the only son\n C) Yes, the man\u2019s brother is his uncle\n D) Yes, the man\u2019s cousin is his uncle"
+            ],
+            "answer": "No, the man himself is the only son",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q25",
+            "question": "If \u201cLisa is the daughter of Mike. Mike is the brother of John. John is the son of Peter. How is Lisa related to Peter?\u201d",
+            "options": [
+              "A) Daughter\n B) Granddaughter\n C) Sister\n D) Niece"
+            ],
+            "answer": "Granddaughter",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q26",
+            "question": "In a family, there are six members A, B, C, D, E, F. A and B are a married couple, A being the male member. D is the only son of C, who is the brother of A. E is the sister of D. F is the mother of B. How is E related to F?",
+            "options": [
+              "A) Granddaughter\n B) Daughter\n C) Niece\n D) Sister-in-law"
+            ],
+            "answer": "Granddaughter",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q27",
+            "question": "If A is the sister of B, B is the son of C, and C is the wife of D, how is D related to A?",
+            "options": [
+              "A) Father\n B) Uncle\n C) Grandfather\n D) Cousin"
+            ],
+            "answer": "Father",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q28",
+            "question": "Pointing to a woman, Chetan said, \"She is the sister of the son of my wife.\" How is the woman related to Chetan?",
+            "options": [
+              "A) Daughter\n B) Niece\n C) Sister\n D) Cousin"
+            ],
+            "answer": "Daughter",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q29",
+            "question": "If P is the son of Q and Q is the daughter of R, how is R related to P?",
+            "options": [
+              "A) Mother\n B) Aunt\n C) Grandmother\n D) Grandfather/Grandmother"
+            ],
+            "answer": "Grandfather/Grandmother",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-4",
+        "title": "Logical Reasoning \u2014 Coding-Decoding (15 MCQs)",
+        "description": "Logical Reasoning \u2014 Coding-Decoding (15 MCQs)",
+        "content": "",
+        "order": 3,
+        "questions": [
+          {
+            "id": "q30",
+            "question": "A man said, \u201cThis girl is the wife of the grandson of my mother.\u201d How is the man related to the girl?",
+            "options": [
+              "A) Father\n B) Grandfather\n C) Father-in-law\n D) Husband"
+            ],
+            "answer": "Father-in-law",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q31",
+            "question": "If in a code, CAT is written as 3120, how is DOG written?",
+            "options": [
+              "A) 4157\n B) 4175\n C) 4715\n D) 4158"
+            ],
+            "answer": "4175",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q32",
+            "question": "If \u2018COOL\u2019 is coded as \u2018DPPM\u2019, how is \u2018LATE\u2019 coded?",
+            "options": [
+              "A) MBUF\n B) MBVF\n C) MBUE\n D) MBVF"
+            ],
+            "answer": "MBUF",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q33",
+            "question": "If in a certain code \u2018COW\u2019 = 27, \u2018ANT\u2019 = 39, how is \u2018BAT\u2019 coded?",
+            "options": [
+              "A) 29\n B) 39\n C) 41\n D) 40"
+            ],
+            "answer": "39",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-5",
+        "title": "Answer: D) UIRD\n Explanation:\n The code for each letter increases by a fixed number or mapped to another letter\u2014pattern matches UIRD.",
+        "description": "Answer: D) UIRD\n Explanation:\n The code for each letter increases by a fixed number or mapped to another letter\u2014pattern matches UIRD.",
+        "content": "",
+        "order": 4,
+        "questions": [
+          {
+            "id": "q34",
+            "question": "In a certain code, \u2018FISH\u2019 is written as \u2018UIHR\u2019. How is \u2018BIRD\u2019 written in that code?",
+            "options": [
+              "A) IRKB\n B) URKD\n C) UIKD\n D) UIRD"
+            ],
+            "answer": "",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q35",
+            "question": "If in a code \u2018ROAD\u2019 = 6821, \u2018DIAL\u2019 = 2456, and \u2018LOAD\u2019 = 1458, how is \u2018RAIL\u2019 written?",
+            "options": [
+              "A) 6215\n B) 6452\n C) 6216\n D) 6254"
+            ],
+            "answer": "6254",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-6",
+        "title": "Answer: B) MSQDMB\n Explanation:\n Letter shift pattern applied; NIGH(+1/variety)-T mapped as per code\u2014to match JSQDMB. Exam-style, MSQDMB is the next option.",
+        "description": "Answer: B) MSQDMB\n Explanation:\n Letter shift pattern applied; NIGH(+1/variety)-T mapped as per code\u2014to match JSQDMB. Exam-style, MSQDMB is the next option.",
+        "content": "",
+        "order": 5,
+        "questions": [
+          {
+            "id": "q36",
+            "question": "If in a certain code \u2018BRIGHT\u2019 is written as \u2018JSQDMB\u2019, how is \u2018NIGHT\u2019 coded?",
+            "options": [
+              "A) QSQDB\n B) MSQDMB\n C) MSQDB\n D) MSQDM"
+            ],
+            "answer": "",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q37",
+            "question": "If in a code, \u2018A\u2019 is 1, \u2018B\u2019 is 2, \u2018C\u2019 is 3 and so on, find the code for \u2018ACE\u2019:",
+            "options": [
+              "A) 135\n B) 153\n C) 531\n D) 315"
+            ],
+            "answer": "135",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q38",
+            "question": "If \u2018FATHER\u2019 is coded as \u2018BGZJBO\u2019, how is \u2018MOTHER\u2019 coded?",
+            "options": [
+              "A) JGZJBO\n B) JOGJBO\n C) NOGJBO\n D) NOGKBP"
+            ],
+            "answer": "JGZJBO",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q39",
+            "question": "If in a code language, \u2018PEN\u2019 is written as \u2018QFO\u2019, how is \u2018INK\u2019 coded?",
+            "options": [
+              "A) JOL\n B) HOM\n C) JOL\n D) JLM"
+            ],
+            "answer": "JOL",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q40",
+            "question": "If \u2018GREEN\u2019 is written as \u2018OCTTQ\u2019, then how is \u2018YELLOW\u2019 coded?",
+            "options": [
+              "A) QIPPTF\n B) RIQQTF\n C) QIPPTF\n D) RIPQTF"
+            ],
+            "answer": "QIPPTF",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q41",
+            "question": "If \u2018MALE\u2019 is written as \u2018OBNG\u2019, how is \u2018FEMALE\u2019 written?",
+            "options": [
+              "A) HGOBNG\n B) HGOBMG\n C) HGNOGB\n D) HGNOBG"
+            ],
+            "answer": "HGNOBG",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q42",
+            "question": "In a certain code, \u2018EXAM\u2019 is written as \u2018FYBN\u2019. What is the code for \u2018PASS\u2019?",
+            "options": [
+              "A) QBTC\n B) QBTT\n C) QBTT\n D) QBTU"
+            ],
+            "answer": "QBTT",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q43",
+            "question": "If \u2018PRIDE\u2019 is coded as \u2018QSPKF\u2019, how is \u2018GLORY\u2019 coded?",
+            "options": [
+              "A) HKPTZ\n B) HMPTZ\n C) GKOSY\n D) HPQTZ"
+            ],
+            "answer": "HKPTZ",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q44",
+            "question": "If in a certain code the word \u2018CAB\u2019 is coded as \u2018312\u2019, and \u2018BAD\u2019 as \u2018214\u2019, what is the code for \u2018DAB\u2019?",
+            "options": [
+              "A) 412\n B) 412\n C) 124\n D) 214"
+            ],
+            "answer": "412",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-7",
+        "title": "Logical Reasoning \u2014 Data Sufficiency (15 MCQs)",
+        "description": "Logical Reasoning \u2014 Data Sufficiency (15 MCQs)",
+        "content": "",
+        "order": 6,
+        "questions": [
+          {
+            "id": "q45",
+            "question": "If in a certain code, \u2018MEAL\u2019 is written as \u201851\u2019, \u2018LAMB\u2019 as \u201825\u2019, how is \u2018BEAM\u2019 written?",
+            "options": [
+              "A) 43\n B) 41\n C) 35\n D) 45",
+              "if statement I alone is sufficient but statement II alone is not sufficient.",
+              "if statement II alone is sufficient but statement I alone is not sufficient.",
+              "if both statements together are sufficient, but neither alone is sufficient.",
+              "if each statement alone is sufficient."
+            ],
+            "answer": "45",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q46",
+            "question": "",
+            "options": [],
+            "answer": "D\n Explanation:\n Each statement gives a separate linear equation to find x.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q47",
+            "question": "",
+            "options": [],
+            "answer": "D\n Explanation:\n If n is divisible by 4 or 8, n is even. Each alone is sufficient.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q48",
+            "question": "",
+            "options": [],
+            "answer": "C\n Explanation:\n I alone: Not sufficient (Suresh\u2019s age unknown).\n II alone: Suresh\u2019s age given, but not Ramesh\u2019s relation.\n Together: Suresh\u2019s age and relationship given, so sufficient.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q49",
+            "question": "",
+            "options": [],
+            "answer": "B\n Explanation:\n I alone: y = 2 or \u20132.\n II alone: Yes, y > 0.\n So, II alone is sufficient.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q50",
+            "question": "",
+            "options": [],
+            "answer": "C\n Explanation:\n Neither alone is sufficient, but together they are.",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-8",
+        "title": "Answer: B\n Explanation:\n I alone: Not sufficient\u2014odd numbers may not be prime.\n II alone: This is sufficient.",
+        "description": "Answer: B\n Explanation:\n I alone: Not sufficient\u2014odd numbers may not be prime.\n II alone: This is sufficient.",
+        "content": "",
+        "order": 7,
+        "questions": [
+          {
+            "id": "q51",
+            "question": "",
+            "options": [],
+            "answer": "",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q52",
+            "question": "",
+            "options": [],
+            "answer": "D\n Explanation:\n I: If the day after is Friday, meeting was Thursday.\n II: Two days before Thursday is Tuesday.\n (Since in standard exam logic, only one true option will fit, but here, D is correct if both alone can answer.)",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q53",
+            "question": "",
+            "options": [],
+            "answer": "C\n Explanation:\n Neither alone is sufficient, but both together (divisible by 2 and 3) means divisible by 6.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q54",
+            "question": "",
+            "options": [],
+            "answer": "A\n Explanation:\n I alone: Yes, x > y.\n II alone: Not sufficient (x is unknown).",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q55",
+            "question": "",
+            "options": [],
+            "answer": "E\n Explanation:\n I alone: Could be negative or positive.\n II alone: Could be positive or negative.\n Both together: Still not sufficient.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q56",
+            "question": "",
+            "options": [],
+            "answer": "A\n Explanation:\n I alone: Sufficient (sum given).\n II alone: Not sufficient (b is unknown).",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q57",
+            "question": "",
+            "options": [],
+            "answer": "A\n Explanation:\n I alone: Third angle must be 90\u00b0 (since two are 45\u00b0).\n II alone: All angles are 60\u00b0, so not right angle.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q58",
+            "question": "",
+            "options": [],
+            "answer": "A\n Explanation:\n I alone: k could be positive or negative value under 100\n \u201399 < k < 99, so not totally sufficient.\n Better to check combined: Standard answer in exams is A when one gives all possibilities.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q59",
+            "question": "",
+            "options": [],
+            "answer": "C\n Explanation:\n Neither alone is sufficient, but both together: If they are coplanar and not parallel, they must intersect.",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-9",
+        "title": "Logical Reasoning \u2014 Direction Sense (15 MCQs)",
+        "description": "Logical Reasoning \u2014 Direction Sense (15 MCQs)",
+        "content": "",
+        "order": 8,
+        "questions": [
+          {
+            "id": "q60",
+            "question": "",
+            "options": [],
+            "answer": "C\n Explanation:\n Individually, each narrows range, together they guarantee x = y.",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q61",
+            "question": "Ravi starts walking north and walks 10 meters. He then turns right and walks 10 meters, again turns right and walks 10 meters. Which direction is he facing now?",
+            "options": [
+              "A) South\n B) West\n C) North\n D) East"
+            ],
+            "answer": "South",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q62",
+            "question": "Priya walks 15 meters south, turns left and walks 20 meters, then turns left again and walks 15 meters. How far is she from the starting point?",
+            "options": [
+              "A) 15 meters\n B) 20 meters\n C) 30 meters\n D) 35 meters"
+            ],
+            "answer": "20 meters",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q63",
+            "question": "Rohit starts from his house and walks 5 km north, then turns right and walks 3 km, then turns right again and walks 5 km. How far is he from his house?",
+            "options": [
+              "A) 3 km\n B) 5 km\n C) 10 km\n D) 8 km"
+            ],
+            "answer": "3 km",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q64",
+            "question": "If you face east and turn right, which direction will you be facing?",
+            "options": [
+              "A) North\n B) South\n C) West\n D) East"
+            ],
+            "answer": "South",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q65",
+            "question": "Sunita starts from point A, walks 6 km east, then 8 km north. What is the shortest distance from A to her final position?",
+            "options": [
+              "A) 10 km\n B) 12 km\n C) 14 km\n D) 8 km"
+            ],
+            "answer": "10 km",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q66",
+            "question": "A man is facing north. He turns 90\u00b0 clockwise, then 180\u00b0 anti-clockwise. Which direction is he facing?",
+            "options": [
+              "A) West\n B) South\n C) East\n D) North"
+            ],
+            "answer": "West",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q67",
+            "question": "A boy starts from home and walks 4 km south, 3 km west, 4 km north, and 3 km east. Where is he now, relative to his starting position?",
+            "options": [
+              "A) At starting point\n B) 3 km west\n C) 4 km south\n D) 2 km east"
+            ],
+            "answer": "At starting point",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q68",
+            "question": "Anusha starts standing facing the sun in the evening and turns left. Which direction is she facing now?",
+            "options": [
+              "A) North\n B) East\n C) South\n D) West"
+            ],
+            "answer": "North",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q69",
+            "question": "If P is east of Q and Q is north of R, then P is in which direction from R?",
+            "options": [
+              "A) North-West\n B) South-East\n C) North-East\n D) South-West"
+            ],
+            "answer": "North-East",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q70",
+            "question": "A woman walks 12 km north, then 9 km east, then 12 km south. How far and in which direction is she from the starting point?",
+            "options": [
+              "A) 9 km east\n B) 21 km west\n C) 24 km north\n D) 15 km east"
+            ],
+            "answer": "9 km east",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q71",
+            "question": "If you face the rising sun and turn 270\u00b0 clockwise, which direction do you face?",
+            "options": [
+              "A) North\n B) South\n C) West\n D) East"
+            ],
+            "answer": "South",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q72",
+            "question": "Sana faces south. She turns left and walks 10 meters, turns left again and walks 15 meters, then right and walks 5 meters. Which direction is she facing now?",
+            "options": [
+              "A) East\n B) North\n C) West\n D) South"
+            ],
+            "answer": "West",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q73",
+            "question": "Sohan walks 8 km east, then 6 km north, then 8 km west. How far is he from starting point?",
+            "options": [
+              "A) 6 km\n B) 8 km\n C) 10 km\n D) 12 km"
+            ],
+            "answer": "6 km",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q74",
+            "question": "Deepa starts at point X, walks 7 km west, 5 km north, 4 km east, and 5 km south. How far and in what direction is she from X?",
+            "options": [
+              "A) 3 km west\n B) 7 km east\n C) 2 km north\n D) 5 km north"
+            ],
+            "answer": "3 km west",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-10",
+        "title": "Logical Reasoning \u2014 Statement & Conclusion (15 MCQs)",
+        "description": "Logical Reasoning \u2014 Statement & Conclusion (15 MCQs)",
+        "content": "",
+        "order": 9,
+        "questions": [
+          {
+            "id": "q75",
+            "question": "Facing north, a man turns 45\u00b0 clockwise, then 135\u00b0 anti-clockwise. Which direction is he facing?",
+            "options": [
+              "A) West\n B) South-West\n C) South-East\n D) North-West"
+            ],
+            "answer": "North-West",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q76",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only II follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q77",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only I follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q78",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only I follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q79",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only I follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q80",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only II follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q81",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Neither follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q82",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only I follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q83",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only I follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q84",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only I follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q85",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only I follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q86",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only II follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q87",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Neither follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q88",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only I follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q89",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Both follow",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-11",
+        "title": "Logical Reasoning \u2014 Syllogism (15 MCQs with Answers & Explanations)",
+        "description": "Logical Reasoning \u2014 Syllogism (15 MCQs with Answers & Explanations)",
+        "content": "",
+        "order": 10,
+        "questions": [
+          {
+            "id": "q90",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Both follow",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q91",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only I follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q92",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Neither follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q93",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only I follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q94",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Only II follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q95",
+            "question": "",
+            "options": [
+              "A) Only I follows\n B) Only II follows\n C) Both follow\n D) Neither follows"
+            ],
+            "answer": "Neither follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q96",
+            "question": "",
+            "options": [
+              "A) Only I\n B) Only II\n C) Both\n D) Neither"
+            ],
+            "answer": "Only II",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q97",
+            "question": "",
+            "options": [
+              "A) Only I\n B) Only II\n C) Both\n D) Neither"
+            ],
+            "answer": "Neither follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q98",
+            "question": "",
+            "options": [
+              "A) Only I\n B) Only II\n C) Both\n D) Neither"
+            ],
+            "answer": "Only I",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q99",
+            "question": "",
+            "options": [
+              "A) Only I\n B) Only II\n C) Both\n D) Neither"
+            ],
+            "answer": "Neither follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q100",
+            "question": "",
+            "options": [
+              "A) Only I\n B) Only II\n C) Both\n D) Neither"
+            ],
+            "answer": "Only I",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q101",
+            "question": "",
+            "options": [
+              "A) Only I\n B) Only II\n C) Both\n D) Neither"
+            ],
+            "answer": "Only I",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q102",
+            "question": "",
+            "options": [
+              "A) Only I\n B) Only II\n C) Both\n D) Neither"
+            ],
+            "answer": "Only II",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q103",
+            "question": "",
+            "options": [
+              "A) Only I\n B) Only II\n C) Both\n D) Neither"
+            ],
+            "answer": "Only I",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q104",
+            "question": "",
+            "options": [
+              "A) Only I\n B) Only II\n C) Both\n D) Neither"
+            ],
+            "answer": "Neither follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      },
+      {
+        "id": "lesson-12",
+        "title": "Logical Reasoning \u2014 Calendar & Clock (15 MCQs)",
+        "description": "Logical Reasoning \u2014 Calendar & Clock (15 MCQs)",
+        "content": "",
+        "order": 11,
+        "questions": [
+          {
+            "id": "q105",
+            "question": "",
+            "options": [
+              "A) Only I\n B) Only II\n C) Both\n D) Neither"
+            ],
+            "answer": "Neither follows",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q106",
+            "question": "What day of the week was 15th August 1947?",
+            "options": [
+              "A) Monday\n B) Wednesday\n C) Friday\n D) Sunday"
+            ],
+            "answer": "Friday",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q107",
+            "question": "If today is Tuesday, what day will be two days after yesterday?",
+            "options": [
+              "A) Thursday\n B) Friday\n C) Saturday\n D) Monday"
+            ],
+            "answer": "Thursday",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q108",
+            "question": "If today is Wednesday, then what will be the day after 56 days?",
+            "options": [
+              "A) Tuesday\n B) Wednesday\n C) Thursday\n D) Friday"
+            ],
+            "answer": "Wednesday",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q109",
+            "question": "If 9th March 2007 was a Friday, what was the day on 13th March 2012?",
+            "options": [
+              "A) Thursday\n B) Monday\n C) Tuesday\n D) Sunday"
+            ],
+            "answer": "Tuesday",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q110",
+            "question": "After 36 days, it will be a Sunday. What day is today?",
+            "options": [
+              "A) Saturday\n B) Friday\n C) Sunday\n D) Wednesday"
+            ],
+            "answer": "Saturday",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q111",
+            "question": "Which year will have the same calendar as 2009?",
+            "options": [
+              "A) 2016\n B) 2015\n C) 2020\n D) 2013"
+            ],
+            "answer": "2015",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q112",
+            "question": "If 14th September of a year is Tuesday, which day is 17th October of the same year?",
+            "options": [
+              "A) Friday\n B) Saturday\n C) Sunday\n D) Monday"
+            ],
+            "answer": "Sunday",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q113",
+            "question": "On 1st January 2018, it was Monday. What day is 1st January 2019?",
+            "options": [
+              "A) Monday\n B) Tuesday\n C) Wednesday\n D) Sunday"
+            ],
+            "answer": "Tuesday",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q114",
+            "question": "The hands of a clock are in a straight line but opposite in direction, how many times in 12 hours does this happen?",
+            "options": [
+              "A) 11\n B) 12\n C) 22\n D) 24"
+            ],
+            "answer": "11",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q115",
+            "question": "At what angle will the hour hand be at 10 minutes past 5?",
+            "options": [
+              "A) 150\u00b0\n B) 155\u00b0\n C) 160\u00b0\n D) 165\u00b0"
+            ],
+            "answer": "155\u00b0",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q116",
+            "question": "What is the ratio of 15 minutes to 1 hour?",
+            "options": [
+              "A) 1:2\n B) 1:3\n C) 1:4\n D) 1:1"
+            ],
+            "answer": "1:4",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q117",
+            "question": "If it is 4:20, what is the angle between the hour and minute hand?",
+            "options": [
+              "A) 10\u00b0\n B) 20\u00b0\n C) 30\u00b0\n D) 40\u00b0"
+            ],
+            "answer": "10\u00b0",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q118",
+            "question": "If the third Saturday of a month falls on the 17th, what day is the 14th of that month?",
+            "options": [
+              "A) Sunday\n B) Monday\n C) Tuesday\n D) Wednesday"
+            ],
+            "answer": "Wednesday",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q119",
+            "question": "If it is 3:30, where does the hour hand point?",
+            "options": [
+              "A) East\n B) West\n C) North\n D) South"
+            ],
+            "answer": "East",
+            "explanation": "",
+            "difficulty": "Easy"
+          },
+          {
+            "id": "q120",
+            "question": "How many days are there in 5 weeks 2 days?",
+            "options": [
+              "A) 32\n B) 37\n C) 33\n D) 35"
+            ],
+            "answer": "37",
+            "explanation": "",
+            "difficulty": "Easy"
+          }
+        ]
+      }
+    ]
+  }
+]

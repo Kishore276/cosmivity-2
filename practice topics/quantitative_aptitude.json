@@ -1,0 +1,1941 @@
+{
+  "name": "Quantitative Aptitude",
+  "category": "quantitative-aptitude",
+  "description": "Mathematical and numerical ability questions",
+  "createdBy": "admin",
+  "lessons": [
+    {
+      "id": "lesson-1",
+      "title": "Quantitative Aptitude Practice Questions",
+      "description": "Mathematical and numerical ability questions",
+      "content": "",
+      "order": 0,
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What is 16% of 250?",
+          "options": [
+            "A) 35",
+            "B) 30",
+            "C) 40",
+            "D) 50"
+          ],
+          "answer": "40",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q2",
+          "question": "If 18% of a number is 54, what is the number?",
+          "options": [
+            "A) 250",
+            "B) 300",
+            "C) 200",
+            "D) 350"
+          ],
+          "answer": "300",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q3",
+          "question": "In an election, Candidate A gets 60% of total votes and B gets the rest. If there are 2,000 total votes, how many did B get?",
+          "options": [
+            "A) 400",
+            "B) 600",
+            "C) 800",
+            "D) 1,000"
+          ],
+          "answer": "600",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q4",
+          "question": "The price of an item increases by 15% and then by 10%. What is the net percentage increase?",
+          "options": [
+            "A) 25%",
+            "B) 26.5%",
+            "C) 25.5%",
+            "D) 30%"
+          ],
+          "answer": "26.5%",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q5",
+          "question": "If a number is increased by 40, it becomes 120% of itself. What is the number?",
+          "options": [
+            "A) 100",
+            "B) 200",
+            "C) 80",
+            "D) 160"
+          ],
+          "answer": "100",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q6",
+          "question": "A shopkeeper marks up his goods by 20% and then gives a discount of 10%. What is his effective percentage profit?",
+          "options": [
+            "A) 8%",
+            "B) 10%",
+            "C) 12%",
+            "D) 15%"
+          ],
+          "answer": "12%",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q7",
+          "question": "13 is what percent of 52?",
+          "options": [
+            "A) 20%",
+            "B) 25%",
+            "C) 22.5%",
+            "D) 30%"
+          ],
+          "answer": "25%",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q8",
+          "question": "A student's score increases from 48 marks to 54 marks. What's the percentage increase?",
+          "options": [
+            "A) 12.5%",
+            "B) 15%",
+            "C) 10%",
+            "D) 20%"
+          ],
+          "answer": "10%",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q9",
+          "question": "What percent is 40 less than 60?",
+          "options": [
+            "A) 30%",
+            "B) 33.3%",
+            "C) 50%",
+            "D) 66.7%"
+          ],
+          "answer": "33.3%",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q10",
+          "question": "A number is increased by 25% and then decreased by 20%. The final number is what percent of the original?",
+          "options": [
+            "A) 100%",
+            "B) 105%",
+            "C) 120%",
+            "D) 110%"
+          ],
+          "answer": "100%",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q11",
+          "question": "If 60% of students are boys in a class of 80, how many girls are there?",
+          "options": [
+            "A) 48",
+            "B) 32",
+            "C) 50",
+            "D) 36"
+          ],
+          "answer": "32",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q12",
+          "question": "A person's salary is hiked by 15%, then reduced by 15%. What's the net effect?",
+          "options": [
+            "A) Increase 0.25%",
+            "B)",
+            "C)",
+            "D) Increase 2.25%"
+          ],
+          "answer": "",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q13",
+          "question": "What is the number?",
+          "options": [
+            "A) 50",
+            "B) 100",
+            "C) 80",
+            "D) 60"
+          ],
+          "answer": "100",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q14",
+          "question": "An article is sold at 180 after a 10% loss. What's its cost price?",
+          "options": [
+            "A) 180",
+            "B) 200",
+            "C) 220",
+            "D) 160"
+          ],
+          "answer": "200",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q15",
+          "question": "By what percent must 80 be increased to become 100?",
+          "options": [
+            "A) 15%",
+            "B) 25%",
+            "C) 20%",
+            "D) 30%"
+          ],
+          "answer": "25%",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q16",
+          "question": "What is the simplest form of the ratio 24:36?",
+          "options": [
+            "A) 2:3",
+            "B) 3:2",
+            "C) 4:7",
+            "D) 6:7"
+          ],
+          "answer": "2:3",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q17",
+          "question": "If 25 minutes is to 1 hour, what is the ratio in simplest form?",
+          "options": [
+            "A) 1:3",
+            "B) 5:12",
+            "C) 3:5",
+            "D) 5:9"
+          ],
+          "answer": "5:12",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q18",
+          "question": "If there are 30 boys, how many girls are there?",
+          "options": [
+            "A) 36",
+            "B) 30",
+            "C) 25",
+            "D) 32"
+          ],
+          "answer": "36",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q19",
+          "question": "Express 0.5:0.2 in its simplest form.",
+          "options": [
+            "A) 1:2",
+            "B) 2:5",
+            "C) 5:2",
+            "D) 5:1"
+          ],
+          "answer": "5:2",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q20",
+          "question": "What is A's share?",
+          "options": [
+            "A) ₹800",
+            "B) ₹1,200",
+            "C) ₹900",
+            "D) ₹600"
+          ],
+          "answer": "₹800",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q21",
+          "question": "If their sum is 160, what is the larger number?",
+          "options": [
+            "A) 63",
+            "B) 72",
+            "C) 81",
+            "D) 90"
+          ],
+          "answer": "81",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q22",
+          "question": "If x:y = 2:3 and y:z = 4:5, what is x:z?",
+          "options": [
+            "A) 8:15",
+            "B) 2:5",
+            "C) 4:9",
+            "D) 6:7"
+          ],
+          "answer": "8:15",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q23",
+          "question": "In what ratio should 30 liters of 40% alcohol solution be mixed with 20 liters of 70% alcohol solution to get a 50% solution?",
+          "options": [
+            "A) 2:3",
+            "B) 3:2",
+            "C) 1:2",
+            "D) 1:3"
+          ],
+          "answer": "3:2",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q24",
+          "question": "If 15 pens cost as much as 10 pencils, what is the ratio of cost of a pen to a pencil?",
+          "options": [
+            "A) 3:2",
+            "B) 2:3",
+            "C) 1:2",
+            "D) 2:1"
+          ],
+          "answer": "2:3",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q25",
+          "question": "How much does Sumit get?",
+          "options": [
+            "A) ₹1500",
+            "B) ₹2000",
+            "C) ₹2500",
+            "D) ₹3000"
+          ],
+          "answer": "₹2500",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q26",
+          "question": "What must be added to each term of 4:7 to get the ratio 2:3?",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 4",
+            "D) 6"
+          ],
+          "answer": "2",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q27",
+          "question": "If 3:4 = x:12, then x = ?",
+          "options": [
+            "A) 8",
+            "B) 9",
+            "C) 10",
+            "D) 11"
+          ],
+          "answer": "8",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q28",
+          "question": "If a:b = 5:6 and b:c = 7:8, find a:b:c.",
+          "options": [
+            "A) 35:42:48",
+            "B) 5:7:8",
+            "C) 10:12:14",
+            "D) 25:36:48"
+          ],
+          "answer": "35:42:48",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q29",
+          "question": "If the income and expenditure of a person are in the ratio 5:3, and he saves ₹800 per month, what is his income?",
+          "options": [
+            "A) ₹2,000",
+            "B) ₹1,200",
+            "C) ₹3,000",
+            "D) ₹4,000"
+          ],
+          "answer": "₹2,000",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q30",
+          "question": "What is the fourth proportional to 3, 9, 27?",
+          "options": [
+            "A) 36",
+            "B) 81",
+            "C) 81/1",
+            "D) 243"
+          ],
+          "answer": "243",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q31",
+          "question": "A trader buys an article for ₹250 and sells it at a loss of 10%. What is the selling price?",
+          "options": [
+            "A) ₹225",
+            "B) ₹235",
+            "C) ₹240",
+            "D) ₹245"
+          ],
+          "answer": "₹240",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q32",
+          "question": "By selling a watch for ₹720, a shopkeeper gains 20%. What was the cost price?",
+          "options": [
+            "A) ₹600",
+            "B) ₹590",
+            "C) ₹700",
+            "D) ₹650"
+          ],
+          "answer": "₹600",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q33",
+          "question": "If the cost price of 15 apples is equal to the selling price of 12 apples, what is the profit percentage?",
+          "options": [
+            "A) 20%",
+            "B) 25%",
+            "C) 30%",
+            "D) 18%"
+          ],
+          "answer": "25%",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q34",
+          "question": "A man sells an article for ₹345, suffering a 7% loss. What is the cost price?",
+          "options": [
+            "A) ₹365",
+            "B) ₹370",
+            "C) ₹375",
+            "D) ₹400"
+          ],
+          "answer": "₹370",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q35",
+          "question": "If a product is sold at a profit of 10% and its cost price is ₹550, what is the selling price?",
+          "options": [
+            "A) ₹600",
+            "B) ₹575",
+            "C) ₹605",
+            "D) ₹605.50"
+          ],
+          "answer": "₹575",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q36",
+          "question": "If an item is sold at a loss of 15% for ₹170, what was its cost price?",
+          "options": [
+            "A) ₹180",
+            "B) ₹190",
+            "C) ₹200",
+            "D) ₹210"
+          ],
+          "answer": "₹200",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q37",
+          "question": "What is B's share?",
+          "options": [
+            "A) ₹1,800",
+            "B) ₹1,200",
+            "C) ₹2,000",
+            "D) ₹1,500"
+          ],
+          "answer": "₹1,800",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q38",
+          "question": "What is the cost price?",
+          "options": [
+            "A) ₹400",
+            "B) ₹412.50",
+            "C) ₹420",
+            "D) ₹440"
+          ],
+          "answer": "₹412.50",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q39",
+          "question": "If the marked price of a shirt is ₹1,200 and it is sold for ₹960, what is the percentage of discount?",
+          "options": [
+            "A) 12%",
+            "B) 15%",
+            "C) 16%",
+            "D) 20%"
+          ],
+          "answer": "20%",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q40",
+          "question": "After allowing a discount of 20% on the marked price, a trader earns a profit of 20%. Find the ratio of cost price to marked price.",
+          "options": [
+            "A) 1:1",
+            "B) 4:5",
+            "C) 2:3",
+            "D) 5:6"
+          ],
+          "answer": "4:5",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q41",
+          "question": "At the end of a year, total profit is ₹4,000, and R gets ₹1,600 as his share. How long did R invest his money?",
+          "options": [
+            "A) 3 months",
+            "B) 6 months",
+            "C) 8 months",
+            "D) 12 months"
+          ],
+          "answer": "12 months",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q42",
+          "question": "In a partnership, A invested ₹3,000 for 4 months and B ₹6,000 for 5 months. Find their profit ratio.",
+          "options": [
+            "A) 1:2",
+            "B) 2:3",
+            "C) 2:5",
+            "D) 4:5"
+          ],
+          "answer": "2:3",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q43",
+          "question": "What is his profit percentage?",
+          "options": [
+            "A) 15%",
+            "B) 18%",
+            "C) 20%",
+            "D) 25%"
+          ],
+          "answer": "20%",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q44",
+          "question": "A sells goods to B at a profit of 10%. B sells to C at a profit of 20%. If finally sold for ₹264, what was the cost price for A?",
+          "options": [
+            "A) ₹200",
+            "B) ₹220",
+            "C) ₹230",
+            "D) ₹240"
+          ],
+          "answer": "₹200",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q45",
+          "question": "If Y gets ₹2,000, what is X’s share?",
+          "options": [
+            "A) ₹2,500",
+            "B) ₹3,000",
+            "C) ₹3,500",
+            "D) ₹4,000"
+          ],
+          "answer": "₹3,000",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q46",
+          "question": "What is the average of 3, 8, 12, and 17?",
+          "options": [
+            "A) 8",
+            "B) 9",
+            "C) 10",
+            "D) 10.5"
+          ],
+          "answer": "10.5",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q47",
+          "question": "What is the largest of these numbers?",
+          "options": [
+            "A) 25",
+            "B) 27",
+            "C) 29",
+            "D) 31"
+          ],
+          "answer": "29",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q48",
+          "question": "In a class, the average height of 30 students is 150cm. When one student leaves, the average drops to 149.5cm. What was the height of the student who left?",
+          "options": [
+            "A) 133cm",
+            "B) 165cm",
+            "C) 140cm",
+            "D) 157cm"
+          ],
+          "answer": "133cm",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q49",
+          "question": "A batsman’s average score for 10 innings is 32 runs. How many runs must he score in the 11th innings to raise his average by 2?",
+          "options": [
+            "A) 50",
+            "B) 54",
+            "C) 56",
+            "D) 60"
+          ],
+          "answer": "56",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q50",
+          "question": "The average weight of 24 boys in a class is 60kg. If the teacher’s weight is included, the average rises by 500g. What is the teacher’s weight?",
+          "options": [
+            "A) 72kg",
+            "B) 72.5kg",
+            "C) 74kg",
+            "D) 75kg"
+          ],
+          "answer": "72.5kg",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q51",
+          "question": "Two types of rice costing ₹30/kg and ₹50/kg are mixed so that the mixture costs ₹40/kg. In what ratio should they be mixed?",
+          "options": [
+            "A) 1:1",
+            "B) 2:3",
+            "C) 1:2",
+            "D) 3:1"
+          ],
+          "answer": "1:1",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q52",
+          "question": "How much water should be added to 20 liters of this mixture so that the ratio becomes 7:5?",
+          "options": [
+            "A) 4L",
+            "B) 5L",
+            "C) 6L",
+            "D) 8L"
+          ],
+          "answer": "5L",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q53",
+          "question": "From a vessel of 20L pure milk, 5L is removed and replaced by water; the operation is repeated once. How much milk is left?",
+          "options": [
+            "A) 11L",
+            "B) 12.25L",
+            "C) 13L",
+            "D) 14.5L"
+          ],
+          "answer": "12.25L",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q54",
+          "question": "A grocer has two kinds of oil worth ₹50/kg and ₹30/kg. In what ratio should he mix them so that the mixture is worth ₹40/kg?",
+          "options": [
+            "A) 1:1",
+            "B) 3:2",
+            "C) 2:3",
+            "D) 1:2"
+          ],
+          "answer": "1:1",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q55",
+          "question": "A mixture of 55L contains 30% alcohol and the rest water. How much alcohol must be added to make it 50% alcohol?",
+          "options": [
+            "A) 11L",
+            "B) 15L",
+            "C) 17.5L",
+            "D) 20L"
+          ],
+          "answer": "15L",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q56",
+          "question": "40L mixture of milk and water contains 10% water. How much water must be added to make water 20% of the new mixture?",
+          "options": [
+            "A) 5L",
+            "B) 6L",
+            "C) 7.5L",
+            "D) 10L"
+          ],
+          "answer": "5L",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q57",
+          "question": "In what ratio must 25% acid solution be mixed with 60% acid solution to get a 40% acid solution?",
+          "options": [
+            "A) 1:2",
+            "B) 3:2",
+            "C) 2:3",
+            "D) 1:1"
+          ],
+          "answer": "3:2",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q58",
+          "question": "Find the excluded number.",
+          "options": [
+            "A) 21",
+            "B) 24",
+            "C) 28",
+            "D) 29"
+          ],
+          "answer": "28",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q59",
+          "question": "How many liters of water must be added to a 32L mixture to make a ratio 4:5?",
+          "options": [
+            "A) 12L",
+            "B) 16L",
+            "C) 20L",
+            "D) 24L"
+          ],
+          "answer": "16L",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q60",
+          "question": "A can finish a piece of work in 15 days, B in 20 days. In how many days will they finish it together?",
+          "options": [
+            "A) 8",
+            "B) 10",
+            "C) 12",
+            "D) 17"
+          ],
+          "answer": "10",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q61",
+          "question": "If 12 men can do a job in 9 days, in how many days can 18 men do it?",
+          "options": [
+            "A) 5",
+            "B) 6",
+            "C) 7",
+            "D) 8"
+          ],
+          "answer": "6",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q62",
+          "question": "A, B, and C can finish a job in 10, 12, and 15 days respectively. Working together, how long will they take?",
+          "options": [
+            "A) 4",
+            "B) 5",
+            "C) 6",
+            "D) 7"
+          ],
+          "answer": "5",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q63",
+          "question": "If A does half a work in 12 days, how many days will he finish the work alone?",
+          "options": [
+            "A) 12",
+            "B) 18",
+            "C) 20",
+            "D) 24"
+          ],
+          "answer": "24",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q64",
+          "question": "B is twice as efficient as A. If both together can do a work in 12 days, how long would A alone take?",
+          "options": [
+            "A) 18",
+            "B) 24",
+            "C) 30",
+            "D) 36"
+          ],
+          "answer": "24",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q65",
+          "question": "C alone can do a job in 12 days, B alone in 15 days. How long if B and C work together?",
+          "options": [
+            "A) 5 5/7",
+            "B) 6 5/13",
+            "C) 6 10/13",
+            "D) 7"
+          ],
+          "answer": "6 10/13",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q66",
+          "question": "A and B can finish a task in 18 days. They work together for 6 days, then A leaves. B finishes in 18 more days. How long would each alone take?",
+          "options": [
+            "A)",
+            "B)",
+            "C)",
+            "D)"
+          ],
+          "answer": "",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q67",
+          "question": "If A is thrice as fast as B and takes 45 days less than B, how long will they take together?",
+          "options": [
+            "A) 20",
+            "B) 22.5",
+            "C) 18",
+            "D) 15"
+          ],
+          "answer": "15",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q68",
+          "question": "40 men work 8 hours daily to complete a job in 15 days. How many men are needed to do it in 10 days, working 6 hours daily?",
+          "options": [
+            "A) 60",
+            "B) 80",
+            "C) 90",
+            "D) 100"
+          ],
+          "answer": "80",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q69",
+          "question": "6 men or 9 women can complete a work in 8 days. How many days will 3 men and 6 women take?",
+          "options": [
+            "A) 6",
+            "B) 8",
+            "C) 4",
+            "D) 5"
+          ],
+          "answer": "8",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q70",
+          "question": "If 10 workers can build a wall in 21 days, how many days will 7 workers take?",
+          "options": [
+            "A) 15",
+            "B) 21",
+            "C) 24",
+            "D) 30"
+          ],
+          "answer": "30",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q71",
+          "question": "If 8 men and 12 boys finish a work in 10 days, and 6 men and 8 boys in 14 days, how long would 10 men alone take?",
+          "options": [
+            "A) 8",
+            "B) 12",
+            "C) 14",
+            "D) 16"
+          ],
+          "answer": "16",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q72",
+          "question": "A leak would empty a full tank in 10 hours. A tap fills at 4 liters/minute. The empty tank with both tap and leak running gets full in 20 hours. What’s the tank capacity?",
+          "options": [
+            "A) 2,400L",
+            "B) 4,800L",
+            "C) 2,000L",
+            "D) 1,200L"
+          ],
+          "answer": "2,400L",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q73",
+          "question": "A, B, C can do a task in 9, 18, 27 days respectively working one after another a day each in turn. In how many days is the task finished?",
+          "options": [
+            "A) 14",
+            "B) 13.5",
+            "C) 15",
+            "D) 12"
+          ],
+          "answer": "13.5",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q74",
+          "question": "If 4 men or 6 women can do work in 12 days, how many days will 2 men and 3 women take?",
+          "options": [
+            "A) 12",
+            "B) 8",
+            "C) 6",
+            "D) 9"
+          ],
+          "answer": "12",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q75",
+          "question": "A car covers 150 km at 50 km/h. How long does it take?",
+          "options": [
+            "A) 2 hours",
+            "B) 3 hours",
+            "C) 3.5 hours",
+            "D) 4 hours"
+          ],
+          "answer": "3 hours",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q76",
+          "question": "A train 120 meters long passes a pole in 6 seconds. What is its speed in km/h?",
+          "options": [
+            "A) 60",
+            "B) 72",
+            "C) 54",
+            "D) 80"
+          ],
+          "answer": "72",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q77",
+          "question": "If a person walks at 5 km/h, he reaches his destination 15 minutes late. At 6 km/h, he is 5 minutes early. What’s the distance?",
+          "options": [
+            "A) 7 km",
+            "B) 12 km",
+            "C) 6 km",
+            "D) 10 km"
+          ],
+          "answer": "12 km",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q78",
+          "question": "Two trains, each 120 m long, run in opposite directions at 60 km/h and 90 km/h. How long will they take to cross each other?",
+          "options": [
+            "A) 5.76 s",
+            "B) 6.4 s",
+            "C) 8.96 s",
+            "D) 9.6 s"
+          ],
+          "answer": "6.4 s",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q79",
+          "question": "A man covers a certain distance by car at 25 km/h and returns by scooter at 20 km/h. What is his average speed (in km/h)?",
+          "options": [
+            "A) 22",
+            "B) 22.5",
+            "C) 23",
+            "D) 23.5"
+          ],
+          "answer": "22.5",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q80",
+          "question": "A boat can go 30 km downstream in 3 hours. If speed of stream is 2 km/h, what's the speed of boat in still water?",
+          "options": [
+            "A) 8 km/h",
+            "B) 10 km/h",
+            "C) 12 km/h",
+            "D) 14 km/h"
+          ],
+          "answer": "10 km/h",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q81",
+          "question": "A bus leaves point A at 8 AM at 60 km/h. Another 90 km/h bus leaves A at 10 AM, same direction. When will it catch up?",
+          "options": [
+            "A) 1 PM",
+            "B) 12 noon",
+            "C) 2 PM",
+            "D) 11"
+          ],
+          "answer": "12 noon",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q82",
+          "question": "A cyclist covers half of his journey at 20 km/h and the other half at 30 km/h. What is the average speed?",
+          "options": [
+            "A) 24 km/h",
+            "B) 25 km/h",
+            "C) 26 km/h",
+            "D) 27 km/h"
+          ],
+          "answer": "24 km/h",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q83",
+          "question": "A train covers 720 km in 8 hours. If it covers half the distance at 90 km/h, what's the speed for the second half?",
+          "options": [
+            "A) 60 km/h",
+            "B) 70 km/h",
+            "C) 80 km/h",
+            "D) 100 km/h"
+          ],
+          "answer": "80 km/h",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q84",
+          "question": "If a man increases his speed by 3 km/h, he reaches his office 20 minutes earlier. If distance is 18 km, find his original speed.",
+          "options": [
+            "A) 6 km/h",
+            "B) 9 km/h",
+            "C) 12 km/h",
+            "D) 15 km/h"
+          ],
+          "answer": "12 km/h",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q85",
+          "question": "If a train is 180 meters long and passes a platform in 30 seconds at 36 km/h, what is the length of the platform?",
+          "options": [
+            "A) 270 m",
+            "B) 320 m",
+            "C) 350 m",
+            "D) 400 m"
+          ],
+          "answer": "320 m",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q86",
+          "question": "If two people start 100 km apart and walk towards each other at 4 km/h and 6 km/h, how far will the first person have walked when they meet?",
+          "options": [
+            "A) 36 km",
+            "B) 40 km",
+            "C) 44 km",
+            "D) 50 km"
+          ],
+          "answer": "40 km",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q87",
+          "question": "A train passes a man, running in the same direction, in 10 seconds and passes a platform 200m long in 20 seconds. Find length of the train.",
+          "options": [
+            "A) 90 m",
+            "B) 100 m",
+            "C) 120 m",
+            "D) 200 m"
+          ],
+          "answer": "120 m",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q88",
+          "question": "A boat goes 30 km upstream in 6 hours. If current speed is 2 km/h, what's boat speed in still water?",
+          "options": [
+            "A) 3 km/h",
+            "B) 5 km/h",
+            "C) 7 km/h",
+            "D) 8 km/h"
+          ],
+          "answer": "5 km/h",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q89",
+          "question": "A person walks 1/3 of a journey at 3 km/h, next 1/3 at 4 km/h, and the last 1/3 at 5 km/h. What is his average speed?",
+          "options": [
+            "A) 3.6 km/h",
+            "B) 4 km/h",
+            "C) 4.1 km/h",
+            "D) 4.23 km/h"
+          ],
+          "answer": "3.6 km/h",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q90",
+          "question": "What is the simple interest on ₹5,000 at 12% per annum for 3 years?",
+          "options": [
+            "A) ₹1,500",
+            "B) ₹1,800",
+            "C) ₹1,600",
+            "D) ₹2,000"
+          ],
+          "answer": "₹1,800",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q91",
+          "question": "At what rate of simple interest will ₹800 amount to ₹1,000 in 5 years?",
+          "options": [
+            "A) 4%",
+            "B) 5%",
+            "C) 6%",
+            "D) 7%"
+          ],
+          "answer": "6%",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q92",
+          "question": "If ₹2,500 is borrowed at 8% p.a. simple interest, what will be the amount after 4 years?",
+          "options": [
+            "A) ₹3,200",
+            "B) ₹3,300",
+            "C) ₹3,400",
+            "D) ₹3,500"
+          ],
+          "answer": "₹3,300",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q93",
+          "question": "A sum of ₹6,000 amounts to ₹6,720 in 2 years at simple interest. What is the rate?",
+          "options": [
+            "A) 4%",
+            "B) 5%",
+            "C) 6%",
+            "D) 8%"
+          ],
+          "answer": "6%",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q94",
+          "question": "What is the compound interest on ₹10,000 at 10% per annum for two years, compounded annually?",
+          "options": [
+            "A) ₹2,000",
+            "B) ₹2,100",
+            "C) ₹2,200",
+            "D) ₹2,100"
+          ],
+          "answer": "₹2,100",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q95",
+          "question": "Find the difference between compound and simple interest on ₹10,000 at 5% for 2 years.",
+          "options": [
+            "A) ₹10",
+            "B) ₹12.50",
+            "C) ₹15",
+            "D) ₹25"
+          ],
+          "answer": "₹12.50",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q96",
+          "question": "What is the principal?",
+          "options": [
+            "A) ₹4,000",
+            "B) ₹5,000",
+            "C) ₹6,000",
+            "D) ₹7,000"
+          ],
+          "answer": "₹4,000",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q97",
+          "question": "A sum doubles itself in 8 years at simple interest. The rate of interest per annum is:",
+          "options": [
+            "A) 10%",
+            "B) 12.5%",
+            "C) 15%",
+            "D) 20%"
+          ],
+          "answer": "12.5%",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q98",
+          "question": "The compound interest on ₹20,000 for 3 years at 5% p.a., compounded annually, is:",
+          "options": [
+            "A) ₹3,000",
+            "B) ₹3,150",
+            "C) ₹3,152.50",
+            "D) ₹3,500"
+          ],
+          "answer": "₹3,152.50",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q99",
+          "question": "The difference between the compound interest and simple interest on ₹5,000 for 2 years at 4% p.a. is:",
+          "options": [
+            "A) ₹4",
+            "B) ₹6",
+            "C) ₹8",
+            "D) ₹10"
+          ],
+          "answer": "₹4",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q100",
+          "question": "What will ₹2,000 amount to in 2 years at 5% p.a. compound interest, compounded half-yearly?",
+          "options": [
+            "A) ₹2,205",
+            "B) ₹2,205.06",
+            "C) ₹2,204.10",
+            "D) ₹2,220"
+          ],
+          "answer": "₹2,205.06",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q101",
+          "question": "In how many years will ₹6000 amount to ₹7260 at 8% per annum compound interest (compounded annually)?",
+          "options": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 5"
+          ],
+          "answer": "2",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q102",
+          "question": "The principal is:",
+          "options": [
+            "A) ₹20,000",
+            "B) ₹25,000",
+            "C) ₹30,000",
+            "D) ₹35,000"
+          ],
+          "answer": "₹25,000",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q103",
+          "question": "At what rate per annum will ₹8000 yield a compound interest of ₹1,320 in 2 years, compounded annually?",
+          "options": [
+            "A) 7.5%",
+            "B) 8%",
+            "C) 10%",
+            "D) 6%"
+          ],
+          "answer": "8%",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q104",
+          "question": "A sum amounts to ₹6,600 in 2 years and ₹7,326 in 3 years at compound interest. What is the rate percent per annum?",
+          "options": [
+            "A) 8%",
+            "B) 10%",
+            "C) 12%",
+            "D) 15%"
+          ],
+          "answer": "8%",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q105",
+          "question": "The least number that must be added to 394 so that it becomes divisible by 5 is:",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 4",
+            "D) 3"
+          ],
+          "answer": "3",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q106",
+          "question": "How many even numbers are there between 21 and 51?",
+          "options": [
+            "A) 14",
+            "B) 15",
+            "C) 16",
+            "D) 17"
+          ],
+          "answer": "16",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q107",
+          "question": "What is the largest 3-digit number exactly divisible by 24, 36 and 54?",
+          "options": [
+            "A) 972",
+            "B) 984",
+            "C) 996",
+            "D) 990"
+          ],
+          "answer": "996",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q108",
+          "question": "How many numbers between 100 and 300 are divisible by 8?",
+          "options": [
+            "A) 24",
+            "B) 25",
+            "C) 26",
+            "D) 28"
+          ],
+          "answer": "26",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q109",
+          "question": "What are the numbers?",
+          "options": [
+            "A) 16, 17",
+            "B) 17, 18",
+            "C) 18, 19",
+            "D) 13, 14"
+          ],
+          "answer": "17, 18",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q110",
+          "question": "How many positive divisors does 36 have?",
+          "options": [
+            "A) 6",
+            "B) 8",
+            "C) 9",
+            "D) 12"
+          ],
+          "answer": "9",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q111",
+          "question": "The sum of digits of which number between 10 and 100 is maximum?",
+          "options": [
+            "A) 89",
+            "B) 99",
+            "C) 98",
+            "D) 79"
+          ],
+          "answer": "99",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q112",
+          "question": "If the sum of a number and its square is 132, then what is the number?",
+          "options": [
+            "A) 12",
+            "B) 11",
+            "C) 10",
+            "D) 9"
+          ],
+          "answer": "11",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q113",
+          "question": "The difference between the place values of 7 in 83725 is:",
+          "options": [
+            "A) 6,993",
+            "B) 6793",
+            "C) 7000",
+            "D) 6900"
+          ],
+          "answer": "6,993",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q114",
+          "question": "Which smallest number should be subtracted from 1000 so that the remainder is divisible by 35?",
+          "options": [
+            "A) 15",
+            "B) 20",
+            "C) 10",
+            "D) 5"
+          ],
+          "answer": "10",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q115",
+          "question": "What is the unit digit of 2^51?",
+          "options": [
+            "A) 2",
+            "B) 4",
+            "C) 6",
+            "D) 8"
+          ],
+          "answer": "2",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q116",
+          "question": "If the HCF of 65 and 117 is expressible as 65x + 117y, what is x?",
+          "options": [
+            "A) 2",
+            "B) 1",
+            "C) -2",
+            "D) -1"
+          ],
+          "answer": "-1",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q117",
+          "question": "Which of the following is a perfect cube?",
+          "options": [
+            "A) 125",
+            "B) 243",
+            "C) 512",
+            "D) 729"
+          ],
+          "answer": "512",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q118",
+          "question": "What is the sum of first 20 natural numbers?",
+          "options": [
+            "A) 200",
+            "B) 210",
+            "C) 220",
+            "D) 230"
+          ],
+          "answer": "210",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q119",
+          "question": "Find the next term: 2, 4, 8, 16, ?",
+          "options": [
+            "A) 18",
+            "B) 20",
+            "C) 24",
+            "D) 32"
+          ],
+          "answer": "32",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q120",
+          "question": "Find the missing number: 1, 4, 9, 16, 25, ?",
+          "options": [
+            "A) 36",
+            "B) 30",
+            "C) 32",
+            "D) 24"
+          ],
+          "answer": "36",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q121",
+          "question": "What comes next? 7, 10, 16, 28, ?",
+          "options": [
+            "A) 45",
+            "B) 52",
+            "C) 54",
+            "D) 60"
+          ],
+          "answer": "52",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q122",
+          "question": "Find the missing number: 2, 5, 10, 17, 26, ?",
+          "options": [
+            "A) 33",
+            "B) 37",
+            "C) 47",
+            "D) 41"
+          ],
+          "answer": "37",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q123",
+          "question": "What is the wrong term: 3, 6, 12, 24, 49, 96",
+          "options": [
+            "A) 6",
+            "B) 49",
+            "C) 24",
+            "D) 12"
+          ],
+          "answer": "49",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q124",
+          "question": "What comes next? 1, 8, 27, 64, ?",
+          "options": [
+            "A) 100",
+            "B) 81",
+            "C) 125",
+            "D) 216"
+          ],
+          "answer": "125",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q125",
+          "question": "Find the missing: 90, 80, 70, 60, ?",
+          "options": [
+            "A) 30",
+            "B) 40",
+            "C) 50",
+            "D) 45"
+          ],
+          "answer": "50",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q126",
+          "question": "What is the next number? 5, 12, 23, 38, 57, ?",
+          "options": [
+            "A) 70",
+            "B) 80",
+            "C) 75",
+            "D) 84"
+          ],
+          "answer": "70",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q127",
+          "question": "Which number comes next? 2, 6, 12, 20, ?",
+          "options": [
+            "A) 28",
+            "B) 32",
+            "C) 36",
+            "D) 40"
+          ],
+          "answer": "28",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q128",
+          "question": "What is the missing number? 13, 16, 21, 28, ?",
+          "options": [
+            "A) 37",
+            "B) 36",
+            "C) 35",
+            "D) 39"
+          ],
+          "answer": "37",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q129",
+          "question": "Which is the next in the sequence: 4, 6, 9, 6, 14, 6, ?",
+          "options": [
+            "A) 6",
+            "B) 18",
+            "C) 16",
+            "D) 24"
+          ],
+          "answer": "18",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q130",
+          "question": "What comes next: 3, 5, 11, 21, 35, ?",
+          "options": [
+            "A) 51",
+            "B) 48",
+            "C) 54",
+            "D) 57"
+          ],
+          "answer": "51",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q131",
+          "question": "What is the missing term? 120, 60, 30, 15, ?",
+          "options": [
+            "A) 8",
+            "B) 7.5",
+            "C) 10",
+            "D) 5"
+          ],
+          "answer": "7.5",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q132",
+          "question": "Which number comes next: 1, 4, 18, 96, ?",
+          "options": [
+            "A) 540",
+            "B) 480",
+            "C) 600",
+            "D) 720"
+          ],
+          "answer": "540",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q133",
+          "question": "Find the next: 21, 28, 37, 48, ?",
+          "options": [
+            "A) 61",
+            "B) 66",
+            "C) 63",
+            "D) 70"
+          ],
+          "answer": "61",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q134",
+          "question": "Solve: 24 + 36 ÷ 6 × 2 − 5 = ?",
+          "options": [
+            "A) 31",
+            "B) 41",
+            "C) 37",
+            "D) 29"
+          ],
+          "answer": "37",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q135",
+          "question": "Solve: 25% of 200 + 30% of 150 = ?",
+          "options": [
+            "A) 100",
+            "B) 115",
+            "C) 110",
+            "D) 105"
+          ],
+          "answer": "105",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q136",
+          "question": "Find the value of: 3.6 × 2.5 + 1.8 × 2.5 = ?",
+          "options": [
+            "A) 10.5",
+            "B) 13.5",
+            "C) 12.5",
+            "D) 14.5"
+          ],
+          "answer": "13.5",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q137",
+          "question": "Evaluate: (18 − 6)² ÷ 4 = ?",
+          "options": [
+            "A) 32",
+            "B) 36",
+            "C) 18",
+            "D) 48"
+          ],
+          "answer": "32",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q138",
+          "question": "Calculate: 1/4 + 1/8 + 1/16 = ?",
+          "options": [
+            "A) 7/16",
+            "B) 9/16",
+            "C) 11/16",
+            "D) 1/2"
+          ],
+          "answer": "9/16",
+          "correctOption": "B",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q139",
+          "question": "Simplify: (0.25 × 0.4) ÷ 0.05 = ?",
+          "options": [
+            "A) 2",
+            "B) 1.5",
+            "C) 5",
+            "D) 10"
+          ],
+          "answer": "5",
+          "correctOption": "C",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q140",
+          "question": "Find the value: 144 ÷ 4 × 2 + 5 = ?",
+          "options": [
+            "A) 77",
+            "B) 78",
+            "C) 72",
+            "D) 79"
+          ],
+          "answer": "77",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q141",
+          "question": "Simplify: (2.5)² + (1.5)² = ?",
+          "options": [
+            "A) 8",
+            "B) 8.5",
+            "C) 7.25",
+            "D) 7.5"
+          ],
+          "answer": "7.5",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q142",
+          "question": "Calculate: √81 + √49 × 2 = ?",
+          "options": [
+            "A) 21",
+            "B) 20",
+            "C) 14",
+            "D) 18"
+          ],
+          "answer": "21",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q143",
+          "question": "Simplify: 5/6 of 48 + 1/4 of 24 = ?",
+          "options": [
+            "A) 40",
+            "B) 46",
+            "C) 48",
+            "D) 44"
+          ],
+          "answer": "44",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q144",
+          "question": "Find the value: 45 + {34 − (24 − 7)} = ?",
+          "options": [
+            "A) 62",
+            "B) 59",
+            "C) 56",
+            "D) 62"
+          ],
+          "answer": "62",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q145",
+          "question": "If x = 2 and y = 3, evaluate xy + x²y²",
+          "options": [
+            "A) 24",
+            "B) 30",
+            "C) 18",
+            "D) 36"
+          ],
+          "answer": "24",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q146",
+          "question": "Evaluate: 750 ÷ [15 × (2 + 3)] = ?",
+          "options": [
+            "A) 8",
+            "B) 7",
+            "C) 10",
+            "D) 5"
+          ],
+          "answer": "8",
+          "correctOption": "A",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q147",
+          "question": "Value of 2/3 + 3/4 − 1/2 = ?",
+          "options": [
+            "A) 5/6",
+            "B) 17/12",
+            "C) 7/12",
+            "D) 11/12"
+          ],
+          "answer": "11/12",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "q148",
+          "question": "Simplify: (1001 × 1001) − (999 × 999) = ?",
+          "options": [
+            "A) 4000",
+            "B) 2000",
+            "C) 3996",
+            "D) 4004"
+          ],
+          "answer": "4004",
+          "correctOption": "D",
+          "difficulty": "Medium"
+        }
+      ]
+    }
+  ]
+}
