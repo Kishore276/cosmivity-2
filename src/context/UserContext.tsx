@@ -4,6 +4,37 @@ import { auth, db } from '@/lib/firebase';
 import { onAuthStateChanged, User as FirebaseUser } from 'firebase/auth';
 import { doc, getDoc, setDoc, onSnapshot } from 'firebase/firestore';
 
+export type Project = {
+  id: string;
+  name: string;
+  description: string;
+  technologies: string[];
+  link?: string;
+  github?: string;
+  startDate?: string;
+  endDate?: string;
+};
+
+export type Certification = {
+  id: string;
+  name: string;
+  organization: string;
+  year: string;
+  link?: string;
+  description?: string;
+};
+
+export type Experience = {
+  id: string;
+  company: string;
+  position: string;
+  startDate: string;
+  endDate: string;
+  current: boolean;
+  description: string;
+  achievements: string[];
+};
+
 export type ProfileData = {
   name: string;
   email: string;
@@ -14,8 +45,12 @@ export type ProfileData = {
   linkedin: string;
   website: string;
   skills: string[];
-  experience: string;
-  projects: string;
+  experience: Experience[];
+  projects: Project[];
+  certifications: Certification[];
+  title?: string;
+  location?: string;
+  phone?: string;
 };
 
 const defaultProfileData: ProfileData = {
@@ -28,8 +63,12 @@ const defaultProfileData: ProfileData = {
     linkedin: '',
     website: '',
     skills: [],
-    experience: '',
-    projects: '',
+    experience: [],
+    projects: [],
+    certifications: [],
+    title: '',
+    location: '',
+    phone: '',
 };
 
 interface UserContextType {
@@ -70,8 +109,12 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
               linkedin: '',
               website: '',
               skills: [],
-              experience: '',
-              projects: '',
+              experience: [],
+              projects: [],
+              certifications: [],
+              title: '',
+              location: '',
+              phone: '',
             };
             try {
               await setDoc(userDocRef, newUserProfile);

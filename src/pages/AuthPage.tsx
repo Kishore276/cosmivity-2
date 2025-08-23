@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Eye, EyeOff, Mail, Lock, User, Chrome, GraduationCap } from 'lucide-react'
+import { Eye, EyeOff, Mail, Lock, User, Chrome, GraduationCap, ArrowLeft } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -82,8 +82,12 @@ const AuthPage: React.FC = () => {
                 linkedin: '',
                 website: '',
                 skills: [],
-                experience: '',
-                projects: '',
+                experience: [],
+                projects: [],
+                certifications: [],
+                title: '',
+                location: '',
+                phone: '',
             };
 
             await setDoc(doc(db, "users", user.uid), newUserProfile);
@@ -173,6 +177,18 @@ const AuthPage: React.FC = () => {
           gradientPosition="30% 20%"
           className="opacity-60"
         />
+      
+      {/* Back Button */}
+      <Button
+        variant="ghost"
+        size="sm"
+        onClick={() => navigate('/')}
+        className="absolute top-4 left-4 z-20 flex items-center gap-2 text-muted-foreground hover:text-foreground"
+      >
+        <ArrowLeft className="h-4 w-4" />
+        Back to Home
+      </Button>
+
       <div className="w-full max-w-md space-y-6 z-10">
         {/* Header */}
         <div className="text-center space-y-2">

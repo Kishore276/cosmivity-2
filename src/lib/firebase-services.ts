@@ -17,7 +17,7 @@ import {
   setDoc,
   writeBatch
 } from 'firebase/firestore';
-import { db } from './firebase';
+import { getFirebaseDb } from './firebase';
 import { mockFirebaseService } from './mock-firebase';
 
 // Helper function to check if we should use mock Firebase
@@ -25,7 +25,8 @@ function shouldUseMockFirebase(): boolean {
   try {
     const hasApiKey = !!import.meta.env.VITE_FIREBASE_API_KEY;
     const hasProjectId = !!import.meta.env.VITE_FIREBASE_PROJECT_ID;
-    return !hasApiKey || !hasProjectId || !db || !db.app;
+    const dbInstance = getFirebaseDb();
+    return !hasApiKey || !hasProjectId || !dbInstance || !dbInstance.app;
   } catch (error) {
     return true;
   }
@@ -72,7 +73,7 @@ export const roomsService = {
   // Create a new room
   async createRoom(roomData: Omit<Room, 'id' | 'createdAt' | 'participants'>) {
     try {
-      const docRef = await addDoc(collection(db, 'rooms'), {
+      const docRef = await addDoc(collection(getFirebaseDb(), 'rooms'), {
         ...roomData,
         participants: [roomData.hostId],
         createdAt: serverTimestamp(),
@@ -80,7 +81,7 @@ export const roomsService = {
       });
 
       // Add host as participant
-      const participantRef = doc(db, 'rooms', docRef.id, 'participants', roomData.hostId);
+      const participantRef = doc(getFirebaseDb(), 'rooms', docRef.id, 'participants', roomData.hostId);
       await setDoc(participantRef, {
         userId: roomData.hostId,
         userName: roomData.hostName,
@@ -100,25 +101,30 @@ export const roomsService = {
   // Join a room
   async joinRoom(roomId: string, userId: string, userName: string) {
     try {
+      console.log('[joinRoom] Attempting to join room:', roomId, 'as', userId, userName);
       // First check if room exists and has capacity
-      const roomRef = doc(db, 'rooms', roomId);
+      const roomRef = doc(getFirebaseDb(), 'rooms', roomId);
       const roomSnap = await getDoc(roomRef);
 
       if (!roomSnap.exists()) {
+        console.error('[joinRoom] Room not found:', roomId);
         throw new Error('Room not found');
       }
 
       const roomData = roomSnap.data() as Room;
+      console.log('[joinRoom] Room data:', roomData);
 
       // Check if room is at capacity
       if (roomData.participants.length >= roomData.maxParticipants) {
+        console.warn('[joinRoom] Room is at maximum capacity:', roomId);
         throw new Error('Room is at maximum capacity');
       }
 
       // Check if user is already in the room
       if (roomData.participants.includes(userId)) {
         // User already in room, just update participant details
-        const participantRef = doc(db, 'rooms', roomId, 'participants', userId);
+        const participantRef = doc(getFirebaseDb(), 'rooms', roomId, 'participants', userId);
+        console.log('[joinRoom] User already in room, updating participant details:', userId);
         await setDoc(participantRef, {
           uid: userId,
           userId,
@@ -129,15 +135,19 @@ export const roomsService = {
           cameraEnabled: true,
           joinedAt: serverTimestamp()
         });
+        console.log('[joinRoom] Participant details updated for existing user:', userId);
         return;
       }
 
+      console.log('[joinRoom] Adding user to participants array:', userId);
       await updateDoc(roomRef, {
         participants: arrayUnion(userId)
       });
+      console.log('[joinRoom] User added to participants array:', userId);
 
       // Add participant details
-      const participantRef = doc(db, 'rooms', roomId, 'participants', userId);
+      const participantRef = doc(getFirebaseDb(), 'rooms', roomId, 'participants', userId);
+      console.log('[joinRoom] Creating participant document for:', userId);
       await setDoc(participantRef, {
         uid: userId,
         userId,
@@ -148,8 +158,9 @@ export const roomsService = {
         cameraEnabled: true,
         joinedAt: serverTimestamp()
       });
+      console.log('[joinRoom] Participant document created for:', userId);
     } catch (error) {
-      console.error('Error joining room:', error);
+      console.error('[joinRoom] Error joining room:', error);
       throw error;
     }
   },
@@ -159,7 +170,7 @@ export const roomsService = {
   // Delete a room (only host can delete)
   async deleteRoom(roomId: string) {
     try {
-      await deleteDoc(doc(db, 'rooms', roomId));
+      await deleteDoc(doc(getFirebaseDb(), 'rooms', roomId));
     } catch (error) {
       console.error('Error deleting room:', error);
       throw error;
@@ -169,7 +180,7 @@ export const roomsService = {
   // Get real-time public rooms with accurate participant counts
   subscribeToPublicRooms(callback: (rooms: Room[]) => void) {
     const q = query(
-      collection(db, 'rooms'),
+      collection(getFirebaseDb(), 'rooms'),
       where('type', '==', 'public'),
       where('isActive', '==', true),
       orderBy('createdAt', 'desc')
@@ -189,7 +200,7 @@ export const roomsService = {
 
         // Set up real-time participant count listener for each room
         if (!participantListeners.has(roomId)) {
-          const participantsRef = collection(db, 'rooms', roomId, 'participants');
+          const participantsRef = collection(getFirebaseDb(), 'rooms', roomId, 'participants');
           const participantUnsub = onSnapshot(participantsRef, (participantSnapshot) => {
             const actualParticipantCount = participantSnapshot.size;
             const participantIds = participantSnapshot.docs.map(doc => doc.data().userId || doc.data().uid);
@@ -206,7 +217,7 @@ export const roomsService = {
 
             // Update main room document if needed (async, don't wait)
             if (actualParticipantCount !== (roomData.participants?.length || 0)) {
-              updateDoc(doc(db, 'rooms', roomId), {
+              updateDoc(doc(getFirebaseDb(), 'rooms', roomId), {
                 participants: participantIds
               }).catch(error => console.warn(`Error updating room ${roomId} participants:`, error));
             }
@@ -240,7 +251,7 @@ export const roomsService = {
   async getRoomByKey(roomKey: string) {
     try {
       const q = query(
-        collection(db, 'rooms'),
+        collection(getFirebaseDb(), 'rooms'),
         where('roomKey', '==', roomKey),
         where('type', '==', 'private'),
         where('isActive', '==', true)
@@ -260,7 +271,7 @@ export const roomsService = {
   // Get user's joined rooms
   subscribeToUserRooms(userId: string, callback: (rooms: Room[]) => void) {
     const q = query(
-      collection(db, 'rooms'),
+      collection(getFirebaseDb(), 'rooms'),
       where('participants', 'array-contains', userId),
       where('isActive', '==', true),
       orderBy('createdAt', 'desc')
@@ -278,7 +289,7 @@ export const roomsService = {
   // Get room participants
   subscribeToRoomParticipants(roomId: string, callback: (participants: RoomParticipant[]) => void) {
     const q = query(
-      collection(db, 'rooms', roomId, 'participants'),
+      collection(getFirebaseDb(), 'rooms', roomId, 'participants'),
       orderBy('joinedAt', 'asc')
     );
 
@@ -294,7 +305,7 @@ export const roomsService = {
   // Update participant media status
   async updateParticipantMedia(roomId: string, userId: string, micEnabled: boolean, cameraEnabled: boolean) {
     try {
-      const participantRef = doc(db, 'rooms', roomId, 'participants', userId);
+      const participantRef = doc(getFirebaseDb(), 'rooms', roomId, 'participants', userId);
       await updateDoc(participantRef, {
         micEnabled,
         cameraEnabled
@@ -308,7 +319,7 @@ export const roomsService = {
   // Send message to room
   async sendMessage(roomId: string, userId: string, userName: string, message: string) {
     try {
-      await addDoc(collection(db, 'rooms', roomId, 'messages'), {
+      await addDoc(collection(getFirebaseDb(), 'rooms', roomId, 'messages'), {
         userId,
         userName,
         message,
@@ -323,7 +334,7 @@ export const roomsService = {
   // Subscribe to room messages
   subscribeToRoomMessages(roomId: string, callback: (messages: RoomMessage[]) => void) {
     const q = query(
-      collection(db, 'rooms', roomId, 'messages'),
+      collection(getFirebaseDb(), 'rooms', roomId, 'messages'),
       orderBy('timestamp', 'asc')
     );
 
@@ -339,7 +350,7 @@ export const roomsService = {
   // Clear all messages from a room (for testing/cleanup)
   async clearRoomMessages(roomId: string) {
     try {
-      const messagesRef = collection(db, 'rooms', roomId, 'messages');
+      const messagesRef = collection(getFirebaseDb(), 'rooms', roomId, 'messages');
       const messagesSnap = await getDocs(messagesRef);
 
       if (messagesSnap.empty) {
@@ -347,7 +358,7 @@ export const roomsService = {
         return;
       }
 
-      const batch = writeBatch(db);
+      const batch = writeBatch(getFirebaseDb());
       messagesSnap.forEach(doc => batch.delete(doc.ref));
 
       await batch.commit();
@@ -361,7 +372,7 @@ export const roomsService = {
   // Leave room
   async leaveRoom(roomId: string, userId: string) {
     try {
-      const roomRef = doc(db, 'rooms', roomId);
+      const roomRef = doc(getFirebaseDb(), 'rooms', roomId);
 
       // Remove from participants array
       await updateDoc(roomRef, {
@@ -369,7 +380,7 @@ export const roomsService = {
       });
 
       // Remove participant details
-      const participantRef = doc(db, 'rooms', roomId, 'participants', userId);
+      const participantRef = doc(getFirebaseDb(), 'rooms', roomId, 'participants', userId);
       await deleteDoc(participantRef);
 
       // Check if room is now empty and clean up if needed
@@ -388,7 +399,7 @@ export const roomsService = {
 
       // Clean up any signaling data for this user
       try {
-        const signalingRef = collection(db, 'rooms', roomId, 'signaling');
+        const signalingRef = collection(getFirebaseDb(), 'rooms', roomId, 'signaling');
         const q1 = query(signalingRef, where('sender', '==', userId));
         const q2 = query(signalingRef, where('recipient', '==', userId));
 
@@ -397,7 +408,7 @@ export const roomsService = {
           getDocs(q2)
         ]);
 
-        const batch = writeBatch(db);
+        const batch = writeBatch(getFirebaseDb());
         senderDocs.forEach(doc => batch.delete(doc.ref));
         recipientDocs.forEach(doc => batch.delete(doc.ref));
 
@@ -416,7 +427,7 @@ export const roomsService = {
   // Get single room
   async getRoom(roomId: string) {
     try {
-      const roomRef = doc(db, 'rooms', roomId);
+      const roomRef = doc(getFirebaseDb(), 'rooms', roomId);
       const roomSnap = await getDoc(roomRef);
       if (roomSnap.exists()) {
         return { id: roomSnap.id, ...roomSnap.data() } as Room;
@@ -431,7 +442,7 @@ export const roomsService = {
   // Clean up stale participants (participants in subcollection but not in main room array)
   async cleanupStaleParticipants(roomId: string) {
     try {
-      const roomRef = doc(db, 'rooms', roomId);
+      const roomRef = doc(getFirebaseDb(), 'rooms', roomId);
       const roomSnap = await getDoc(roomRef);
 
       if (!roomSnap.exists()) return;
@@ -440,10 +451,10 @@ export const roomsService = {
       const activeParticipants = roomData.participants || [];
 
       // Get all participants in subcollection
-      const participantsRef = collection(db, 'rooms', roomId, 'participants');
+      const participantsRef = collection(getFirebaseDb(), 'rooms', roomId, 'participants');
       const participantsSnap = await getDocs(participantsRef);
 
-      const batch = writeBatch(db);
+      const batch = writeBatch(getFirebaseDb());
       let hasChanges = false;
       const actualParticipants: string[] = [];
 
@@ -469,7 +480,7 @@ export const roomsService = {
       // If room is now empty, clear messages
       if (actualParticipants.length === 0 && activeParticipants.length > 0) {
         console.log(`Room ${roomId} became empty during cleanup, clearing messages...`);
-        const messagesRef = collection(db, 'rooms', roomId, 'messages');
+        const messagesRef = collection(getFirebaseDb(), 'rooms', roomId, 'messages');
         const messagesSnap = await getDocs(messagesRef);
         messagesSnap.forEach(doc => batch.delete(doc.ref));
       }
@@ -481,6 +492,102 @@ export const roomsService = {
     } catch (error) {
       console.error('Error cleaning up stale participants:', error);
     }
+  },
+
+  // Auto-delete empty rooms after 10 minutes
+  async autoDeleteEmptyRooms() {
+    try {
+      console.log('🧹 Running auto-delete check for empty rooms...');
+      
+      const now = new Date();
+      const tenMinutesAgo = new Date(now.getTime() - 10 * 60 * 1000);
+
+      // Query active rooms
+      const q = query(
+        collection(getFirebaseDb(), 'rooms'),
+        where('isActive', '==', true)
+      );
+
+      const snapshot = await getDocs(q);
+      
+      if (snapshot.empty) {
+        console.log('No active rooms found');
+        return;
+      }
+
+      console.log(`Found ${snapshot.size} active rooms to check`);
+      let deletedCount = 0;
+
+      for (const roomDoc of snapshot.docs) {
+        const room = { id: roomDoc.id, ...roomDoc.data() } as Room;
+        
+        // Check if room is empty (no participants)
+        if (!room.participants || room.participants.length === 0) {
+          // Check if room was created more than 10 minutes ago
+          const createdAt = room.createdAt?.toDate() || new Date(0);
+          
+          if (createdAt < tenMinutesAgo) {
+            console.log(`🗑️ Deleting empty room: ${room.name} (ID: ${room.id})`);
+            
+            try {
+              // Delete all subcollections first
+              const batch = writeBatch(getFirebaseDb());
+              
+              // Delete participants subcollection
+              const participantsQuery = await getDocs(collection(getFirebaseDb(), 'rooms', room.id, 'participants'));
+              participantsQuery.forEach(doc => batch.delete(doc.ref));
+              
+              // Delete messages subcollection  
+              const messagesQuery = await getDocs(collection(getFirebaseDb(), 'rooms', room.id, 'messages'));
+              messagesQuery.forEach(doc => batch.delete(doc.ref));
+              
+              await batch.commit();
+              
+              // Delete the room document itself
+              await deleteDoc(doc(getFirebaseDb(), 'rooms', room.id));
+              
+              deletedCount++;
+              console.log(`✅ Successfully deleted empty room: ${room.name}`);
+            } catch (error) {
+              console.error(`❌ Failed to delete room ${room.id}:`, error);
+            }
+          } else {
+            console.log(`⏳ Room ${room.name} is empty but was created recently (${Math.round((now.getTime() - createdAt.getTime()) / 60000)} minutes ago)`);
+          }
+        } else {
+          console.log(`👥 Room ${room.name} has ${room.participants.length} participants - keeping`);
+        }
+      }
+
+      if (deletedCount > 0) {
+        console.log(`🧹 Auto-deletion completed: Deleted ${deletedCount} empty rooms`);
+      } else {
+        console.log('🧹 Auto-deletion completed: No rooms needed deletion');
+      }
+    } catch (error) {
+      console.error('❌ Error in auto-delete empty rooms:', error);
+    }
+  },
+
+  // Start the auto-delete service
+  startAutoDeleteService() {
+    console.log('🚀 Starting room auto-deletion service...');
+    
+    // Run immediately
+    this.autoDeleteEmptyRooms();
+    
+    // Run every 10 minutes
+    const intervalId = setInterval(() => {
+      this.autoDeleteEmptyRooms();
+    }, 10 * 60 * 1000); // 10 minutes
+    
+    console.log('✅ Room auto-deletion service started (runs every 10 minutes)');
+    
+    // Return cleanup function
+    return () => {
+      clearInterval(intervalId);
+      console.log('🛑 Room auto-deletion service stopped');
+    };
   }
 };
 
@@ -493,6 +600,7 @@ export interface AptitudeQuestion {
   explanation?: string;
   difficulty: 'Easy' | 'Medium' | 'Hard';
   timeLimit?: number; // in seconds
+  passage?: string; // For reading comprehension questions
 }
 
 export interface AptitudeLesson {
@@ -520,7 +628,7 @@ export const aptitudeService = {
   // Add a new subject with lessons
   async addSubject(subjectData: Omit<AptitudeSubject, 'id' | 'createdAt' | 'updatedAt'>) {
     try {
-      const docRef = await addDoc(collection(db, 'aptitude-subjects'), {
+      const docRef = await addDoc(collection(getFirebaseDb(), 'aptitude-subjects'), {
         ...subjectData,
         createdAt: serverTimestamp(),
         updatedAt: serverTimestamp()
@@ -536,7 +644,7 @@ export const aptitudeService = {
   async getUserSubjects(userId: string) {
     try {
       const q = query(
-        collection(db, 'aptitude-subjects'),
+        collection(getFirebaseDb(), 'aptitude-subjects'),
         where('createdBy', '==', userId),
         orderBy('createdAt', 'desc')
       );
@@ -562,7 +670,7 @@ export const aptitudeService = {
       });
     } else {
       const q = query(
-        collection(db, 'aptitude-subjects')
+        collection(getFirebaseDb(), 'aptitude-subjects')
       );
 
       return onSnapshot(q, (snapshot) => {
@@ -581,7 +689,7 @@ export const aptitudeService = {
   // Update a subject
   async updateSubject(subjectId: string, updates: Partial<AptitudeSubject>) {
     try {
-      await updateDoc(doc(db, 'aptitude-subjects', subjectId), {
+      await updateDoc(doc(getFirebaseDb(), 'aptitude-subjects', subjectId), {
         ...updates,
         updatedAt: serverTimestamp()
       });
@@ -594,7 +702,7 @@ export const aptitudeService = {
   // Delete a subject
   async deleteSubject(subjectId: string) {
     try {
-      await deleteDoc(doc(db, 'aptitude-subjects', subjectId));
+      await deleteDoc(doc(getFirebaseDb(), 'aptitude-subjects', subjectId));
     } catch (error) {
       console.error('Error deleting subject:', error);
       throw error;
@@ -679,7 +787,7 @@ export const resumeService = {
   // Create a new resume
   async createResume(resumeData: Omit<ResumeData, 'id' | 'createdAt' | 'updatedAt'>) {
     try {
-      const docRef = await addDoc(collection(db, 'resumes'), {
+      const docRef = await addDoc(collection(getFirebaseDb(), 'resumes'), {
         ...resumeData,
         createdAt: serverTimestamp(),
         updatedAt: serverTimestamp()
@@ -694,7 +802,7 @@ export const resumeService = {
   // Update resume
   async updateResume(resumeId: string, updates: Partial<ResumeData>) {
     try {
-      const resumeRef = doc(db, 'resumes', resumeId);
+      const resumeRef = doc(getFirebaseDb(), 'resumes', resumeId);
       await updateDoc(resumeRef, {
         ...updates,
         updatedAt: serverTimestamp()
@@ -708,7 +816,7 @@ export const resumeService = {
   // Delete resume
   async deleteResume(resumeId: string) {
     try {
-      await deleteDoc(doc(db, 'resumes', resumeId));
+      await deleteDoc(doc(getFirebaseDb(), 'resumes', resumeId));
     } catch (error) {
       console.error('Error deleting resume:', error);
       throw error;
@@ -718,7 +826,7 @@ export const resumeService = {
   // Get user's resumes
   subscribeToUserResumes(userId: string, callback: (resumes: ResumeData[]) => void) {
     const q = query(
-      collection(db, 'resumes'),
+      collection(getFirebaseDb(), 'resumes'),
       where('userId', '==', userId),
       orderBy('updatedAt', 'desc')
     );
@@ -735,8 +843,8 @@ export const resumeService = {
   // Get resume by ID
   async getResume(resumeId: string): Promise<ResumeData | null> {
     try {
-      const docRef = doc(db, 'resumes', resumeId);
-      const docSnap = await getDocs(query(collection(db, 'resumes'), where('__name__', '==', resumeId)));
+      const docRef = doc(getFirebaseDb(), 'resumes', resumeId);
+      const docSnap = await getDocs(query(collection(getFirebaseDb(), 'resumes'), where('__name__', '==', resumeId)));
       if (!docSnap.empty) {
         const doc = docSnap.docs[0];
         return { id: doc.id, ...doc.data() } as ResumeData;
@@ -754,7 +862,7 @@ export const templateService = {
   // Get all templates
   subscribeToTemplates(callback: (templates: ResumeTemplate[]) => void) {
     const q = query(
-      collection(db, 'resume-templates'),
+      collection(getFirebaseDb(), 'resume-templates'),
       orderBy('atsScore', 'desc')
     );
 
@@ -771,50 +879,42 @@ export const templateService = {
   async addDefaultTemplates() {
     const defaultTemplates: Omit<ResumeTemplate, 'id' | 'createdAt'>[] = [
       {
-        name: 'ATS Professional',
-        description: 'Clean, ATS-friendly design perfect for corporate roles',
-        atsScore: 95,
+        name: 'Modern Clean',
+        description: 'A contemporary, clean design with clear sections and professional formatting. Ideal for technical professionals and recent graduates.',
+        atsScore: 78,
         category: 'professional',
-        preview: '/templates/ats-professional.png',
+        preview: '/templates/modern-clean.png',
         isDefault: true
       },
       {
-        name: 'Modern Minimalist',
-        description: 'Simple, elegant design with excellent readability',
+        name: 'Business Professional',
+        description: 'A traditional, text-focused format emphasizing professional experience and achievements. Perfect for business professionals and managers.',
+        atsScore: 92,
+        category: 'professional',
+        preview: '/templates/business-professional.png',
+        isDefault: true
+      },
+      {
+        name: 'Aditya Vardhan',
+        description: 'A comprehensive format with detailed sections for projects, certifications, and extra-curricular activities. Perfect for students and recent graduates with diverse experiences.',
         atsScore: 90,
-        category: 'professional',
-        preview: '/templates/modern-minimalist.png',
-        isDefault: true
-      },
-      {
-        name: 'Technical Focus',
-        description: 'Optimized for software engineers and technical roles',
-        atsScore: 88,
-        category: 'technical',
-        preview: '/templates/technical-focus.png',
-        isDefault: true
-      },
-      {
-        name: 'Academic CV',
-        description: 'Comprehensive format for academic and research positions',
-        atsScore: 85,
         category: 'academic',
-        preview: '/templates/academic-cv.png',
+        preview: '/templates/aditya-vardhan.png',
         isDefault: true
       },
       {
-        name: 'Creative Professional',
-        description: 'Stylish design for creative industries',
-        atsScore: 75,
-        category: 'creative',
-        preview: '/templates/creative-professional.png',
+        name: 'Experience Focused',
+        description: 'A traditional, experience-focused format with detailed professional history and achievements. Perfect for experienced professionals with extensive work history.',
+        atsScore: 88,
+        category: 'professional',
+        preview: '/templates/experience-focused.png',
         isDefault: true
       }
     ];
 
     try {
       for (const template of defaultTemplates) {
-        await addDoc(collection(db, 'resume-templates'), {
+        await addDoc(collection(getFirebaseDb(), 'resume-templates'), {
           ...template,
           createdAt: serverTimestamp()
         });
@@ -822,6 +922,23 @@ export const templateService = {
       console.log('Default templates added successfully');
     } catch (error) {
       console.error('Error adding default templates:', error);
+      throw error;
+    }
+  },
+
+  // Clear all templates and add new ones
+  async resetToDefaultTemplates() {
+    try {
+      // Delete all existing templates
+      const templatesSnapshot = await getDocs(collection(getFirebaseDb(), 'resume-templates'));
+      const deletePromises = templatesSnapshot.docs.map(doc => deleteDoc(doc.ref));
+      await Promise.all(deletePromises);
+
+      // Add new default templates
+      await this.addDefaultTemplates();
+      console.log('Templates reset successfully');
+    } catch (error) {
+      console.error('Error resetting templates:', error);
       throw error;
     }
   }

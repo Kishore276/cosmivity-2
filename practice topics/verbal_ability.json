@@ -1,70 +1,74 @@
 {
   "name": "Verbal Ability",
   "category": "verbal-ability",
-  "description": "English language and verbal reasoning questions",
+  "description": "Verbal ability questions to test language proficiency",
   "createdBy": "admin",
   "lessons": [
     {
-      "id": "lesson-1",
       "title": "Verbal Ability Practice Questions",
-      "description": "English language and verbal reasoning questions",
+      "description": "Synonym Antonym, Fill in the Blanks, Find the Error, Verbal Analogies, Sentence Correction, Reading Comprehension, Parajumbles, Meanings (Vocabulary), Cloze Test, Idiom Phrases, Critical Reasoning",
       "content": "",
       "order": 0,
       "questions": [
         {
-          "id": "q1",
+          "section": "Verbal Ability — Synonym Antonym",
+          "id": "1",
           "question": "Choose the synonym of \"BENEVOLENT\":",
           "options": [
             "A) Hostile",
             "B) Kind",
-            "C)",
+            "C) Aggressive",
             "D) Unjust"
           ],
           "answer": "Kind",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Benevolent\" means kind or well-meaning."
         },
         {
-          "id": "q2",
+          "id": "2",
           "question": "Choose the antonym of \"OBSCURE\":",
           "options": [
-            "A)",
-            "B)",
+            "A) Clear",
+            "B) Dull",
             "C) Opaque",
-            "D)"
+            "D) Blurry"
           ],
-          "answer": "",
+          "answer": "Clear",
           "correctOption": "A",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Obscure\" means unclear; \"clear\" is its opposite."
         },
         {
-          "id": "q3",
+          "id": "3",
           "question": "\"CONCISE\" — Choose the synonym:",
           "options": [
             "A) Wordy",
             "B) Occupied",
-            "C)",
+            "C) Brief",
             "D) Rude"
           ],
-          "answer": "",
+          "answer": "Brief",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Concise\" means brief and to the point."
         },
         {
-          "id": "q4",
+          "id": "4",
           "question": "Choose the antonym of \"RELUCTANT\":",
           "options": [
             "A) Eager",
             "B) Hesitant",
             "C) Resistant",
-            "D)"
+            "D) Doubtful"
           ],
           "answer": "Eager",
           "correctOption": "A",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Reluctant\" is unwilling; its opposite is eager."
         },
         {
-          "id": "q5",
+          "id": "5",
           "question": "Pick the synonym of \"EMINENT\":",
           "options": [
             "A) Notorious",
@@ -74,10 +78,11 @@
           ],
           "answer": "Famous",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Eminent\" means well-known or famous."
         },
         {
-          "id": "q6",
+          "id": "6",
           "question": "Antonym of \"ABUNDANT\":",
           "options": [
             "A) Rich",
@@ -87,23 +92,25 @@
           ],
           "answer": "Scarce",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Abundant\" is plenty; \"scarce\" is limited."
         },
         {
-          "id": "q7",
+          "id": "7",
           "question": "Synonym for \"AUSPICIOUS\":",
           "options": [
             "A) Unlucky",
             "B) Fortunate",
             "C) Serious",
-            "D)"
+            "D) Doubtful"
           ],
           "answer": "Fortunate",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Auspicious\" means indicating good fortune."
         },
         {
-          "id": "q8",
+          "id": "8",
           "question": "Antonym for \"CANDID\":",
           "options": [
             "A) Honest",
@@ -113,49 +120,53 @@
           ],
           "answer": "Secretive",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Candid\" is frank; the opposite is secretive."
         },
         {
-          "id": "q9",
+          "id": "9",
           "question": "\"DILIGENT\" — Choose the synonym:",
           "options": [
             "A) Lazy",
-            "B)",
+            "B) Careless",
             "C) Hardworking",
-            "D)"
+            "D) Disloyal"
           ],
           "answer": "Hardworking",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Diligent\" means hardworking."
         },
         {
-          "id": "q10",
+          "id": "10",
           "question": "Antonym of \"SERENE\":",
           "options": [
-            "A)",
+            "A) Calm",
             "B) Untroubled",
-            "C)",
+            "C) Agitated",
             "D) Peaceful"
           ],
-          "answer": "",
+          "answer": "Agitated",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Serene\" is calm; \"agitated\" is disturbed."
         },
         {
-          "id": "q11",
+          "id": "11",
           "question": "Synonym for \"PRUDENT\":",
           "options": [
             "A) Reckless",
-            "B)",
+            "B) Careful",
             "C) Wasteful",
             "D) Hasty"
           ],
-          "answer": "",
+          "answer": "Careful",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Prudent\" means wise or careful."
         },
         {
-          "id": "q12",
+          "id": "12",
           "question": "Antonym of \"ENORMOUS\":",
           "options": [
             "A) Gigantic",
@@ -165,49 +176,54 @@
           ],
           "answer": "Tiny",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Enormous\" is very large; \"tiny\" is very small."
         },
         {
-          "id": "q13",
+          "id": "13",
           "question": "Synonym of \"AMBIGUOUS\":",
           "options": [
-            "A)",
-            "B)",
+            "A) Definite",
+            "B) Clear",
             "C) Vague",
-            "D)"
+            "D) Certain"
           ],
           "answer": "Vague",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Ambiguous\" means unclear or vague."
         },
         {
-          "id": "q14",
+          "id": "14",
           "question": "Antonym of \"METICULOUS\":",
           "options": [
-            "A)",
-            "B)",
+            "A) Detailed",
+            "B) Careful",
             "C) Negligent",
             "D) Thorough"
           ],
           "answer": "Negligent",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Meticulous\" means very careful; \"negligent\" is careless."
         },
         {
-          "id": "q15",
+          "id": "15",
           "question": "Synonym for \"VIVID\":",
           "options": [
-            "A)",
-            "B)",
+            "A) Dull",
+            "B) Bright",
             "C) Pale",
             "D) Faded"
           ],
-          "answer": "",
+          "answer": "Bright",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Vivid\" means bright or strong in color or impression."
         },
         {
-          "id": "q16",
+          "section": "Verbal Ability — Fill in the Blanks",
+          "id": "1",
           "question": "The thieves _________ the apartment while the family was on a vacation.",
           "options": [
             "A) broke into",
@@ -217,10 +233,11 @@
           ],
           "answer": "broke into",
           "correctOption": "A",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Broke into\" means to enter forcibly for theft; other phrasal verbs don't suit the context."
         },
         {
-          "id": "q17",
+          "id": "2",
           "question": "Rahim’s doctor advised him to ______ as a cure for his sore throat.",
           "options": [
             "A) giggle",
@@ -230,10 +247,11 @@
           ],
           "answer": "gargle",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Gargle\" means to rinse the throat with liquid; the other actions are unrelated to curing a sore throat."
         },
         {
-          "id": "q18",
+          "id": "3",
           "question": "One or two stars were still ______ in the sky.",
           "options": [
             "A) burning",
@@ -243,10 +261,11 @@
           ],
           "answer": "twinkling",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Twinkling\" describes how stars appear to shimmer; others do not fit the context."
         },
         {
-          "id": "q19",
+          "id": "4",
           "question": "The police were on high alert on account of the ___________ convict who had killed many people.",
           "options": [
             "A) official",
@@ -256,10 +275,11 @@
           ],
           "answer": "notorious",
           "correctOption": "D",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Notorious\" means famous for something negative; only this word fits a dangerous criminal."
         },
         {
-          "id": "q20",
+          "id": "5",
           "question": "She was blamed ______ the failure.",
           "options": [
             "A) of",
@@ -269,10 +289,11 @@
           ],
           "answer": "for",
           "correctOption": "D",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "The correct preposition after \"blamed\" is \"for\" — \"blamed for the failure\"."
         },
         {
-          "id": "q21",
+          "id": "6",
           "question": "He lost control of the car and crashed _______ a wall.",
           "options": [
             "A) in",
@@ -282,10 +303,11 @@
           ],
           "answer": "into",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Crash into\" is the correct phrasal verb for colliding with something."
         },
         {
-          "id": "q22",
+          "id": "7",
           "question": "John as well as Tom ______ waiting for you.",
           "options": [
             "A) is",
@@ -295,10 +317,11 @@
           ],
           "answer": "is",
           "correctOption": "A",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"As well as\" takes a singular verb; so \"is waiting\" is correct."
         },
         {
-          "id": "q23",
+          "id": "8",
           "question": "Before the bell rang, the class was _____ to go home.",
           "options": [
             "A) ready",
@@ -308,10 +331,11 @@
           ],
           "answer": "all ready",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"All ready\" means everyone was prepared; \"already\" means before now, which doesn't fit."
         },
         {
-          "id": "q24",
+          "id": "9",
           "question": "Advertisement will ______ your sale.",
           "options": [
             "A) slow",
@@ -321,10 +345,11 @@
           ],
           "answer": "boost",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "Advertisements help increase (boost) sales."
         },
         {
-          "id": "q25",
+          "id": "10",
           "question": "The examination will begin _______ at eight thirty.",
           "options": [
             "A) exactly",
@@ -334,10 +359,11 @@
           ],
           "answer": "exactly",
           "correctOption": "A",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "For precision timing, \"exactly\" is correct."
         },
         {
-          "id": "q26",
+          "id": "11",
           "question": "The sky ______ as the storm approached.",
           "options": [
             "A) brightened",
@@ -347,10 +373,11 @@
           ],
           "answer": "darkened",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "Sky turns dark as a storm comes; \"darkened\" is the correct verb."
         },
         {
-          "id": "q27",
+          "id": "12",
           "question": "Drugs and Alcohol ____ together to ____ the risk of cancer in both men and women.",
           "options": [
             "A) result, lower",
@@ -360,10 +387,11 @@
           ],
           "answer": "combine, increase",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "The two together (combine) and make the risk go up (increase)."
         },
         {
-          "id": "q28",
+          "id": "13",
           "question": "We ______ ourselves for difficult times.",
           "options": [
             "A) reserved",
@@ -373,10 +401,11 @@
           ],
           "answer": "prepared",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Prepared\" means to get ready for challenges."
         },
         {
-          "id": "q29",
+          "id": "14",
           "question": "The children ran ______ the room.",
           "options": [
             "A) into",
@@ -386,10 +415,11 @@
           ],
           "answer": "into",
           "correctOption": "A",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Ran into\" indicates entering a room."
         },
         {
-          "id": "q30",
+          "id": "15",
           "question": "He was fined Rs. 500 for _______ driving.",
           "options": [
             "A) careless",
@@ -399,10 +429,661 @@
           ],
           "answer": "reckless",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "\"Reckless driving\" means driving dangerously; only this word fits."
         },
         {
-          "id": "q31",
+          "section": "Verbal Ability — Find the Error",
+          "id": "1",
+          "question": "(A) Each of the students / (B) are responsible / (C) for submitting their homework / (D) on time.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "B",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Each of the students\" is singular, so it should be \"is responsible.\""
+        },
+        {
+          "id": "2",
+          "question": "(A) She gave me / (B) a good advice / (C) when I needed help. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "B",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Advice\" is uncountable, so \"good advice\" (no \"a\")."
+        },
+        {
+          "id": "3",
+          "question": "(A) Neither of the boys / (B) have finished / (C) their work. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "B",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Neither\" takes a singular verb — use \"has finished.\""
+        },
+        {
+          "id": "4",
+          "question": "(A) If I was you / (B) I would not / (C) make that mistake. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "A",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "For hypothetical conditionals, \"If I were you\" is correct."
+        },
+        {
+          "id": "5",
+          "question": "(A) My brother / (B) does not know / (C) to swim well. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "C",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "Correct form: \"how to swim well.\""
+        },
+        {
+          "id": "6",
+          "question": "(A) I have not / (B) seen him / (C) since ten years. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "C",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "Should be \"for ten years\" for duration; \"since\" for a point in time."
+        },
+        {
+          "id": "7",
+          "question": "(A) Unless you do not / (B) work hard / (C) you will not succeed. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "A",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "\"Unless you work hard…\" (don't use \"do not\" with unless)."
+        },
+        {
+          "id": "8",
+          "question": "(A) The sceneries / (B) of Kashmir / (C) are charming. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "A",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "\"Scenery\" is uncountable; so \"The scenery\" (not sceneries)."
+        },
+        {
+          "id": "9",
+          "question": "(A) Each of these boys / (B) play games / (C) in the evening. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "B",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Each\" takes singular verb: \"plays games.\""
+        },
+        {
+          "id": "10",
+          "question": "(A) The number of students / (B) have increased / (C) this year. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "B",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"The number\" (singular subject) takes \"has increased.\""
+        },
+        {
+          "id": "11",
+          "question": "(A) He is / (B) senior than me / (C) in service. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "B",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Use \"senior to me\" (not 'than')."
+        },
+        {
+          "id": "12",
+          "question": "(A) Everybody who / (B) have read this book / (C) will agree with me. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "B",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Everybody\" takes singular verb: \"has read.\""
+        },
+        {
+          "id": "13",
+          "question": "(A) Neither Ramesh / (B) nor Suresh are / (C) present today. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "B",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "When \"neither…nor\" joins two subjects, verb agrees with the one nearer. \"Suresh is\" is correct."
+        },
+        {
+          "id": "14",
+          "question": "(A) The team / (B) have played / (C) very well. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "B",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Team\" is singular; should be \"has played.\""
+        },
+        {
+          "id": "15",
+          "question": "(A) He is one of the best / (B) player / (C) in our school. / (D) No error.",
+          "options": [
+            "A) A",
+            "B) B",
+            "C) C",
+            "D) D",
+            "E) No error"
+          ],
+          "answer": "B",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"One of the best\" is always followed by the plural noun: \"players.\""
+        },
+        {
+          "section": "Verbal Ability — Verbal Analogies",
+          "id": "1",
+          "question": "Doctor : Hospital :: Teacher : ?",
+          "options": [
+            "A) Classroom",
+            "B) Syllabus",
+            "C) School",
+            "D) Laboratory"
+          ],
+          "answer": "School",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "Doctor works in a hospital; a teacher works in a school."
+        },
+        {
+          "id": "2",
+          "question": "Water : Thirst :: Food : ?",
+          "options": [
+            "A) Hunger",
+            "B) Fruit",
+            "C) Taste",
+            "D) Energy"
+          ],
+          "answer": "Hunger",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "Water quenches thirst, food satisfies hunger."
+        },
+        {
+          "id": "3",
+          "question": "Cobbler : Shoes :: Tailor : ?",
+          "options": [
+            "A) Clothes",
+            "B) Needles",
+            "C) Thread",
+            "D) Silk"
+          ],
+          "answer": "Clothes",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "Cobbler makes shoes, tailor makes clothes."
+        },
+        {
+          "id": "4",
+          "question": "Pen : Write :: Knife : ?",
+          "options": [
+            "A) Cut",
+            "B) Chop",
+            "C) Kill",
+            "D) Shape"
+          ],
+          "answer": "Cut",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "Pen is used to write; knife is used to cut."
+        },
+        {
+          "id": "5",
+          "question": "Bird : Wings :: Car : ?",
+          "options": [
+            "A) Steering",
+            "B) Engine",
+            "C) Wheels",
+            "D) Brake"
+          ],
+          "answer": "Wheels",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "Bird moves using wings; car moves using wheels."
+        },
+        {
+          "id": "6",
+          "question": "Leaf : Tree :: Petal : ?",
+          "options": [
+            "A) Branch",
+            "B) Flower",
+            "C) Stem",
+            "D) Root"
+          ],
+          "answer": "Flower",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Leaf is part of tree; petal is part of flower."
+        },
+        {
+          "id": "7",
+          "question": "Child : Adult :: Puppy : ?",
+          "options": [
+            "A) Dog",
+            "B) Lion",
+            "C) Elephant",
+            "D) Kid"
+          ],
+          "answer": "Dog",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "Puppy grows into a dog, child grows into an adult."
+        },
+        {
+          "id": "8",
+          "question": "Book : Read :: Piano : ?",
+          "options": [
+            "A) Play",
+            "B) Touch",
+            "C) Write",
+            "D) Sing"
+          ],
+          "answer": "Play",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "You read a book, you play a piano."
+        },
+        {
+          "id": "9",
+          "question": "Poverty : Wealth :: Failure : ?",
+          "options": [
+            "A) Defeat",
+            "B) Success",
+            "C) Happiness",
+            "D) Goal"
+          ],
+          "answer": "Success",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Poverty is the opposite of wealth; failure is opposite of success."
+        },
+        {
+          "id": "10",
+          "question": "Lion : Pride :: Fish : ?",
+          "options": [
+            "A) School",
+            "B) Flock",
+            "C) Shoal",
+            "D) Swarm"
+          ],
+          "answer": "School",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "A group of lions is called a pride; a group of fish is called a school."
+        },
+        {
+          "id": "11",
+          "question": "Clock : Time :: Thermometer : ?",
+          "options": [
+            "A) Weather",
+            "B) Mercury",
+            "C) Temperature",
+            "D) Distance"
+          ],
+          "answer": "Temperature",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "A clock measures time; a thermometer measures temperature."
+        },
+        {
+          "id": "12",
+          "question": "Butterfly : Caterpillar :: Frog : ?",
+          "options": [
+            "A) Fish",
+            "B) Spawn",
+            "C) Tadpole",
+            "D) Insect"
+          ],
+          "answer": "Tadpole",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "A caterpillar becomes a butterfly; a tadpole becomes a frog."
+        },
+        {
+          "id": "13",
+          "question": "Merchant : Trade :: Warrior : ?",
+          "options": [
+            "A) Sword",
+            "B) Fight",
+            "C) Armour",
+            "D) War"
+          ],
+          "answer": "War",
+          "correctOption": "D",
+          "difficulty": "Medium",
+          "explanation": "A merchant is associated with trade, a warrior is associated with war."
+        },
+        {
+          "id": "14",
+          "question": "Microphone : Amplify :: Telescope : ?",
+          "options": [
+            "A) Magnify",
+            "B) Simplify",
+            "C) Nullify",
+            "D) Clarify"
+          ],
+          "answer": "Magnify",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "Microphone amplifies sound; telescope magnifies images."
+        },
+        {
+          "id": "15",
+          "question": "Oxygen : Respiration :: Fuel : ?",
+          "options": [
+            "A) Fire",
+            "B) Machine",
+            "C) Energy",
+            "D) Combustion"
+          ],
+          "answer": "Combustion",
+          "correctOption": "D",
+          "difficulty": "Medium",
+          "explanation": "Oxygen is needed for respiration; fuel is needed for combustion."
+        },
+        {
+          "section": "Verbal Ability — Sentence Correction",
+          "id": "1",
+          "question": "The boys were playing in the garden when the ball hit by John fell into the pond.",
+          "options": [
+            "A) hit by John fell",
+            "B) was hit by John fell",
+            "C) hit by John had fallen",
+            "D) hit by John had fell"
+          ],
+          "answer": "was hit by John fell",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Passive form is needed: \"...the ball was hit by John and fell into the pond.\""
+        },
+        {
+          "id": "2",
+          "question": "He is living in this city for the last ten years.",
+          "options": [
+            "A) He is living in this city",
+            "B) He had lived in this city",
+            "C) He has been living in this city",
+            "D) He was living in this city"
+          ],
+          "answer": "He has been living in this city",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "\"For the last ten years\" requires present perfect continuous tense."
+        },
+        {
+          "id": "3",
+          "question": "Neither the students nor the teacher are present today.",
+          "options": [
+            "A) are present today",
+            "B) were present today",
+            "C) is present today",
+            "D) have present today"
+          ],
+          "answer": "is present today",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "With \"neither...nor,\" the verb agrees with the noun closest to it (teacher), which is singular."
+        },
+        {
+          "id": "4",
+          "question": "The committee have decided to postpone the meeting.",
+          "options": [
+            "A) have decided",
+            "B) has decided",
+            "C) decided",
+            "D) will decided"
+          ],
+          "answer": "has decided",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Committee\" (as a group acting as one) takes singular verb \"has\"."
+        },
+        {
+          "id": "5",
+          "question": "No sooner had she arrived than she started complaining.",
+          "options": [
+            "A) had she arrived than",
+            "B) she had arrived when",
+            "C) she arrived when",
+            "D) did she arrive than"
+          ],
+          "answer": "had she arrived than",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "Use \"No sooner had...than\" structure for such sentences."
+        },
+        {
+          "id": "6",
+          "question": "He has not and never will touch alcohol.",
+          "options": [
+            "A) has not and never will touch",
+            "B) never has and never will touch",
+            "C) has not touched and never will touch",
+            "D) has not and also never will touch"
+          ],
+          "answer": "has not touched and never will touch",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "Two actions: Use \"has not touched…and never will touch.\""
+        },
+        {
+          "id": "7",
+          "question": "She did not tell me the reason of her absence.",
+          "options": [
+            "A) did not told me",
+            "B) did not tell me the reason for",
+            "C) did not told me the reason of",
+            "D) didn’t told me the reason for"
+          ],
+          "answer": "did not tell me the reason for",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Correct preposition with \"reason\" is \"for\": \"reason for her absence.\""
+        },
+        {
+          "id": "8",
+          "question": "Despite of his efforts, he could not succeed.",
+          "options": [
+            "A) Despite of",
+            "B) Inspite of",
+            "C) Despite",
+            "D) Although"
+          ],
+          "answer": "Despite",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "\"Despite\" is not followed by \"of\"; \"In spite of\" is correct, but only \"Despite\" fits as per the question."
+        },
+        {
+          "id": "9",
+          "question": "She prefers tea than coffee.",
+          "options": [
+            "A) prefers tea than",
+            "B) prefers tea from",
+            "C) prefers tea over",
+            "D) prefers tea to"
+          ],
+          "answer": "prefers tea to",
+          "correctOption": "D",
+          "difficulty": "Medium",
+          "explanation": "Correct form: \"prefers X to Y.\""
+        },
+        {
+          "id": "10",
+          "question": "Each of the boys have brought their books.",
+          "options": [
+            "A) has brought their books",
+            "B) have brought their books",
+            "C) has brought his books",
+            "D) was bringing his books"
+          ],
+          "answer": "has brought his books",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "\"Each\" is singular, so \"has brought his books\" is correct."
+        },
+        {
+          "id": "11",
+          "question": "She has lived here since five years.",
+          "options": [
+            "A) for five years",
+            "B) from five years",
+            "C) since five years",
+            "D) from last five years"
+          ],
+          "answer": "for five years",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "\"For\" is used for periods of time; \"since\" for points in time."
+        },
+        {
+          "id": "12",
+          "question": "He is good in English, but weak in Mathematics.",
+          "options": [
+            "A) good in English",
+            "B) good at English",
+            "C) well in English",
+            "D) good at in English"
+          ],
+          "answer": "good at English",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Good at\" is used for subjects or activities."
+        },
+        {
+          "id": "13",
+          "question": "She said me the news.",
+          "options": [
+            "A) She said me",
+            "B) She told me",
+            "C) She said to me",
+            "D) She tell me"
+          ],
+          "answer": "She told me",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Tell someone\" (person as object) is correct."
+        },
+        {
+          "id": "14",
+          "question": "This is the same dress which I bought yesterday.",
+          "options": [
+            "A) which I bought",
+            "B) whom I bought",
+            "C) that I bought",
+            "D) what I bought"
+          ],
+          "answer": "that I bought",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "\"That\" is preferred for defining/restrictive clauses."
+        },
+        {
+          "id": "15",
+          "question": "No sooner the teacher entered the room, the students stood up.",
+          "options": [
+            "A) No sooner the teacher entered",
+            "B) No sooner had the teacher entered",
+            "C) No sooner the teacher had entered",
+            "D) No sooner did the teacher entered"
+          ],
+          "answer": "No sooner had the teacher entered",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"No sooner had [subject] [past participle], than...\" is standard."
+        },
+        {
+          "section": "Verbal Ability — Reading Comprehension",
+          "passage": "Passage 1\r\nThe internet has revolutionized communication. People from different parts of the world can now interact in real time, share ideas, and access information instantly. [cite_start]This technological advancement has made the world a global village. [cite: 261, 262]\r\n\r\nPassage 2\r\nPlants need sunlight, water, and carbon dioxide for photosynthesis. [cite_start]By absorbing sunlight through their leaves, plants convert these resources into food, supporting their growth and development. [cite: 267]\r\n\r\nPassage 3\r\nIndia is known for its unity in diversity. People belonging to different religions, languages, and cultures live together peacefully. [cite_start]This harmonious mixture is the strength of the nation. [cite: 272, 273]\r\n\r\nPassage 4\r\nRegular exercise helps maintain good physical and mental health. [cite_start]It improves mood, strengthens the immune system, and increases energy levels. [cite: 278]\r\n\r\nPassage 5\r\nWith rising pollution levels, cities are facing severe health hazards. [cite_start]Authorities are taking steps such as restricting vehicle use and planting more trees to combat this issue. [cite: 283, 284]\r\n\r\nPassage 6\r\nSwami Vivekananda was a great Indian philosopher and religious leader. [cite_start]He inspired many people through his speeches and teachings on spirituality and unity. [cite: 289, 290]\r\n\r\nPassage 7\r\nE-commerce has changed the way people shop. [cite_start]Consumers can buy goods and services from anywhere, at any time, using the internet, making shopping more convenient. [cite: 295][cite_start]\r\n\r\nPassage 8\r\nThe Himalayas act as a natural barrier, protecting India from cold winds from Central Asia and influencing the country's climate patterns. [cite: 300][cite_start]\r\n\r\nPassage 9\r\nScientists believe that renewable energy sources such as solar and wind power can help reduce dependence on fossil fuels. [cite: 305]\r\n\r\nPassage 10\r\nReading books regularly increases knowledge and improves vocabulary. [cite_start]It also encourages critical thinking and imagination. [cite: 310]\r\n\r\nPassage 11\r\nFarmers use fertilizers to ensure healthy crop growth. [cite_start]However, excessive use of fertilizers can cause environmental issues like water pollution. [cite: 315]\r\n\r\nPassage 12\r\nMobile phones have many advantages, including communication and internet access. [cite_start]However, excess use can lead to addiction and affect health. [cite: 320]\r\n\r\nPassage 13\r\nLion is called the king of the jungle due to its strength and majestic appearance. [cite_start]Despite this, lions live in pride and depend on teamwork for hunting. [cite: 325, 326]\r\n\r\nPassage 14\r\nGlobal warming is a serious threat facing humanity. [cite_start]Continuous rise in earth's temperature affects weather patterns, food production, and sea levels. [cite: 331]\r\n\r\nPassage 15\r\nThe invention of the printing press made books more affordable and accessible. [cite_start]It helped spread ideas rapidly during the Renaissance. [cite: 336]",
+          "id": "1",
           "question": "What is the main idea of the passage above?",
           "options": [
             "A) The world is becoming smaller in size",
@@ -412,49 +1093,53 @@
           ],
           "answer": "The internet has improved global communication",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "The whole passage highlights how internet technology has improved worldwide communication."
         },
         {
-          "id": "q32",
+          "id": "2",
           "question": "According to the passage, which is NOT required for photosynthesis?",
           "options": [
             "A) Sunlight",
-            "B)",
+            "B) Carbon dioxide",
             "C) Water",
             "D) Oxygen"
           ],
           "answer": "Oxygen",
           "correctOption": "D",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "Only sunlight, water, and carbon dioxide are mentioned."
         },
         {
-          "id": "q33",
+          "id": "3",
           "question": "What is described as India's strength in the passage?",
           "options": [
-            "A)",
+            "A) Agriculture",
             "B) Unity in diversity",
             "C) Military power",
             "D) Space technology"
           ],
           "answer": "Unity in diversity",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "Passage says this unity is India's strength."
         },
         {
-          "id": "q34",
+          "id": "4",
           "question": "Which of the following is NOT mentioned as a benefit of exercise?",
           "options": [
             "A) Improved mood",
             "B) Immune system strength",
             "C) Increased energy",
-            "D)"
+            "D) Better eyesight"
           ],
-          "answer": "",
+          "answer": "Better eyesight",
           "correctOption": "D",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "The other three benefits are mentioned, but eyesight is not."
         },
         {
-          "id": "q35",
+          "id": "5",
           "question": "What step is NOT mentioned in the passage as a solution to pollution?",
           "options": [
             "A) Planting more trees",
@@ -464,10 +1149,11 @@
           ],
           "answer": "Promoting public transport",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "Only (A) and (B) are given."
         },
         {
-          "id": "q36",
+          "id": "6",
           "question": "According to the passage, Vivekananda inspired people through:",
           "options": [
             "A) Scientific research",
@@ -477,88 +1163,95 @@
           ],
           "answer": "Spirituality and unity",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "The passage specifies his teachings on these areas."
         },
         {
-          "id": "q37",
+          "id": "7",
           "question": "What is a benefit of e-commerce mentioned in the passage?",
           "options": [
-            "A)",
+            "A) Better product quality",
             "B) 24x7 buying convenience",
             "C) Less traffic congestion",
             "D) Free internet access"
           ],
           "answer": "24x7 buying convenience",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "The passage mentions anytime, anywhere shopping."
         },
         {
-          "id": "q38",
+          "id": "8",
           "question": "What is one function of the Himalayas according to the passage?",
           "options": [
             "A) Preventing monsoon",
             "B) Separating continents",
             "C) Protecting from cold winds",
-            "D)"
+            "D) Causing earthquakes"
           ],
           "answer": "Protecting from cold winds",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "Passage directly states this role."
         },
         {
-          "id": "q39",
+          "id": "9",
           "question": "According to the passage, renewable energy sources:",
           "options": [
-            "A)",
-            "B)",
+            "A) Are expensive",
+            "B) Cause more pollution",
             "C) Help reduce fossil fuel dependence",
-            "D)"
+            "D) Are not suitable for power generation"
           ],
           "answer": "Help reduce fossil fuel dependence",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "This is the main reason scientists advocate for them."
         },
         {
-          "id": "q40",
+          "id": "10",
           "question": "Which is NOT a benefit of reading mentioned in the passage?",
           "options": [
             "A) More knowledge",
             "B) Improved vocabulary",
-            "C)",
+            "C) Critical thinking",
             "D) Physical fitness"
           ],
           "answer": "Physical fitness",
           "correctOption": "D",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "The rest are stated, but not fitness."
         },
         {
-          "id": "q41",
+          "id": "11",
           "question": "What problem is associated with overusing fertilizers, per the passage?",
           "options": [
-            "A)",
-            "B)",
+            "A) Crop failure",
+            "B) Drought",
             "C) Water pollution",
             "D) Soil erosion"
           ],
           "answer": "Water pollution",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "Passage explains this danger."
         },
         {
-          "id": "q42",
+          "id": "12",
           "question": "Which effect of too much mobile usage is NOT mentioned in the passage?",
           "options": [
-            "A)",
+            "A) Addiction",
             "B) Health impact",
             "C) Increased intelligence",
-            "D)"
+            "D) Both A and B"
           ],
           "answer": "Increased intelligence",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "Only addiction and health effects are mentioned."
         },
         {
-          "id": "q43",
+          "id": "13",
           "question": "What does the passage reveal about lions?",
           "options": [
             "A) They always hunt alone",
@@ -568,228 +1261,1091 @@
           ],
           "answer": "They depend on teamwork",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "Passage says they hunt as a group."
         },
         {
-          "id": "q44",
+          "id": "14",
           "question": "Which of the following is NOT mentioned as an effect of global warming?",
           "options": [
-            "A)",
+            "A) Changing weather",
             "B) Food production",
             "C) Melting glaciers",
             "D) Sea level rise"
           ],
           "answer": "Melting glaciers",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "Only the other three are cited."
         },
         {
-          "id": "q45",
+          "id": "15",
           "question": "The main achievement of the printing press according to the passage is:",
           "options": [
             "A) Making paper cheap",
             "B) Spreading ideas",
             "C) Increasing book prices",
-            "D)"
+            "D) Discouraging reading"
           ],
           "answer": "Spreading ideas",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "It made information accessible and ideas spread fast."
         },
         {
-          "id": "q46",
+          "section": "Verbal Ability — Parajumbles",
+          "id": "1",
           "question": "A. Our country depends on agriculture. B. Sometimes the rainfall is too little or too much. C. But the rainfall in India is uncertain. D. For agriculture, rainfall is very important.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ACBD",
+            "B) ABCD",
+            "C) ADCB",
+            "D) ABDC"
           ],
-          "answer": "",
+          "answer": "ACBD",
           "correctOption": "A",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "Start with A (broad topic), then C (states uncertainty), B (exemplifies), D (consequence)."
         },
         {
-          "id": "q47",
+          "id": "2",
           "question": "A. There was an old owl in the forest. B. He saw many things during the day. C. At night he would sit silently and observe everything. D. The next morning he would often tell others what he saw.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ACBD",
+            "B) ABCD",
+            "C) BACD",
+            "D) CADB"
           ],
-          "answer": "",
+          "answer": "ABCD",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "A (introduces owl), B (what he does), C (how), D (results)."
         },
         {
-          "id": "q48",
+          "id": "3",
           "question": "A. I returned home late from the office. B. There was a power cut in my locality. C. I lit a candle and looked for my keys. D. Entering my apartment, I realized it was totally dark.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ABDC",
+            "B) ADBC",
+            "C) BACD",
+            "D) BADC"
           ],
-          "answer": "",
+          "answer": "ADBC",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "A (arrival), D (discover darkness), B (cause), C (action)."
         },
         {
-          "id": "q49",
+          "id": "4",
           "question": "A. The increase in pollution is a threat to public health. B. Steps must be taken to reduce pollution. C. Factories and vehicles release harmful substances. D. Pollution control measures are therefore essential.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ACBD",
+            "B) CADB",
+            "C) ABCD",
+            "D) CBAD"
           ],
-          "answer": "",
+          "answer": "CBAD",
           "correctOption": "D",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "C (cause), B (need for action), A (impact), D (solution/conclusion)."
         },
         {
-          "id": "q50",
+          "id": "5",
           "question": "A. The Earth revolves around the Sun. B. It takes about 365 days to complete one revolution. C. This revolution causes the seasons. D. The tilt of the earth’s axis also plays a role.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ACBD",
+            "B) ABCD",
+            "C) ABDC",
+            "D) BACD"
           ],
-          "answer": "",
+          "answer": "ABDC",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "A (fact), B (details), D (more details), C (result)."
         },
         {
-          "id": "q51",
+          "id": "6",
           "question": "A. Students are the future of the country. B. They must develop good values. C. Education molds their overall personality. D. Therefore, education is very important for students.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ACBD",
+            "B) ABDC",
+            "C) CADB",
+            "D) CBAD"
           ],
-          "answer": "",
+          "answer": "CADB",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "C (broad statement), A (who), B (what's needed), D (conclusion)."
         },
         {
-          "id": "q52",
+          "id": "7",
           "question": "A. Books are our best friends. B. They give us knowledge and joy. C. We must always respect them. D. Reading makes us wise and thoughtful.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ABCD",
+            "B) ACBD",
+            "C) ABDC",
+            "D) BACD"
           ],
-          "answer": "",
+          "answer": "ABDC",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "A (topic), B (why), D (result), C (advice)."
         },
         {
-          "id": "q53",
+          "id": "8",
           "question": "A. The Himalayas are the highest mountains in the world. B. Mt. Everest, the highest peak, lies in this range. C. Tourists from around the globe visit these mountains. D. They extend across five countries in Asia.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ABDC",
+            "B) ADBC",
+            "C) ABDA",
+            "D) ACBD"
           ],
-          "answer": "",
+          "answer": "ADBC",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "A (topic), D (detail), B (peak), C (effect/result)."
         },
         {
-          "id": "q54",
+          "id": "9",
           "question": "A. Water is essential for life. B. All living beings need water to survive. C. Without water, life would be impossible. D. It covers about 71% of the Earth's surface.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ADCB",
+            "B) BACD",
+            "C) ABDC",
+            "D) ABCD"
           ],
-          "answer": "",
+          "answer": "ADCB",
           "correctOption": "A",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "A (topic), D (fact), C (conclusion), B (application)."
         },
         {
-          "id": "q55",
+          "id": "10",
           "question": "A. Thomas Edison was a great inventor. B. He held more than one thousand patents. C. His most famous invention is the electric bulb. D. He was awarded numerous honors throughout his life.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ACBD",
+            "B) ABCD",
+            "C) ABDC",
+            "D) BACD"
           ],
-          "answer": "",
+          "answer": "ABDC",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "A (introduction), B (achievements), D (recognition), C (famous invention)."
         },
         {
-          "id": "q56",
+          "id": "11",
           "question": "A. Internet banking is convenient for customers. B. It saves both time and effort. C. But users must be cautious about security. D. Online frauds are increasing every day.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ABCD",
+            "B) ABDC",
+            "C) ACBD",
+            "D) ADAB"
           ],
-          "answer": "",
+          "answer": "ABDC",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "A (what), B (why), D (problem), C (caution)."
         },
         {
-          "id": "q57",
+          "id": "12",
           "question": "A. Science has changed our way of life. B. It has made our lives comfortable. C. New inventions have made traveling faster. D. Electricity has brought light and power into homes.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ACBD",
+            "B) ABCD",
+            "C) ADCB",
+            "D) ABDC"
           ],
-          "answer": "",
+          "answer": "ABDC",
           "correctOption": "D",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "A (topic), B (result), D (electricity), C (travel)."
         },
         {
-          "id": "q58",
+          "id": "13",
           "question": "A. The Mona Lisa is a world-famous painting. B. It is housed in the Louvre Museum, Paris. C. Crowds of tourists come daily to see it. D. Leonardo da Vinci painted it during the Renaissance.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ACBD",
+            "B) DABC",
+            "C) ABDC",
+            "D) BACD"
           ],
-          "answer": "",
+          "answer": "DABC",
           "correctOption": "B",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "D (who), A (what), B (where), C (effect)."
         },
         {
-          "id": "q59",
+          "id": "14",
           "question": "A. Hard work and dedication are keys to success. B. Success depends on various factors. C. Among them, hard work is the most important. D. Without consistent effort, one can rarely achieve great things.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) BACD",
+            "B) ABCD",
+            "C) ACBD",
+            "D) CBAD"
           ],
-          "answer": "",
+          "answer": "BACD",
           "correctOption": "A",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "B (topic), A/C (factors/importance), D (conclusion)."
         },
         {
-          "id": "q60",
+          "id": "15",
           "question": "A. It is important to eat a balanced diet. B. Such a diet provides all the nutrients our body needs. C. Skipping meals or eating junk food can harm our health. D. Many people ignore healthy eating habits.",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) ABDC",
+            "B) ACBD",
+            "C) ADCB",
+            "D) BACD"
           ],
-          "answer": "",
+          "answer": "ADCB",
           "correctOption": "C",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "explanation": "A (importance), D (problem), C (result), B (positive note)."
+        },
+        {
+          "section": "Verbal Ability — Meanings (Vocabulary)",
+          "id": "1",
+          "question": "Choose the word that best expresses the meaning of: “INTRICATE”",
+          "options": [
+            "A) Complicated",
+            "B) Simple",
+            "C) Careless",
+            "D) Regular"
+          ],
+          "answer": "Complicated",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "\"Intricate\" means very complex or detailed."
+        },
+        {
+          "id": "2",
+          "question": "Choose the word that best fits the sentence: He faced the problem with great “FORTITUDE.”",
+          "options": [
+            "A) Courage",
+            "B) Confusion",
+            "C) Speed",
+            "D) Worry"
+          ],
+          "answer": "Courage",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "\"Fortitude\" means strength of mind or courage in adversity."
+        },
+        {
+          "id": "3",
+          "question": "Choose the correct meaning of: “OMNIPRESENT”",
+          "options": [
+            "A) Dangerous",
+            "B) Present everywhere",
+            "C) Friendly",
+            "D) Unique"
+          ],
+          "answer": "Present everywhere",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Omnipresent\" means being everywhere simultaneously."
+        },
+        {
+          "id": "4",
+          "question": "Select the correct usage of “BENIGN”:",
+          "options": [
+            "A) The medicine had a benign effect.",
+            "B) The weather was benign and stormy.",
+            "C) His benign smile scared everyone.",
+            "D) She gave a benign complaint."
+          ],
+          "answer": "The medicine had a benign effect.",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "\"Benign\" means gentle, harmless, or not dangerous."
+        },
+        {
+          "id": "5",
+          "question": "Choose the nearest meaning of: “SCEPTICAL”",
+          "options": [
+            "A) Doubtful",
+            "B) Furious",
+            "C) Cheerful",
+            "D) Careless"
+          ],
+          "answer": "Doubtful",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "\"Sceptical\" means having doubts or reservations."
+        },
+        {
+          "id": "6",
+          "question": "“He has a very GREGARIOUS nature.” The word “gregarious” means:",
+          "options": [
+            "A) Silent",
+            "B) Outgoing",
+            "C) Hostile",
+            "D) Shy"
+          ],
+          "answer": "Outgoing",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Gregarious\" means sociable; enjoys company."
+        },
+        {
+          "id": "7",
+          "question": "The word “LAMENT” most nearly means:",
+          "options": [
+            "A) Celebrate",
+            "B) Mourn",
+            "C) Run",
+            "D) Build"
+          ],
+          "answer": "Mourn",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Lament\" means to express sorrow or sadness."
+        },
+        {
+          "id": "8",
+          "question": "Choose the correct meaning of “PLAGIARISM”",
+          "options": [
+            "A) Writing poems",
+            "B) Copying someone’s work",
+            "C) Learning fast",
+            "D) Criticizing others"
+          ],
+          "answer": "Copying someone’s work",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Plagiarism\" is using someone’s work as your own without credit."
+        },
+        {
+          "id": "9",
+          "question": "Find the meaning of “EXPLICIT”:",
+          "options": [
+            "A) Unclear",
+            "B) Plain and clear",
+            "C) Dishonest",
+            "D) Secretive"
+          ],
+          "answer": "Plain and clear",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Explicit\" means stated clearly and in detail."
+        },
+        {
+          "id": "10",
+          "question": "“Incessant” most nearly means:",
+          "options": [
+            "A) Occasional",
+            "B) Never stopping",
+            "C) Unplanned",
+            "D) Weak"
+          ],
+          "answer": "Never stopping",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Incessant\" means continuing without interruption."
+        },
+        {
+          "id": "11",
+          "question": "The word “CONCISE” means:",
+          "options": [
+            "A) Long and detailed",
+            "B) Short and clear",
+            "C) Wrong and misleading",
+            "D) None of these"
+          ],
+          "answer": "Short and clear",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Concise\" means expressing much in few words."
+        },
+        {
+          "id": "12",
+          "question": "Choose the meaning of “RELINQUISH”:",
+          "options": [
+            "A) Accept",
+            "B) Surrender",
+            "C) Enjoy",
+            "D) Demand"
+          ],
+          "answer": "Surrender",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Relinquish\" means to give up or surrender something."
+        },
+        {
+          "id": "13",
+          "question": "“ARDUOUS” means:",
+          "options": [
+            "A) Dangerous",
+            "B) Easy",
+            "C) Difficult",
+            "D) Inevitable"
+          ],
+          "answer": "Difficult",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "\"Arduous\" is something that requires a lot of effort."
+        },
+        {
+          "id": "14",
+          "question": "The word “CONGENIAL” is closest in meaning to:",
+          "options": [
+            "A) Annoying",
+            "B) Friendly",
+            "C) Rude",
+            "D) Violent"
+          ],
+          "answer": "Friendly",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Congenial\" means pleasant or friendly."
+        },
+        {
+          "id": "15",
+          "question": "“He showed remarkable ALACRITY in completing the task.” “Alacrity” means:",
+          "options": [
+            "A) Delay",
+            "B) Willingness",
+            "C) Boredom",
+            "D) Resistance"
+          ],
+          "answer": "Willingness",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Alacrity\" means cheerful readiness or eagerness."
+        },
+        {
+          "section": "Verbal Ability — Cloze Test",
+          "id": "1",
+          "question": "The earth is our home. We must take care of it. If we (1) ______ to pollute it, our own lives will be in danger. Factories and vehicles (2) ______ poisonous gases, which harm the air we breathe. Garbage and plastic (3) ______ rivers and oceans. It is necessary to (4) ______ pollution. We should plant trees and (5) ______ our surroundings clean.",
+          "options": [
+            "A) continue",
+            "B) start",
+            "C) refuse",
+            "D) invite"
+          ],
+          "answer": "continue",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "\"If we continue to pollute...\" fits the context of an ongoing action."
+        },
+        {
+          "id": "2",
+          "question": "The earth is our home. We must take care of it. If we (1) ______ to pollute it, our own lives will be in danger. Factories and vehicles (2) ______ poisonous gases, which harm the air we breathe. Garbage and plastic (3) ______ rivers and oceans. It is necessary to (4) ______ pollution. We should plant trees and (5) ______ our surroundings clean.",
+          "options": [
+            "A) inhale",
+            "B) produce",
+            "C) provide",
+            "D) need"
+          ],
+          "answer": "produce",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Factories and vehicles \"produce\" gases that harm people."
+        },
+        {
+          "id": "3",
+          "question": "The earth is our home. We must take care of it. If we (1) ______ to pollute it, our own lives will be in danger. Factories and vehicles (2) ______ poisonous gases, which harm the air we breathe. Garbage and plastic (3) ______ rivers and oceans. It is necessary to (4) ______ pollution. We should plant trees and (5) ______ our surroundings clean.",
+          "options": [
+            "A) support",
+            "B) educate",
+            "C) pollute",
+            "D) improve"
+          ],
+          "answer": "pollute",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "Garbage and plastic \"pollute\" water bodies."
+        },
+        {
+          "id": "4",
+          "question": "The earth is our home. We must take care of it. If we (1) ______ to pollute it, our own lives will be in danger. Factories and vehicles (2) ______ poisonous gases, which harm the air we breathe. Garbage and plastic (3) ______ rivers and oceans. It is necessary to (4) ______ pollution. We should plant trees and (5) ______ our surroundings clean.",
+          "options": [
+            "A) ignore",
+            "B) increase",
+            "C) reduce",
+            "D) transfer"
+          ],
+          "answer": "reduce",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "To solve the problem, we must \"reduce\" pollution."
+        },
+        {
+          "id": "5",
+          "question": "The earth is our home. We must take care of it. If we (1) ______ to pollute it, our own lives will be in danger. Factories and vehicles (2) ______ poisonous gases, which harm the air we breathe. Garbage and plastic (3) ______ rivers and oceans. It is necessary to (4) ______ pollution. We should plant trees and (5) ______ our surroundings clean.",
+          "options": [
+            "A) make",
+            "B) take",
+            "C) create",
+            "D) keep"
+          ],
+          "answer": "keep",
+          "correctOption": "D",
+          "difficulty": "Medium",
+          "explanation": "Standard phrase: \"keep our surroundings clean\"."
+        },
+        {
+          "id": "6",
+          "question": "Reading books is a good habit. It not only (6) ______ knowledge but also (7) ______ our vocabulary. Books (8) ______ us to other worlds and cultures. They (9) ______ our imagination and make us (10) ______ thinkers.",
+          "options": [
+            "A) gives",
+            "B) adds",
+            "C) provides",
+            "D) increases"
+          ],
+          "answer": "provides",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "\"Provides knowledge\" is the most idiomatic."
+        },
+        {
+          "id": "7",
+          "question": "Reading books is a good habit. It not only (6) ______ knowledge but also (7) ______ our vocabulary. Books (8) ______ us to other worlds and cultures. They (9) ______ our imagination and make us (10) ______ thinkers.",
+          "options": [
+            "A) decreases",
+            "B) improves",
+            "C) moves",
+            "D) wastes"
+          ],
+          "answer": "improves",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Reading \"improves\" vocabulary."
+        },
+        {
+          "id": "8",
+          "question": "Reading books is a good habit. It not only (6) ______ knowledge but also (7) ______ our vocabulary. Books (8) ______ us to other worlds and cultures. They (9) ______ our imagination and make us (10) ______ thinkers.",
+          "options": [
+            "A) close",
+            "B) limit",
+            "C) introduce",
+            "D) forbid"
+          ],
+          "answer": "introduce",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "Books \"introduce us to\" other worlds."
+        },
+        {
+          "id": "9",
+          "question": "Reading books is a good habit. It not only (6) ______ knowledge but also (7) ______ our vocabulary. Books (8) ______ us to other worlds and cultures. They (9) ______ our imagination and make us (10) ______ thinkers.",
+          "options": [
+            "A) destroy",
+            "B) reduce",
+            "C) block",
+            "D) develop"
+          ],
+          "answer": "develop",
+          "correctOption": "D",
+          "difficulty": "Medium",
+          "explanation": "Books \"develop\" our imagination."
+        },
+        {
+          "id": "10",
+          "question": "Reading books is a good habit. It not only (6) ______ knowledge but also (7) ______ our vocabulary. Books (8) ______ us to other worlds and cultures. They (9) ______ our imagination and make us (10) ______ thinkers.",
+          "options": [
+            "A) narrow",
+            "B) lazy",
+            "C) creative",
+            "D) weak"
+          ],
+          "answer": "creative",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "Books make us \"creative thinkers\"."
+        },
+        {
+          "id": "11",
+          "question": "Plastic pollution is a major environmental (11) ______. Animals sometimes (12) ______ plastic bags for food and eat them, which can cause death. To control this problem, many countries (13) ______ the use of plastic bags. It is important to (14) ______ alternatives like cloth or paper bags. Public (15) ______ is also necessary to solve this issue.",
+          "options": [
+            "A) asset",
+            "B) benefit",
+            "C) issue",
+            "D) lesson"
+          ],
+          "answer": "issue",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "Plastic pollution is a \"major issue\"."
+        },
+        {
+          "id": "12",
+          "question": "Plastic pollution is a major environmental (11) ______. Animals sometimes (12) ______ plastic bags for food and eat them, which can cause death. To control this problem, many countries (13) ______ the use of plastic bags. It is important to (14) ______ alternatives like cloth or paper bags. Public (15) ______ is also necessary to solve this issue.",
+          "options": [
+            "A) support",
+            "B) mistake",
+            "C) ignore",
+            "D) improve"
+          ],
+          "answer": "mistake",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Animals \"mistake\" plastic for food."
+        },
+        {
+          "id": "13",
+          "question": "Plastic pollution is a major environmental (11) ______. Animals sometimes (12) ______ plastic bags for food and eat them, which can cause death. To control this problem, many countries (13) ______ the use of plastic bags. It is important to (14) ______ alternatives like cloth or paper bags. Public (15) ______ is also necessary to solve this issue.",
+          "options": [
+            "A) encourage",
+            "B) recommend",
+            "C) ban",
+            "D) ignore"
+          ],
+          "answer": "ban",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "Countries \"ban\" use of plastic bags."
+        },
+        {
+          "id": "14",
+          "question": "Plastic pollution is a major environmental (11) ______. Animals sometimes (12) ______ plastic bags for food and eat them, which can cause death. To control this problem, many countries (13) ______ the use of plastic bags. It is important to (14) ______ alternatives like cloth or paper bags. Public (15) ______ is also necessary to solve this issue.",
+          "options": [
+            "A) reject",
+            "B) encourage",
+            "C) ban",
+            "D) accept"
+          ],
+          "answer": "encourage",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "We must \"encourage\" alternatives."
+        },
+        {
+          "id": "15",
+          "question": "Plastic pollution is a major environmental (11) ______. Animals sometimes (12) ______ plastic bags for food and eat them, which can cause death. To control this problem, many countries (13) ______ the use of plastic bags. It is important to (14) ______ alternatives like cloth or paper bags. Public (15) ______ is also necessary to solve this issue.",
+          "options": [
+            "A) awareness",
+            "B) sorrow",
+            "C) confusion",
+            "D) support"
+          ],
+          "answer": "awareness",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "\"Public awareness\" is vital for solving pollution problems."
+        },
+        {
+          "section": "Verbal Ability — Idiom Phrases",
+          "id": "1",
+          "question": "Idiom: “Break the ice”",
+          "options": [
+            "A) To break something",
+            "B) To start conversation",
+            "C) To go for skating",
+            "D) To feel cold"
+          ],
+          "answer": "To start conversation",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Break the ice\" means to initiate conversation in a social setting."
+        },
+        {
+          "id": "2",
+          "question": "Idiom: “Once in a blue moon”",
+          "options": [
+            "A) Very regularly",
+            "B) Very rarely",
+            "C) Very soon",
+            "D) Very late"
+          ],
+          "answer": "Very rarely",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Once in a blue moon\" describes something that happens very infrequently."
+        },
+        {
+          "id": "3",
+          "question": "Idiom: “Hit the nail on the head”",
+          "options": [
+            "A) Complain",
+            "B) Guess randomly",
+            "C) Be exactly right",
+            "D) Hit someone’s head"
+          ],
+          "answer": "Be exactly right",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "This means to describe exactly what is causing a situation or problem."
+        },
+        {
+          "id": "4",
+          "question": "Idiom: “Crocodile tears”",
+          "options": [
+            "A) Real sorrow",
+            "B) False show of emotion",
+            "C) Happy tears",
+            "D) Tears of animal"
+          ],
+          "answer": "False show of emotion",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Crocodile tears\" are insincere or fake expressions of grief."
+        },
+        {
+          "id": "5",
+          "question": "Idiom: “To get a taste of your own medicine”",
+          "options": [
+            "A) To fall sick",
+            "B) To be treated as one treats others",
+            "C) To take wrong medicine",
+            "D) To start new treatment"
+          ],
+          "answer": "To be treated as one treats others",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "It means experiencing the same unpleasant things that one has given others."
+        },
+        {
+          "id": "6",
+          "question": "Idiom: “A blessing in disguise”",
+          "options": [
+            "A) A good thing that seemed bad at first",
+            "B) A bad event",
+            "C) An angel’s visit",
+            "D) A painful event"
+          ],
+          "answer": "A good thing that seemed bad at first",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "Something good that is not recognized at first."
+        },
+        {
+          "id": "7",
+          "question": "Idiom: “Burn the midnight oil”",
+          "options": [
+            "A) Set fire at night",
+            "B) Work late at night",
+            "C) Do nothing",
+            "D) Waste oil"
+          ],
+          "answer": "Work late at night",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Means to study or work till late at night."
+        },
+        {
+          "id": "8",
+          "question": "Idiom: “Let the cat out of the bag”",
+          "options": [
+            "A) Freeing a pet",
+            "B) Revealing a secret",
+            "C) Buying a cat",
+            "D) Escaping quickly"
+          ],
+          "answer": "Revealing a secret",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "To accidentally disclose a secret."
+        },
+        {
+          "id": "9",
+          "question": "Idiom: “Call it a day”",
+          "options": [
+            "A) Remember the day",
+            "B) Stop working for the day",
+            "C) Shout loudly",
+            "D) Work fast"
+          ],
+          "answer": "Stop working for the day",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"Call it a day\" means to stop an activity, usually work, for the rest of the day."
+        },
+        {
+          "id": "10",
+          "question": "Idiom: “Under the weather”",
+          "options": [
+            "A) In the open",
+            "B) Feeling unwell",
+            "C) On the boat",
+            "D) In the rain"
+          ],
+          "answer": "Feeling unwell",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Describes someone who is ill or not feeling well."
+        },
+        {
+          "id": "11",
+          "question": "Idiom: “Back to the drawing board”",
+          "options": [
+            "A) Return home",
+            "B) Start again from scratch",
+            "C) Go back in time",
+            "D) Draw a picture"
+          ],
+          "answer": "Start again from scratch",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Used when a plan has failed and a new one is needed."
+        },
+        {
+          "id": "12",
+          "question": "Idiom: “To hit below the belt”",
+          "options": [
+            "A) To box professionally",
+            "B) To fight legally",
+            "C) To act unfairly",
+            "D) To move physically"
+          ],
+          "answer": "To act unfairly",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "The phrase means to act in an unfair or wrong manner, especially in arguments."
+        },
+        {
+          "id": "13",
+          "question": "Idiom: “To turn a deaf ear”",
+          "options": [
+            "A) To pretend not to listen",
+            "B) To listen carefully",
+            "C) To hear clearly",
+            "D) To get ear pain"
+          ],
+          "answer": "To pretend not to listen",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "Means to ignore what someone is saying."
+        },
+        {
+          "id": "14",
+          "question": "Idiom: “To be in hot water”",
+          "options": [
+            "A) Bathing",
+            "B) In trouble",
+            "C) Happy",
+            "D) Cooking"
+          ],
+          "answer": "In trouble",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "\"In hot water\" means to be in difficulty or trouble."
+        },
+        {
+          "id": "15",
+          "question": "Idiom: “On cloud nine”",
+          "options": [
+            "A) Feeling very high",
+            "B) Very happy",
+            "C) Lost",
+            "D) Very tired"
+          ],
+          "answer": "Very happy",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Means to be extremely happy or delighted."
+        },
+        {
+          "section": "Verbal Ability — Critical Reasoning",
+          "id": "1",
+          "question": "Statement: All successful entrepreneurs work hard. Which of the following can be inferred?",
+          "options": [
+            "A) All hard-working people become successful entrepreneurs.",
+            "B) No one can be a successful entrepreneur without hard work.",
+            "C) Only intelligent people are successful entrepreneurs.",
+            "D) Hard work guarantees success in any field."
+          ],
+          "answer": "No one can be a successful entrepreneur without hard work.",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "The original statement means hard work is a necessary condition for successful entrepreneurs."
+        },
+        {
+          "id": "2",
+          "question": "Argument: Use of mobile phones in classrooms should be banned because it distracts students from learning. Which of the following, if true, most strengthens the argument?",
+          "options": [
+            "A) Many students use mobile phones to take notes during class.",
+            "B) Research shows students using phones in class have lower grades.",
+            "C) Mobile phones are expensive devices.",
+            "D) Schools should allow phones for emergencies."
+          ],
+          "answer": "Research shows students using phones in class have lower grades.",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "This evidence directly supports the claim about distraction."
+        },
+        {
+          "id": "3",
+          "question": "Statement: Some farmers believe that organic farming produces healthier crops than chemical-based farming. Which assumption is implicit in the statement?",
+          "options": [
+            "A) All chemical-based crops are unhealthy.",
+            "B) Chemical fertilizers are more expensive than organic manure.",
+            "C) Healthy crops can be produced without chemicals.",
+            "D) Organic food is unaffordable."
+          ],
+          "answer": "Healthy crops can be produced without chemicals.",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "This is the underlying belief allowing farmers to adopt organic methods."
+        },
+        {
+          "id": "4",
+          "question": "Question: Which of the following, if true, would weaken the claim: \"Technology always creates more jobs than it destroys\"?",
+          "options": [
+            "A) Many traditional jobs have been automated by machines.",
+            "B) New industries emerge due to technological advancement.",
+            "C) Unemployment rates decrease after adoption of technology.",
+            "D) Some countries invest in retraining workers displaced by tech."
+          ],
+          "answer": "Many traditional jobs have been automated by machines.",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "Automation replacing jobs weakens the “always creates more jobs” claim."
+        },
+        {
+          "id": "5",
+          "question": "Statement: Good communication skills are essential for success in business. This statement assumes:",
+          "options": [
+            "A) Only those with good communication skills can succeed in business.",
+            "B) Most businesses are run poorly.",
+            "C) Success in business is difficult.",
+            "D) Communication is an important part of business success."
+          ],
+          "answer": "Communication is an important part of business success.",
+          "correctOption": "D",
+          "difficulty": "Medium",
+          "explanation": "The assumption is that communication plays a key role."
+        },
+        {
+          "id": "6",
+          "question": "Argument: Renewable energy is preferable to fossil fuels because it is environmentally friendly. Which of the following, if true, most strengthens this argument?",
+          "options": [
+            "A) Fossil fuel reserves are abundant.",
+            "B) Renewable sources produce less greenhouse gas.",
+            "C) Renewable energy installations are costly.",
+            "D) Many people work in the coal industry."
+          ],
+          "answer": "Renewable sources produce less greenhouse gas.",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "This directly supports the claim of being environmentally friendly."
+        },
+        {
+          "id": "7",
+          "question": "If all apples are fruits and some fruits are sour, which of the following must be true?",
+          "options": [
+            "A) All apples are sour.",
+            "B) Some apples are sour.",
+            "C) Some fruits are apples.",
+            "D) All fruits are apples."
+          ],
+          "answer": "Some fruits are apples.",
+          "correctOption": "C",
+          "difficulty": "Medium",
+          "explanation": "“All apples are fruits” implies “some fruits (the apples) are apples.”"
+        },
+        {
+          "id": "8",
+          "question": "Statement: High-speed internet improves the productivity of small businesses. Which, if true, most seriously weakens this claim?",
+          "options": [
+            "A) Most small businesses do not use computers or the internet.",
+            "B) High-speed internet is available in cities.",
+            "C) Some firms use the internet for entertainment only.",
+            "D) Many firms advertise online."
+          ],
+          "answer": "Most small businesses do not use computers or the internet.",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "If they don’t use it, better speed cannot improve productivity."
+        },
+        {
+          "id": "9",
+          "question": "If every member of a team must agree before a decision is taken, which of the following is implied?",
+          "options": [
+            "A) The biggest member decides.",
+            "B) Any member can block a decision.",
+            "C) The leader always decides.",
+            "D) Team decisions are always correct."
+          ],
+          "answer": "Any member can block a decision.",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "Consensus means any single “no” prevents group action."
+        },
+        {
+          "id": "10",
+          "question": "Argument: “School uniforms should be mandatory to promote discipline.” Which of the following, if true, weakens this argument?",
+          "options": [
+            "A) Students in schools without uniforms are also disciplined.",
+            "B) Students like to wear uniforms.",
+            "C) Uniforms are available in many colors.",
+            "D) Some students cannot afford uniforms."
+          ],
+          "answer": "Students in schools without uniforms are also disciplined.",
+          "correctOption": "A",
+          "difficulty": "Medium",
+          "explanation": "If discipline exists without uniforms, necessity is questionable."
+        },
+        {
+          "id": "11",
+          "question": "If the cost of living increases, then salaries should also increase. All employees at company X recently received salary hikes. What can we conclude?",
+          "options": [
+            "A) The cost of living increased.",
+            "B) Company X always increases salaries every year.",
+            "C) All employees are satisfied.",
+            "D) None of the above can be concluded for sure."
+          ],
+          "answer": "None of the above can be concluded for sure.",
+          "correctOption": "D",
+          "difficulty": "Medium",
+          "explanation": "Salary hike alone does not guarantee any of the listed factors."
+        },
+        {
+          "id": "12",
+          "question": "Statement: “Rapid urbanization is causing more traffic congestion in cities.” Which would strengthen this argument?",
+          "options": [
+            "A) Traffic has increased in rural areas.",
+            "B) Urban population is rising faster than roads are built.",
+            "C) Auto sales are declining in cities.",
+            "D) Metro networks are expanding rapidly."
+          ],
+          "answer": "Urban population is rising faster than roads are built.",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "This supports more crowding due to urbanization."
+        },
+        {
+          "id": "13",
+          "question": "Argument: “Use of plastic carry bags should be banned because it causes pollution.” Which fact, if true, most weakens the argument?",
+          "options": [
+            "A) Paper bags cost more than plastic bags.",
+            "B) Plastic bags can be easily recycled, reducing pollution.",
+            "C) Pollution causes diseases.",
+            "D) People reuse plastic bags many times."
+          ],
+          "answer": "Plastic bags can be easily recycled, reducing pollution.",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "If pollution can be minimized, the reason for the ban is weaker."
+        },
+        {
+          "id": "14",
+          "question": "If A always arrives before B, and B always arrives before C, who must arrive first?",
+          "options": [
+            "A) B",
+            "B) A",
+            "C) C",
+            "D) Cannot be determined"
+          ],
+          "answer": "A",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "If A always before B, and B before C, then A must be first."
+        },
+        {
+          "id": "15",
+          "question": "Argument: “Government should invest more in public transport to reduce traffic jams.” Which of the following best strengthens the argument?",
+          "options": [
+            "A) People prefer private vehicles to buses.",
+            "B) Public transport can move more people per trip, reducing the number of cars on the road.",
+            "C) Roads are being widened.",
+            "D) Some cities have no bus routes."
+          ],
+          "answer": "Public transport can move more people per trip, reducing the number of cars on the road.",
+          "correctOption": "B",
+          "difficulty": "Medium",
+          "explanation": "This shows direct benefit of investing in public transport for reducing jams."
         }
       ]
     }

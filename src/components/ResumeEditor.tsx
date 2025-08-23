@@ -222,6 +222,22 @@ export function ResumeEditor({ resumeId, templateId, onSave }: ResumeEditorProps
     }));
   };
 
+  const addCertification = () => {
+    setResumeData(prev => ({
+      ...prev,
+      certifications: [
+        ...(prev.certifications || []),
+        {
+          id: Date.now().toString(),
+          name: '',
+          issuer: '',
+          date: '',
+          link: ''
+        }
+      ]
+    }));
+  };
+
   return (
     <div className="space-y-6">
       {/* Header Actions */}
@@ -357,7 +373,117 @@ export function ResumeEditor({ resumeId, templateId, onSave }: ResumeEditorProps
                 Add Experience
               </Button>
             </div>
-            {resumeData.experience?.length === 0 && (
+            
+            {resumeData.experience && resumeData.experience.length > 0 ? (
+              <div className="space-y-4">
+                {resumeData.experience.map((exp, index) => (
+                  <div key={exp.id} className="border rounded-lg p-4 space-y-4">
+                    <div className="flex justify-between items-start">
+                      <h4 className="font-medium">Experience {index + 1}</h4>
+                      <Button 
+                        size="sm" 
+                        variant="outline"
+                        onClick={() => setResumeData(prev => ({
+                          ...prev,
+                          experience: prev.experience?.filter((_, i) => i !== index) || []
+                        }))}
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </Button>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <Label>Company</Label>
+                        <Input
+                          value={exp.company}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            experience: prev.experience?.map((item, i) => 
+                              i === index ? { ...item, company: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="Company name"
+                        />
+                      </div>
+                      <div>
+                        <Label>Position</Label>
+                        <Input
+                          value={exp.position}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            experience: prev.experience?.map((item, i) => 
+                              i === index ? { ...item, position: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="Job title"
+                        />
+                      </div>
+                      <div>
+                        <Label>Start Date</Label>
+                        <Input
+                          type="date"
+                          value={exp.startDate}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            experience: prev.experience?.map((item, i) => 
+                              i === index ? { ...item, startDate: e.target.value } : item
+                            ) || []
+                          }))}
+                        />
+                      </div>
+                      <div>
+                        <Label>End Date</Label>
+                        <div className="space-y-2">
+                          <Input
+                            type="date"
+                            value={exp.endDate}
+                            onChange={(e) => setResumeData(prev => ({
+                              ...prev,
+                              experience: prev.experience?.map((item, i) => 
+                                i === index ? { ...item, endDate: e.target.value } : item
+                              ) || []
+                            }))}
+                            disabled={exp.current}
+                          />
+                          <div className="flex items-center space-x-2">
+                            <input
+                              type="checkbox"
+                              id={`current-${index}`}
+                              checked={exp.current}
+                              onChange={(e) => setResumeData(prev => ({
+                                ...prev,
+                                experience: prev.experience?.map((item, i) => 
+                                  i === index ? { ...item, current: e.target.checked, endDate: e.target.checked ? '' : item.endDate } : item
+                                ) || []
+                              }))}
+                              className="rounded"
+                              aria-label="Currently working here"
+                            />
+                            <Label htmlFor={`current-${index}`} className="text-sm">Current Position</Label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <Label>Job Description</Label>
+                      <Textarea
+                        value={exp.description}
+                        onChange={(e) => setResumeData(prev => ({
+                          ...prev,
+                          experience: prev.experience?.map((item, i) => 
+                            i === index ? { ...item, description: e.target.value } : item
+                          ) || []
+                        }))}
+                        placeholder="Describe your responsibilities and achievements..."
+                        rows={3}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
               <p className="text-muted-foreground text-center py-8">
                 No experience added yet. Click "Add Experience" to get started.
               </p>
@@ -376,7 +502,109 @@ export function ResumeEditor({ resumeId, templateId, onSave }: ResumeEditorProps
                 Add Education
               </Button>
             </div>
-            {resumeData.education?.length === 0 && (
+            
+            {resumeData.education && resumeData.education.length > 0 ? (
+              <div className="space-y-4">
+                {resumeData.education.map((edu, index) => (
+                  <div key={edu.id} className="border rounded-lg p-4 space-y-4">
+                    <div className="flex justify-between items-start">
+                      <h4 className="font-medium">Education {index + 1}</h4>
+                      <Button 
+                        size="sm" 
+                        variant="outline"
+                        onClick={() => setResumeData(prev => ({
+                          ...prev,
+                          education: prev.education?.filter((_, i) => i !== index) || []
+                        }))}
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </Button>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <Label>Institution</Label>
+                        <Input
+                          value={edu.institution}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            education: prev.education?.map((item, i) => 
+                              i === index ? { ...item, institution: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="University/College name"
+                        />
+                      </div>
+                      <div>
+                        <Label>Degree</Label>
+                        <Input
+                          value={edu.degree}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            education: prev.education?.map((item, i) => 
+                              i === index ? { ...item, degree: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="e.g., Bachelor of Science"
+                        />
+                      </div>
+                      <div>
+                        <Label>Field of Study</Label>
+                        <Input
+                          value={edu.field}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            education: prev.education?.map((item, i) => 
+                              i === index ? { ...item, field: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="e.g., Computer Science"
+                        />
+                      </div>
+                      <div>
+                        <Label>GPA (Optional)</Label>
+                        <Input
+                          value={edu.gpa}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            education: prev.education?.map((item, i) => 
+                              i === index ? { ...item, gpa: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="e.g., 3.8/4.0"
+                        />
+                      </div>
+                      <div>
+                        <Label>Start Date</Label>
+                        <Input
+                          type="date"
+                          value={edu.startDate}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            education: prev.education?.map((item, i) => 
+                              i === index ? { ...item, startDate: e.target.value } : item
+                            ) || []
+                          }))}
+                        />
+                      </div>
+                      <div>
+                        <Label>End Date</Label>
+                        <Input
+                          type="date"
+                          value={edu.endDate}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            education: prev.education?.map((item, i) => 
+                              i === index ? { ...item, endDate: e.target.value } : item
+                            ) || []
+                          }))}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
               <p className="text-muted-foreground text-center py-8">
                 No education added yet. Click "Add Education" to get started.
               </p>
@@ -395,7 +623,64 @@ export function ResumeEditor({ resumeId, templateId, onSave }: ResumeEditorProps
                 Add Skill Group
               </Button>
             </div>
-            {resumeData.skills?.length === 0 && (
+            
+            {resumeData.skills && resumeData.skills.length > 0 ? (
+              <div className="space-y-4">
+                {resumeData.skills.map((skillGroup, index) => (
+                  <div key={index} className="border rounded-lg p-4 space-y-4">
+                    <div className="flex justify-between items-start">
+                      <h4 className="font-medium">Skill Group {index + 1}</h4>
+                      <Button 
+                        size="sm" 
+                        variant="outline"
+                        onClick={() => setResumeData(prev => ({
+                          ...prev,
+                          skills: prev.skills?.filter((_, i) => i !== index) || []
+                        }))}
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </Button>
+                    </div>
+                    
+                    <div className="space-y-4">
+                      <div>
+                        <Label>Category</Label>
+                        <Input
+                          value={skillGroup.category}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            skills: prev.skills?.map((item, i) => 
+                              i === index ? { ...item, category: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="e.g., Programming Languages, Frameworks, Tools"
+                        />
+                      </div>
+                      <div>
+                        <Label>Skills (comma-separated)</Label>
+                        <Input
+                          value={skillGroup.items.join(', ')}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            skills: prev.skills?.map((item, i) => 
+                              i === index ? { ...item, items: e.target.value.split(',').map(s => s.trim()).filter(s => s) } : item
+                            ) || []
+                          }))}
+                          placeholder="e.g., React, TypeScript, Node.js, Python"
+                        />
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {skillGroup.items.map((skill, skillIndex) => (
+                          <Badge key={skillIndex} variant="secondary" className="text-xs">
+                            {skill}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
               <p className="text-muted-foreground text-center py-8">
                 No skills added yet. Click "Add Skill Group" to get started.
               </p>
@@ -414,9 +699,203 @@ export function ResumeEditor({ resumeId, templateId, onSave }: ResumeEditorProps
                 Add Project
               </Button>
             </div>
-            {resumeData.projects?.length === 0 && (
+            
+            {resumeData.projects && resumeData.projects.length > 0 ? (
+              <div className="space-y-4">
+                {resumeData.projects.map((project, index) => (
+                  <div key={project.id} className="border rounded-lg p-4 space-y-4">
+                    <div className="flex justify-between items-start">
+                      <h4 className="font-medium">Project {index + 1}</h4>
+                      <Button 
+                        size="sm" 
+                        variant="outline"
+                        onClick={() => setResumeData(prev => ({
+                          ...prev,
+                          projects: prev.projects?.filter((_, i) => i !== index) || []
+                        }))}
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </Button>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <Label>Project Name</Label>
+                        <Input
+                          value={project.name}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            projects: prev.projects?.map((item, i) => 
+                              i === index ? { ...item, name: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="Project title"
+                        />
+                      </div>
+                      <div>
+                        <Label>Technologies (comma-separated)</Label>
+                        <Input
+                          value={project.technologies.join(', ')}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            projects: prev.projects?.map((item, i) => 
+                              i === index ? { ...item, technologies: e.target.value.split(',').map(s => s.trim()).filter(s => s) } : item
+                            ) || []
+                          }))}
+                          placeholder="e.g., React, Node.js, MongoDB"
+                        />
+                      </div>
+                      <div>
+                        <Label>Live Link (Optional)</Label>
+                        <Input
+                          value={project.link}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            projects: prev.projects?.map((item, i) => 
+                              i === index ? { ...item, link: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="https://example.com"
+                        />
+                      </div>
+                      <div>
+                        <Label>GitHub Link (Optional)</Label>
+                        <Input
+                          value={project.github}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            projects: prev.projects?.map((item, i) => 
+                              i === index ? { ...item, github: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="https://github.com/username/repo"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <Label>Project Description</Label>
+                      <Textarea
+                        value={project.description}
+                        onChange={(e) => setResumeData(prev => ({
+                          ...prev,
+                          projects: prev.projects?.map((item, i) => 
+                            i === index ? { ...item, description: e.target.value } : item
+                          ) || []
+                        }))}
+                        placeholder="Describe the project, your role, and key achievements..."
+                        rows={3}
+                      />
+                    </div>
+                    
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, techIndex) => (
+                        <Badge key={techIndex} variant="outline" className="text-xs">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
               <p className="text-muted-foreground text-center py-8">
                 No projects added yet. Click "Add Project" to get started.
+              </p>
+            )}
+          </Card>
+
+          {/* Certifications Section */}
+          <Card className="p-6">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <Award className="h-5 w-5 text-primary" />
+                <h3 className="text-lg font-semibold">Certifications</h3>
+              </div>
+              <Button onClick={addCertification} size="sm">
+                <Plus className="h-4 w-4 mr-2" />
+                Add Certification
+              </Button>
+            </div>
+            
+            {resumeData.certifications && resumeData.certifications.length > 0 ? (
+              <div className="space-y-4">
+                {resumeData.certifications.map((cert, index) => (
+                  <div key={cert.id} className="border rounded-lg p-4 space-y-4">
+                    <div className="flex justify-between items-start">
+                      <h4 className="font-medium">Certification {index + 1}</h4>
+                      <Button 
+                        size="sm" 
+                        variant="outline"
+                        onClick={() => setResumeData(prev => ({
+                          ...prev,
+                          certifications: prev.certifications?.filter((_, i) => i !== index) || []
+                        }))}
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </Button>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <Label>Certification Name</Label>
+                        <Input
+                          value={cert.name}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            certifications: prev.certifications?.map((item, i) => 
+                              i === index ? { ...item, name: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="e.g., AWS Certified Solutions Architect"
+                        />
+                      </div>
+                      <div>
+                        <Label>Issuing Organization</Label>
+                        <Input
+                          value={cert.issuer}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            certifications: prev.certifications?.map((item, i) => 
+                              i === index ? { ...item, issuer: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="e.g., Amazon Web Services"
+                        />
+                      </div>
+                      <div>
+                        <Label>Date Obtained</Label>
+                        <Input
+                          type="date"
+                          value={cert.date}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            certifications: prev.certifications?.map((item, i) => 
+                              i === index ? { ...item, date: e.target.value } : item
+                            ) || []
+                          }))}
+                        />
+                      </div>
+                      <div>
+                        <Label>Credential Link (Optional)</Label>
+                        <Input
+                          value={cert.link}
+                          onChange={(e) => setResumeData(prev => ({
+                            ...prev,
+                            certifications: prev.certifications?.map((item, i) => 
+                              i === index ? { ...item, link: e.target.value } : item
+                            ) || []
+                          }))}
+                          placeholder="https://credential-link.com"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="text-muted-foreground text-center py-8">
+                No certifications added yet. Click "Add Certification" to get started.
               </p>
             )}
           </Card>

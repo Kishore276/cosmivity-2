@@ -1,0 +1,1 @@
+import{j as l,a as n}from"./index-CWgw_Ts5.js";const f=({className:a,gradientFrom:t="#fff",gradientTo:s="#63e",gradientSize:e="125% 125%",gradientPosition:r="50% 10%",gradientStop:i="40%"})=>l.jsx("div",{className:n("absolute inset-0 w-full h-full -z-10 bg-white",a),style:{background:`radial-gradient(${e} at ${r}, ${t} ${i}, ${s} 100%)`}});export{f as B};

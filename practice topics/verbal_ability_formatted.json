@@ -1,0 +1,914 @@
+{
+  "verbalAbility": {
+    "synonymsAndAntonyms": [
+      {
+        "id": 1,
+        "question": "Choose the synonym for 'ABUNDANT':",
+        "options": {
+          "A": "Scarce",
+          "B": "Plentiful",
+          "C": "Meager",
+          "D": "Limited"
+        },
+        "correctOption": "B",
+        "explanation": "Abundant means existing in large quantities, which is synonymous with plentiful."
+      },
+      {
+        "id": 2,
+        "question": "Choose the antonym for 'BENEVOLENT':",
+        "options": {
+          "A": "Kind",
+          "B": "Generous",
+          "C": "Malevolent",
+          "D": "Caring"
+        },
+        "correctOption": "C",
+        "explanation": "Benevolent means well-meaning and kindly, so its antonym is malevolent (having evil intentions)."
+      },
+      {
+        "id": 3,
+        "question": "Choose the synonym for 'EPHEMERAL':",
+        "options": {
+          "A": "Permanent",
+          "B": "Lasting",
+          "C": "Temporary",
+          "D": "Eternal"
+        },
+        "correctOption": "C",
+        "explanation": "Ephemeral means lasting for a very short time, which is synonymous with temporary."
+      },
+      {
+        "id": 4,
+        "question": "Choose the antonym for 'VERBOSE':",
+        "options": {
+          "A": "Talkative",
+          "B": "Concise",
+          "C": "Wordy",
+          "D": "Elaborate"
+        },
+        "correctOption": "B",
+        "explanation": "Verbose means using more words than needed, so its antonym is concise (brief and clearly expressed)."
+      },
+      {
+        "id": 5,
+        "question": "Choose the synonym for 'UBIQUITOUS':",
+        "options": {
+          "A": "Rare",
+          "B": "Omnipresent",
+          "C": "Absent",
+          "D": "Limited"
+        },
+        "correctOption": "B",
+        "explanation": "Ubiquitous means present everywhere, which is synonymous with omnipresent."
+      },
+      {
+        "id": 6,
+        "question": "Choose the antonym for 'CORDIAL':",
+        "options": {
+          "A": "Friendly",
+          "B": "Warm",
+          "C": "Hostile",
+          "D": "Pleasant"
+        },
+        "correctOption": "C",
+        "explanation": "Cordial means warm and friendly, so its antonym is hostile (unfriendly or antagonistic)."
+      },
+      {
+        "id": 7,
+        "question": "Choose the synonym for 'AMELIORATE':",
+        "options": {
+          "A": "Worsen",
+          "B": "Improve",
+          "C": "Maintain",
+          "D": "Destroy"
+        },
+        "correctOption": "B",
+        "explanation": "Ameliorate means to make something better, which is synonymous with improve."
+      },
+      {
+        "id": 8,
+        "question": "Choose the antonym for 'PRUDENT':",
+        "options": {
+          "A": "Wise",
+          "B": "Careful",
+          "C": "Reckless",
+          "D": "Sensible"
+        },
+        "correctOption": "C",
+        "explanation": "Prudent means showing care and thought for the future, so its antonym is reckless (without thinking or caring about consequences)."
+      },
+      {
+        "id": 9,
+        "question": "Choose the synonym for 'DILIGENT':",
+        "options": {
+          "A": "Lazy",
+          "B": "Hardworking",
+          "C": "Careless",
+          "D": "Negligent"
+        },
+        "correctOption": "B",
+        "explanation": "Diligent means showing care and conscientiousness in work, which is synonymous with hardworking."
+      },
+      {
+        "id": 10,
+        "question": "Choose the antonym for 'TRANSPARENT':",
+        "options": {
+          "A": "Clear",
+          "B": "Obvious",
+          "C": "Opaque",
+          "D": "Visible"
+        },
+        "correctOption": "C",
+        "explanation": "Transparent means able to be seen through clearly, so its antonym is opaque (not able to be seen through)."
+      },
+      {
+        "id": 11,
+        "question": "Choose the synonym for 'PRISTINE':",
+        "options": {
+          "A": "Dirty",
+          "B": "Immaculate",
+          "C": "Damaged",
+          "D": "Used"
+        },
+        "correctOption": "B",
+        "explanation": "Pristine means in its original condition; unspoiled, which is synonymous with immaculate."
+      },
+      {
+        "id": 12,
+        "question": "Choose the antonym for 'OPTIMISTIC':",
+        "options": {
+          "A": "Hopeful",
+          "B": "Positive",
+          "C": "Pessimistic",
+          "D": "Confident"
+        },
+        "correctOption": "C",
+        "explanation": "Optimistic means hopeful and confident about the future, so its antonym is pessimistic."
+      },
+      {
+        "id": 13,
+        "question": "Choose the synonym for 'METICULOUS':",
+        "options": {
+          "A": "Careless",
+          "B": "Precise",
+          "C": "Hasty",
+          "D": "Sloppy"
+        },
+        "correctOption": "B",
+        "explanation": "Meticulous means showing great attention to detail; very careful and precise."
+      },
+      {
+        "id": 14,
+        "question": "Choose the antonym for 'NOVICE':",
+        "options": {
+          "A": "Beginner",
+          "B": "Expert",
+          "C": "Amateur",
+          "D": "Student"
+        },
+        "correctOption": "B",
+        "explanation": "Novice means a person new to or inexperienced in a field, so its antonym is expert."
+      },
+      {
+        "id": 15,
+        "question": "Choose the synonym for 'TENACIOUS':",
+        "options": {
+          "A": "Weak",
+          "B": "Persistent",
+          "C": "Flexible",
+          "D": "Yielding"
+        },
+        "correctOption": "B",
+        "explanation": "Tenacious means tending to keep a firm hold; persistent, which is synonymous with persistent."
+      }
+    ],
+    "readingComprehension": [
+      {
+        "id": 1,
+        "question": "Read the passage: 'The internet has revolutionized communication, education, and commerce. However, it has also created challenges like cybersecurity threats and information overload.' What is the main theme?",
+        "options": {
+          "A": "Internet is only beneficial",
+          "B": "Internet has both advantages and disadvantages",
+          "C": "Internet causes only problems",
+          "D": "Internet is used for communication only"
+        },
+        "correctOption": "B",
+        "explanation": "The passage mentions both positive aspects (revolutionized areas) and negative aspects (challenges) of the internet."
+      },
+      {
+        "id": 2,
+        "question": "Passage: 'Climate change is pressing. Rising temperatures, melting ice caps, and extreme weather are clear indicators of environmental degradation.' What can be inferred?",
+        "options": {
+          "A": "Climate change is not serious",
+          "B": "Environmental problems are evident and urgent",
+          "C": "Weather has always been extreme",
+          "D": "Ice caps naturally melt"
+        },
+        "correctOption": "B",
+        "explanation": "The passage describes climate change as 'pressing' and lists clear indicators, implying urgency and evidence."
+      },
+      {
+        "id": 3,
+        "question": "Passage: 'AI transforms industries from healthcare to finance. While offering benefits like efficiency, concerns about job displacement remain.' What is the author's tone?",
+        "options": {
+          "A": "Completely positive",
+          "B": "Completely negative",
+          "C": "Balanced and analytical",
+          "D": "Indifferent"
+        },
+        "correctOption": "C",
+        "explanation": "The author presents both benefits and concerns about AI, showing a balanced perspective."
+      },
+      {
+        "id": 4,
+        "question": "Passage: 'Education empowers individuals, promotes critical thinking, and drives innovation. Investment in education yields long-term benefits.' What is the main argument?",
+        "options": {
+          "A": "Education is expensive",
+          "B": "Education should be prioritized and invested in",
+          "C": "Education is only for individuals",
+          "D": "Critical thinking is unnecessary"
+        },
+        "correctOption": "B",
+        "explanation": "The passage emphasizes education's importance and states investment yields long-term benefits."
+      },
+      {
+        "id": 5,
+        "question": "Passage: 'Technological advancement led to unprecedented changes in daily life. While bringing convenience, it raised privacy questions.' What does 'unprecedented' mean?",
+        "options": {
+          "A": "Expected",
+          "B": "Never seen before",
+          "C": "Gradual",
+          "D": "Temporary"
+        },
+        "correctOption": "B",
+        "explanation": "Unprecedented means never done or known before, referring to the scale of technological changes."
+      },
+      {
+        "id": 6,
+        "question": "Passage: 'Renewable energy sources like solar and wind are becoming cost-effective alternatives to fossil fuels, reducing environmental impact.' What is implied?",
+        "options": {
+          "A": "Fossil fuels are environmentally friendly",
+          "B": "Renewable energy is expensive",
+          "C": "There's a shift towards cleaner energy",
+          "D": "Environmental impact is not important"
+        },
+        "correctOption": "C",
+        "explanation": "The passage suggests renewable energy is replacing fossil fuels due to cost-effectiveness and environmental benefits."
+      },
+      {
+        "id": 7,
+        "question": "Passage: 'Social media connects people globally but can also spread misinformation rapidly.' What is the author highlighting?",
+        "options": {
+          "A": "Only benefits of social media",
+          "B": "Only problems with social media",
+          "C": "Dual nature of social media",
+          "D": "Social media is unnecessary"
+        },
+        "correctOption": "C",
+        "explanation": "The author presents both the connecting benefit and misinformation problem of social media."
+      },
+      {
+        "id": 8,
+        "question": "Passage: 'Regular exercise improves physical health, mental well-being, and cognitive function. It's essential for a balanced lifestyle.' What is the conclusion?",
+        "options": {
+          "A": "Exercise is optional",
+          "B": "Exercise only affects physical health",
+          "C": "Exercise is crucial for overall wellness",
+          "D": "Exercise is time-consuming"
+        },
+        "correctOption": "C",
+        "explanation": "The passage lists multiple benefits and states exercise is essential for balance."
+      },
+      {
+        "id": 9,
+        "question": "Passage: 'Urbanization brings economic opportunities but also challenges like pollution and overcrowding.' What is the structure of this argument?",
+        "options": {
+          "A": "Problem-solution",
+          "B": "Cause-effect",
+          "C": "Compare-contrast",
+          "D": "Advantage-disadvantage"
+        },
+        "correctOption": "D",
+        "explanation": "The passage presents advantages (opportunities) and disadvantages (challenges) of urbanization."
+      },
+      {
+        "id": 10,
+        "question": "Passage: 'Scientific research requires rigorous methodology and peer review to ensure credibility and reproducibility.' What is emphasized?",
+        "options": {
+          "A": "Speed of research",
+          "B": "Cost of research",
+          "C": "Quality and reliability of research",
+          "D": "Popularity of research"
+        },
+        "correctOption": "C",
+        "explanation": "The passage emphasizes rigorous methodology and peer review for credibility and reproducibility."
+      },
+      {
+        "id": 11,
+        "question": "Passage: 'Globalization has created interconnected economies but also increased vulnerability to global crises.' What paradox is presented?",
+        "options": {
+          "A": "Connection creates isolation",
+          "B": "Integration increases vulnerability",
+          "C": "Economy affects politics",
+          "D": "Crisis leads to growth"
+        },
+        "correctOption": "B",
+        "explanation": "The paradox is that increased economic integration (benefit) leads to increased vulnerability (risk)."
+      },
+      {
+        "id": 12,
+        "question": "Passage: 'Biodiversity is crucial for ecosystem stability. Human activities threaten this balance, requiring conservation efforts.' What is the logical flow?",
+        "options": {
+          "A": "Importance → Threat → Solution",
+          "B": "Problem → Cause → Effect",
+          "C": "Theory → Evidence → Conclusion",
+          "D": "Past → Present → Future"
+        },
+        "correctOption": "A",
+        "explanation": "The passage follows: biodiversity importance → human threat → need for conservation."
+      },
+      {
+        "id": 13,
+        "question": "Passage: 'Digital literacy is as important as traditional literacy in today's world, affecting employment and civic participation.' What is being compared?",
+        "options": {
+          "A": "Old vs new technology",
+          "B": "Employment vs civic duties",
+          "C": "Digital skills vs reading/writing skills",
+          "D": "Today vs yesterday"
+        },
+        "correctOption": "C",
+        "explanation": "The passage compares digital literacy with traditional literacy (reading/writing skills)."
+      },
+      {
+        "id": 14,
+        "question": "Passage: 'Space exploration advances scientific knowledge but requires substantial investment. The debate continues over priorities.' What dilemma is presented?",
+        "options": {
+          "A": "Science vs technology",
+          "B": "Knowledge vs cost",
+          "C": "Space vs Earth",
+          "D": "Present vs future"
+        },
+        "correctOption": "B",
+        "explanation": "The dilemma is between gaining scientific knowledge and the substantial cost required."
+      },
+      {
+        "id": 15,
+        "question": "Passage: 'Mental health awareness has increased, reducing stigma and encouraging people to seek help.' What positive cycle is described?",
+        "options": {
+          "A": "Awareness → Reduced stigma → Help-seeking",
+          "B": "Problem → Solution → Result",
+          "C": "Education → Action → Outcome",
+          "D": "Individual → Society → Change"
+        },
+        "correctOption": "A",
+        "explanation": "The positive cycle shows awareness leading to reduced stigma, which encourages help-seeking behavior."
+      }
+    ],
+    "grammarAndSentenceCorrection": [
+      {
+        "id": 1,
+        "question": "Choose the correct sentence:",
+        "options": {
+          "A": "Neither John nor his friends was present",
+          "B": "Neither John nor his friends were present",
+          "C": "Neither John or his friends were present",
+          "D": "Neither John and his friends were present"
+        },
+        "correctOption": "B",
+        "explanation": "With 'neither...nor', the verb agrees with the noun closer to it. 'Friends' is plural, so 'were' is correct."
+      },
+      {
+        "id": 2,
+        "question": "Identify the error: 'The team of players are ready for the match.'",
+        "options": {
+          "A": "The team",
+          "B": "of players",
+          "C": "are ready",
+          "D": "No error"
+        },
+        "correctOption": "C",
+        "explanation": "'Team' is a collective noun treated as singular, so it should be 'The team of players is ready'."
+      },
+      {
+        "id": 3,
+        "question": "Choose the correct form: 'I have been _____ this book for two hours.'",
+        "options": {
+          "A": "reading",
+          "B": "read",
+          "C": "reads",
+          "D": "to read"
+        },
+        "correctOption": "A",
+        "explanation": "Present perfect continuous tense requires 'have been + verb+ing' for ongoing actions."
+      },
+      {
+        "id": 4,
+        "question": "Find the grammatically correct sentence:",
+        "options": {
+          "A": "She don't like coffee",
+          "B": "She doesn't likes coffee",
+          "C": "She doesn't like coffee",
+          "D": "She not like coffee"
+        },
+        "correctOption": "C",
+        "explanation": "Third person singular requires 'doesn't' (does not) with the base form of the verb."
+      },
+      {
+        "id": 5,
+        "question": "Choose the correct sentence:",
+        "options": {
+          "A": "Between you and I, this is confidential",
+          "B": "Between you and me, this is confidential",
+          "C": "Between you and myself, this is confidential",
+          "D": "Between you and mine, this is confidential"
+        },
+        "correctOption": "B",
+        "explanation": "After prepositions like 'between', use object pronouns. 'Me' is the correct object pronoun."
+      },
+      {
+        "id": 6,
+        "question": "Identify the error: 'He has went to the market.'",
+        "options": {
+          "A": "He has",
+          "B": "has went",
+          "C": "to the market",
+          "D": "No error"
+        },
+        "correctOption": "B",
+        "explanation": "Present perfect tense requires 'has gone', not 'has went'. 'Gone' is the past participle of 'go'."
+      },
+      {
+        "id": 7,
+        "question": "Choose the correct form: 'If I _____ rich, I would travel the world.'",
+        "options": {
+          "A": "am",
+          "B": "was",
+          "C": "were",
+          "D": "will be"
+        },
+        "correctOption": "C",
+        "explanation": "In hypothetical conditions (unreal present), use 'were' for all persons in the if-clause."
+      },
+      {
+        "id": 8,
+        "question": "Find the correct sentence:",
+        "options": {
+          "A": "Who's book is this?",
+          "B": "Whose book is this?",
+          "C": "Who book is this?",
+          "D": "Whos book is this?"
+        },
+        "correctOption": "B",
+        "explanation": "'Whose' is the possessive form asking about ownership. 'Who's' is a contraction for 'who is'."
+      },
+      {
+        "id": 9,
+        "question": "Choose the correct sentence:",
+        "options": {
+          "A": "I have less friends than you",
+          "B": "I have fewer friends than you",
+          "C": "I have lesser friends than you",
+          "D": "I have few friends than you"
+        },
+        "correctOption": "B",
+        "explanation": "Use 'fewer' with countable nouns (friends). 'Less' is used with uncountable nouns."
+      },
+      {
+        "id": 10,
+        "question": "Identify the error: 'Each of the students have submitted their assignment.'",
+        "options": {
+          "A": "Each of",
+          "B": "the students",
+          "C": "have submitted",
+          "D": "their assignment"
+        },
+        "correctOption": "C",
+        "explanation": "'Each' is singular, so it should be 'has submitted'. The subject is 'each', not 'students'."
+      },
+      {
+        "id": 11,
+        "question": "Choose the correct sentence:",
+        "options": {
+          "A": "The data is conclusive",
+          "B": "The data are conclusive",
+          "C": "The datas are conclusive",
+          "D": "The datas is conclusive"
+        },
+        "correctOption": "B",
+        "explanation": "'Data' is plural (datum is singular), so use 'are'. However, both A and B are acceptable in modern usage."
+      },
+      {
+        "id": 12,
+        "question": "Find the error: 'She is one of those people who always complains.'",
+        "options": {
+          "A": "She is one",
+          "B": "of those people",
+          "C": "who always complains",
+          "D": "No error"
+        },
+        "correctOption": "C",
+        "explanation": "'Who' refers to 'people' (plural), so it should be 'who always complain'."
+      },
+      {
+        "id": 13,
+        "question": "Choose the correct form: 'Either the manager or the employees _____ responsible.'",
+        "options": {
+          "A": "is",
+          "B": "are",
+          "C": "was",
+          "D": "being"
+        },
+        "correctOption": "B",
+        "explanation": "With 'either...or', the verb agrees with the subject nearest to it. 'Employees' is plural, so 'are'."
+      },
+      {
+        "id": 14,
+        "question": "Identify the correct sentence:",
+        "options": {
+          "A": "I could care less about it",
+          "B": "I couldn't care less about it",
+          "C": "I could care lesser about it",
+          "D": "I couldn't care lesser about it"
+        },
+        "correctOption": "B",
+        "explanation": "'Couldn't care less' means you care so little that you couldn't care any less. 'Could care less' is incorrect."
+      },
+      {
+        "id": 15,
+        "question": "Find the error: 'The reason is because he was late.'",
+        "options": {
+          "A": "The reason is",
+          "B": "because he",
+          "C": "was late",
+          "D": "No error"
+        },
+        "correctOption": "B",
+        "explanation": "Use either 'The reason is that he was late' or 'It's because he was late'. 'Reason is because' is redundant."
+      }
+    ],
+    "analogyAndWordRelationships": [
+      {
+        "id": 1,
+        "question": "BOOK : AUTHOR :: PAINTING : ?",
+        "options": {
+          "A": "Museum",
+          "B": "Artist",
+          "C": "Canvas",
+          "D": "Gallery"
+        },
+        "correctOption": "B",
+        "explanation": "A book is created by an author, similarly a painting is created by an artist."
+      },
+      {
+        "id": 2,
+        "question": "FISH : WATER :: BIRD : ?",
+        "options": {
+          "A": "Nest",
+          "B": "Tree",
+          "C": "Air",
+          "D": "Wings"
+        },
+        "correctOption": "C",
+        "explanation": "Fish live and move in water, similarly birds live and move in air."
+      },
+      {
+        "id": 3,
+        "question": "DOCTOR : HOSPITAL :: TEACHER : ?",
+        "options": {
+          "A": "Student",
+          "B": "School",
+          "C": "Book",
+          "D": "Education"
+        },
+        "correctOption": "B",
+        "explanation": "A doctor works in a hospital, similarly a teacher works in a school."
+      },
+      {
+        "id": 4,
+        "question": "WHEEL : BICYCLE :: ENGINE : ?",
+        "options": {
+          "A": "Car",
+          "B": "Fuel",
+          "C": "Speed",
+          "D": "Road"
+        },
+        "correctOption": "A",
+        "explanation": "A wheel is an essential part of a bicycle, similarly an engine is an essential part of a car."
+      },
+      {
+        "id": 5,
+        "question": "SCISSORS : CUT :: HAMMER : ?",
+        "options": {
+          "A": "Nail",
+          "B": "Hit",
+          "C": "Tool",
+          "D": "Wood"
+        },
+        "correctOption": "B",
+        "explanation": "Scissors are used to cut, similarly a hammer is used to hit."
+      },
+      {
+        "id": 6,
+        "question": "NORTH : SOUTH :: EAST : ?",
+        "options": {
+          "A": "Direction",
+          "B": "West",
+          "C": "Compass",
+          "D": "Map"
+        },
+        "correctOption": "B",
+        "explanation": "North and South are opposite directions, similarly East and West are opposite directions."
+      },
+      {
+        "id": 7,
+        "question": "LIBRARY : BOOKS :: MUSEUM : ?",
+        "options": {
+          "A": "Visitors",
+          "B": "History",
+          "C": "Artifacts",
+          "D": "Building"
+        },
+        "correctOption": "C",
+        "explanation": "A library contains books, similarly a museum contains artifacts."
+      },
+      {
+        "id": 8,
+        "question": "CAPTAIN : SHIP :: PILOT : ?",
+        "options": {
+          "A": "Airport",
+          "B": "Airplane",
+          "C": "Sky",
+          "D": "Flight"
+        },
+        "correctOption": "B",
+        "explanation": "A captain controls a ship, similarly a pilot controls an airplane."
+      },
+      {
+        "id": 9,
+        "question": "PROUD : HUMILITY :: BRAVE : ?",
+        "options": {
+          "A": "Courage",
+          "B": "Cowardice",
+          "C": "Fear",
+          "D": "Bold"
+        },
+        "correctOption": "B",
+        "explanation": "Proud is opposite to humility, similarly brave is opposite to cowardice."
+      },
+      {
+        "id": 10,
+        "question": "FIRE : HEAT :: ICE : ?",
+        "options": {
+          "A": "Water",
+          "B": "Winter",
+          "C": "Cold",
+          "D": "Snow"
+        },
+        "correctOption": "C",
+        "explanation": "Fire produces heat, similarly ice produces cold."
+      },
+      {
+        "id": 11,
+        "question": "PEN : WRITE :: BRUSH : ?",
+        "options": {
+          "A": "Art",
+          "B": "Paint",
+          "C": "Color",
+          "D": "Canvas"
+        },
+        "correctOption": "B",
+        "explanation": "A pen is used to write, similarly a brush is used to paint."
+      },
+      {
+        "id": 12,
+        "question": "SEED : PLANT :: EGG : ?",
+        "options": {
+          "A": "Nest",
+          "B": "Bird",
+          "C": "Shell",
+          "D": "Chicken"
+        },
+        "correctOption": "B",
+        "explanation": "A seed grows into a plant, similarly an egg develops into a bird."
+      },
+      {
+        "id": 13,
+        "question": "KEY : LOCK :: PASSWORD : ?",
+        "options": {
+          "A": "Computer",
+          "B": "Security",
+          "C": "Account",
+          "D": "Access"
+        },
+        "correctOption": "C",
+        "explanation": "A key opens a lock, similarly a password opens an account."
+      },
+      {
+        "id": 14,
+        "question": "CHEF : KITCHEN :: SCIENTIST : ?",
+        "options": {
+          "A": "Experiment",
+          "B": "Laboratory",
+          "C": "Research",
+          "D": "Discovery"
+        },
+        "correctOption": "B",
+        "explanation": "A chef works in a kitchen, similarly a scientist works in a laboratory."
+      },
+      {
+        "id": 15,
+        "question": "CLOCK : TIME :: THERMOMETER : ?",
+        "options": {
+          "A": "Heat",
+          "B": "Cold",
+          "C": "Temperature",
+          "D": "Weather"
+        },
+        "correctOption": "C",
+        "explanation": "A clock measures time, similarly a thermometer measures temperature."
+      }
+    ],
+    "sentenceCompletion": [
+      {
+        "id": 1,
+        "question": "The speaker was so _____ that the audience fell asleep during his presentation.",
+        "options": {
+          "A": "eloquent",
+          "B": "boring",
+          "C": "energetic",
+          "D": "passionate"
+        },
+        "correctOption": "B",
+        "explanation": "If the audience fell asleep, the speaker must have been boring."
+      },
+      {
+        "id": 2,
+        "question": "Despite her _____ efforts, she could not complete the project on time.",
+        "options": {
+          "A": "halfhearted",
+          "B": "diligent",
+          "C": "careless",
+          "D": "occasional"
+        },
+        "correctOption": "B",
+        "explanation": "'Despite' indicates contrast. Even with diligent (hardworking) efforts, she couldn't complete it, showing the difficulty."
+      },
+      {
+        "id": 3,
+        "question": "The medicine was so _____ that the patient recovered within a few days.",
+        "options": {
+          "A": "ineffective",
+          "B": "expensive",
+          "C": "efficacious",
+          "D": "common"
+        },
+        "correctOption": "C",
+        "explanation": "If the patient recovered quickly, the medicine must have been efficacious (effective)."
+      },
+      {
+        "id": 4,
+        "question": "The _____ student always submitted assignments late and rarely attended classes.",
+        "options": {
+          "A": "punctual",
+          "B": "dedicated",
+          "C": "negligent",
+          "D": "ambitious"
+        },
+        "correctOption": "C",
+        "explanation": "A student who submits late and rarely attends classes is negligent (careless)."
+      },
+      {
+        "id": 5,
+        "question": "The company's _____ approach to environmental issues impressed the stakeholders.",
+        "options": {
+          "A": "progressive",
+          "B": "outdated",
+          "C": "indifferent",
+          "D": "careless"
+        },
+        "correctOption": "A",
+        "explanation": "If stakeholders were impressed, the approach must have been progressive (forward-thinking)."
+      },
+      {
+        "id": 6,
+        "question": "The athlete's _____ training regimen helped him win the championship.",
+        "options": {
+          "A": "sporadic",
+          "B": "rigorous",
+          "C": "casual",
+          "D": "minimal"
+        },
+        "correctOption": "B",
+        "explanation": "Winning a championship typically requires rigorous (strict and thorough) training."
+      },
+      {
+        "id": 7,
+        "question": "The author's writing style is known for its _____ and clarity.",
+        "options": {
+          "A": "confusion",
+          "B": "ambiguity",
+          "C": "precision",
+          "D": "vagueness"
+        },
+        "correctOption": "C",
+        "explanation": "Precision and clarity go together as positive qualities of writing."
+      },
+      {
+        "id": 8,
+        "question": "The manager's _____ decision-making often frustrated the team members.",
+        "options": {
+          "A": "decisive",
+          "B": "erratic",
+          "C": "consistent",
+          "D": "thoughtful"
+        },
+        "correctOption": "B",
+        "explanation": "If the team was frustrated, the decision-making must have been erratic (unpredictable)."
+      },
+      {
+        "id": 9,
+        "question": "The scientist's theory was _____ by extensive research and experimentation.",
+        "options": {
+          "A": "contradicted",
+          "B": "ignored",
+          "C": "substantiated",
+          "D": "dismissed"
+        },
+        "correctOption": "C",
+        "explanation": "Extensive research and experimentation would substantiate (provide evidence for) a theory."
+      },
+      {
+        "id": 10,
+        "question": "The old building's _____ condition made it unsafe for occupancy.",
+        "options": {
+          "A": "pristine",
+          "B": "deteriorating",
+          "C": "renovated",
+          "D": "modern"
+        },
+        "correctOption": "B",
+        "explanation": "If a building is unsafe for occupancy, it must be in deteriorating (worsening) condition."
+      },
+      {
+        "id": 11,
+        "question": "The _____ witness provided crucial testimony that changed the course of the trial.",
+        "options": {
+          "A": "unreliable",
+          "B": "credible",
+          "C": "biased",
+          "D": "confused"
+        },
+        "correctOption": "B",
+        "explanation": "If testimony changed the trial's course positively, the witness must have been credible (believable)."
+      },
+      {
+        "id": 12,
+        "question": "The artist's _____ use of colors created a stunning visual impact.",
+        "options": {
+          "A": "monotonous",
+          "B": "skillful",
+          "C": "random",
+          "D": "limited"
+        },
+        "correctOption": "B",
+        "explanation": "Creating a stunning visual impact requires skillful use of colors."
+      },
+      {
+        "id": 13,
+        "question": "The politician's _____ speech failed to convince the voters.",
+        "options": {
+          "A": "persuasive",
+          "B": "compelling",
+          "C": "unconvincing",
+          "D": "inspiring"
+        },
+        "correctOption": "C",
+        "explanation": "If the speech failed to convince voters, it must have been unconvincing."
+      },
+      {
+        "id": 14,
+        "question": "The restaurant's _____ atmosphere made it perfect for romantic dinners.",
+        "options": {
+          "A": "chaotic",
+          "B": "intimate",
+          "C": "noisy",
+          "D": "crowded"
+        },
+        "correctOption": "B",
+        "explanation": "For romantic dinners, an intimate (cozy and private) atmosphere would be perfect."
+      },
+      {
+        "id": 15,
+        "question": "The student's _____ explanation demonstrated a deep understanding of the subject.",
+        "options": {
+          "A": "superficial",
+          "B": "thorough",
+          "C": "vague",
+          "D": "brief"
+        },
+        "correctOption": "B",
+        "explanation": "Demonstrating deep understanding requires a thorough (detailed and complete) explanation."
+      }
+    ]
+  }
+}

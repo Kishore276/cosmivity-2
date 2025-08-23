@@ -31,6 +31,97 @@ const getTemplateCSS = (template?: ResumeTemplate): string => {
   const templateName = template.name.toLowerCase().replace(/\s+/g, '-');
 
   switch (templateName) {
+    case 'structured-professional':
+      return `
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+          background: #ffffff; 
+          font-family: 'Times New Roman', Times, serif; 
+          font-size: 14px; 
+          line-height: 1.4; 
+          color: #000000;
+        }
+        .container { 
+          max-width: 8.5in; 
+          margin: 0 auto; 
+          padding: 0.5in; 
+          background: white; 
+          border: 2px solid #cccccc;
+        }
+        .header { 
+          text-align: center; 
+          margin-bottom: 1.5em; 
+        }
+        .name { 
+          font-size: 18px; 
+          font-weight: bold; 
+          margin-bottom: 0.5em; 
+          letter-spacing: 1px;
+        }
+        .contact { 
+          font-size: 12px; 
+          margin-bottom: 0.5em; 
+        }
+        .tip { 
+          font-size: 10px; 
+          color: #666666; 
+          font-style: italic; 
+          margin-top: 0.5em; 
+          line-height: 1.2; 
+        }
+        .section-title { 
+          font-size: 14px; 
+          font-weight: bold; 
+          margin: 1.5em 0 0.75em 0; 
+        }
+        .item-title { 
+          font-weight: bold; 
+          font-size: 12px; 
+        }
+        .item-subtitle { 
+          font-style: italic; 
+          font-size: 12px; 
+        }
+        .item-date { 
+          font-size: 12px; 
+          font-weight: 500; 
+        }
+        .description { 
+          font-size: 12px; 
+          margin-top: 0.5em; 
+          line-height: 1.4; 
+        }
+        .bullet-point { 
+          font-size: 12px; 
+          line-height: 1.4; 
+          margin: 0.25em 0; 
+        }
+        .date-right { 
+          float: right; 
+          margin-left: 1em; 
+        }
+        ul { 
+          margin: 0.5em 0; 
+          padding: 0; 
+          list-style: none; 
+        }
+        li { 
+          margin: 0.25em 0; 
+        }
+        .flex-between { 
+          display: flex; 
+          justify-content: space-between; 
+          align-items: flex-start; 
+        }
+        .flex-1 { 
+          flex: 1; 
+        }
+        @media print {
+          body { margin: 0; }
+          .container { border: none; margin: 0; padding: 0.25in; }
+          .tip { display: none; }
+        }
+      `;
     case 'ats-professional':
       return `
         body { background: #f8fafc; }
@@ -87,6 +178,217 @@ const getTemplateCSS = (template?: ResumeTemplate): string => {
         .experience-item { background: white; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border: 1px solid #e879f9; padding: 1.5rem; margin: 1rem 0; }
         .item-subtitle { color: #a855f7; }
         .item-date { background: linear-gradient(45deg, #fdf4ff, #fef7f0); padding: 0.25rem 0.5rem; border-radius: 0.25rem; }
+      `;
+    case 'experience-focused':
+      return `
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+          background: #ffffff; 
+          font-family: 'Times New Roman', Times, serif; 
+          font-size: 14px; 
+          line-height: 1.2; 
+          color: #000000;
+          margin: 0;
+          padding: 0;
+        }
+        .container { 
+          max-width: 8.5in; 
+          margin: 0 auto; 
+          padding: 0.5in; 
+          background: white; 
+        }
+        .header { 
+          text-align: center; 
+          margin-bottom: 16px; 
+        }
+        .name { 
+          font-size: 18px; 
+          font-weight: bold; 
+          margin-bottom: 8px; 
+          letter-spacing: 1px; 
+        }
+        .contact { 
+          font-size: 14px; 
+          margin-bottom: 8px; 
+        }
+        .tip { 
+          font-size: 12px; 
+          font-style: italic; 
+          color: #666666; 
+          margin-bottom: 16px; 
+        }
+        .section-title { 
+          font-size: 14px; 
+          font-weight: bold; 
+          margin-bottom: 8px; 
+          text-decoration: underline; 
+        }
+        .subsection-title { 
+          font-size: 14px; 
+          font-weight: bold; 
+        }
+        .text { 
+          font-size: 14px; 
+        }
+        .bullet-point { 
+          font-size: 14px; 
+          line-height: 1.4; 
+        }
+        .date-range { 
+          font-size: 14px; 
+          text-align: right; 
+        }
+        .flex-between { 
+          display: flex; 
+          justify-content: space-between; 
+          align-items: flex-start; 
+          margin-bottom: 8px; 
+        }
+        .flex-1 { 
+          flex: 1; 
+        }
+        .text-right { 
+          text-align: right; 
+        }
+        .section { 
+          margin-bottom: 16px; 
+        }
+        .entry { 
+          margin-bottom: 12px; 
+        }
+        ul { 
+          margin: 8px 0; 
+          padding: 0; 
+          list-style: none; 
+        }
+        li { 
+          margin: 4px 0; 
+        }
+        @media print {
+          body { margin: 0; }
+          .container { margin: 0; padding: 0.25in; }
+          .tip { display: none; }
+          * { -webkit-print-color-adjust: exact; }
+        }
+      `;
+    case 'business-professional':
+      return `
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+          background: #ffffff; 
+          font-family: 'Times New Roman', Times, serif; 
+          font-size: 14px; 
+          line-height: 1.4; 
+          color: #000000;
+          margin: 0;
+          padding: 0;
+        }
+        .container { 
+          max-width: 8.5in; 
+          margin: 0 auto; 
+          padding: 0.5in; 
+          background: white; 
+        }
+        .header { 
+          text-align: center; 
+          margin-bottom: 24px; 
+        }
+        .name { 
+          font-size: 18px; 
+          font-weight: bold; 
+          margin-bottom: 8px; 
+          letter-spacing: 1px; 
+        }
+        .contact { 
+          font-size: 14px; 
+          margin-bottom: 8px; 
+        }
+        .section-title { 
+          font-size: 14px; 
+          font-weight: bold; 
+          margin-bottom: 12px; 
+          padding-bottom: 4px; 
+          border-bottom: 1px solid #9ca3af; 
+          text-transform: uppercase; 
+        }
+        .company-name { 
+          font-size: 14px; 
+          font-weight: bold; 
+        }
+        .position { 
+          font-size: 14px; 
+        }
+        .position-italic { 
+          font-size: 14px; 
+          font-style: italic; 
+        }
+        .location { 
+          font-size: 14px; 
+          text-align: right; 
+        }
+        .date-range { 
+          font-size: 14px; 
+          text-align: right; 
+        }
+        .description { 
+          font-size: 14px; 
+          margin-top: 8px; 
+          text-align: justify; 
+          line-height: 1.5; 
+        }
+        .bullet-point { 
+          font-size: 14px; 
+          line-height: 1.5; 
+        }
+        .flex-between { 
+          display: flex; 
+          justify-content: space-between; 
+          align-items: flex-start; 
+          margin-bottom: 8px; 
+        }
+        .flex-1 { 
+          flex: 1; 
+        }
+        .text-right { 
+          text-align: right; 
+        }
+        .experience-item, .education-item { 
+          margin-bottom: 16px; 
+        }
+        .additional-info { 
+          margin-bottom: 24px; 
+        }
+        .additional-item { 
+          margin-bottom: 8px; 
+          display: flex; 
+        }
+        .additional-item .bullet { 
+          margin-right: 8px; 
+        }
+        .additional-item .category { 
+          font-weight: bold; 
+        }
+        ul { 
+          margin: 8px 0; 
+          padding: 0; 
+          list-style: none; 
+        }
+        li { 
+          margin: 4px 0; 
+          display: flex; 
+        }
+        li .bullet { 
+          margin-right: 8px; 
+        }
+        li .text { 
+          text-align: justify; 
+          flex: 1; 
+        }
+        @media print {
+          body { margin: 0; }
+          .container { margin: 0; padding: 0.25in; }
+          * { -webkit-print-color-adjust: exact; }
+        }
       `;
     default:
       return '';

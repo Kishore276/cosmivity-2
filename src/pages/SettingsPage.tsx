@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DashboardLayout } from '@/components/DashboardLayout';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useUser } from '@/context/UserContext';
 import { useToast } from '@/hooks/use-toast';
+import { useNavigate } from 'react-router-dom';
 import { auth } from '@/lib/firebase';
 import { updatePassword, reauthenticateWithCredential, EmailAuthProvider } from 'firebase/auth';
 import {
@@ -17,13 +18,21 @@ import {
 } from 'lucide-react';
 
 export default function SettingsPage() {
-  const { user, firebaseUser } = useUser();
+  const { user, firebaseUser, loading } = useUser();
+  const navigate = useNavigate();
   const { toast } = useToast();
-  const [loading, setLoading] = useState(false);
+  const [updating, setUpdating] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [showCurrentPassword, setShowCurrentPassword] = useState(false);
   const [showNewPassword, setShowNewPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
+  // Authentication guard
+  useEffect(() => {
+    if (!loading && !firebaseUser) {
+      navigate('/auth');
+    }
+  }, [firebaseUser, loading, navigate]);
 
   // Password change state
   const [passwordData, setPasswordData] = useState({
@@ -70,7 +79,7 @@ export default function SettingsPage() {
       return;
     }
 
-    setLoading(true);
+    setUpdating(true);
     try {
       // Re-authenticate user with current password
       const credential = EmailAuthProvider.credential(
@@ -117,7 +126,7 @@ export default function SettingsPage() {
         description
       });
     } finally {
-      setLoading(false);
+      setUpdating(false);
     }
   };
 
@@ -129,6 +138,21 @@ export default function SettingsPage() {
     });
     setIsEditing(false);
   };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-muted-foreground">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!firebaseUser) {
+    return null;
+  }
 
   return (
     <DashboardLayout>
@@ -263,15 +287,15 @@ export default function SettingsPage() {
                 <div className="flex items-center gap-3 pt-4">
                   <Button
                     onClick={handlePasswordChange}
-                    disabled={loading}
+                    disabled={updating}
                     className="flex items-center gap-2"
                   >
-                    {loading ? 'Updating...' : 'Save Password'}
+                    {updating ? 'Updating...' : 'Save Password'}
                   </Button>
                   <Button
                     variant="outline"
                     onClick={handleCancelEdit}
-                    disabled={loading}
+                    disabled={updating}
                   >
                     Cancel
                   </Button>

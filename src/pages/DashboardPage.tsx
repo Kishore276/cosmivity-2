@@ -3,14 +3,27 @@ import { DashboardLayout } from '@/components/DashboardLayout';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useUser } from '@/context/UserContext';
 import { roomsService, Room } from '@/lib/firebase-services';
-import { Video, Users, Globe, Lock } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { enhancedPracticeService } from '@/lib/enhanced-practice-service';
+import PracticeAnalytics from '@/components/PracticeAnalytics';
+import { Video, Users, Globe, Lock, BookOpen, TrendingUp, Target, Brain } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function DashboardPage() {
-  const { user, firebaseUser } = useUser();
+  const { user, firebaseUser, loading } = useUser();
+  const navigate = useNavigate();
   const [joinedRooms, setJoinedRooms] = useState<Room[]>([]);
+  const [practiceStats, setPracticeStats] = useState<any>(null);
+  const [activeTab, setActiveTab] = useState('overview');
+
+  // Authentication guard
+  useEffect(() => {
+    if (!loading && !firebaseUser) {
+      navigate('/auth');
+    }
+  }, [firebaseUser, loading, navigate]);
 
   // Subscribe to user's joined rooms
   useEffect(() => {
@@ -22,6 +35,37 @@ export default function DashboardPage() {
 
     return () => unsubscribe();
   }, [firebaseUser]);
+
+  // Load practice statistics
+  useEffect(() => {
+    if (!firebaseUser) return;
+
+    const loadPracticeStats = async () => {
+      try {
+        const stats = await enhancedPracticeService.getSessionAnalytics(firebaseUser.uid, 'week');
+        setPracticeStats(stats);
+      } catch (error) {
+        console.error('Error loading practice stats:', error);
+      }
+    };
+
+    loadPracticeStats();
+  }, [firebaseUser]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-muted-foreground">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!firebaseUser) {
+    return null;
+  }
 
   return (
     <DashboardLayout>
@@ -38,36 +82,126 @@ export default function DashboardPage() {
           </div>
           <div className="flex gap-3">
             <Button asChild variant="outline" className="flex-shrink-0">
+              <Link to="/practice">
+                <BookOpen className="h-4 w-4 mr-2" />
+                <span className="hidden sm:inline">Start </span>Practice
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="flex-shrink-0">
               <Link to="/rooms">
                 <Video className="h-4 w-4 mr-2" />
-                <span className="hidden sm:inline">Go to </span>Rooms
+                <span className="hidden sm:inline">Join </span>Rooms
               </Link>
             </Button>
           </div>
         </div>
 
-        {/* User Info */}
-        <Card className="p-6">
-          <h3 className="text-lg font-semibold mb-4">Your Information</h3>
-          <div className="space-y-2">
-            <p className="text-sm">
-              <span className="font-medium">Name:</span> {user.name || 'Not provided'}
-            </p>
-            <p className="text-sm">
-              <span className="font-medium">Email:</span> {user.email || 'Not provided'}
-            </p>
+        {/* Quick Stats */}
+        {practiceStats && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Card className="p-4">
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-blue-100 rounded-lg">
+                  <BookOpen className="h-5 w-5 text-blue-600" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Sessions</p>
+                  <p className="text-xl font-bold">{practiceStats.totalSessions}</p>
+                </div>
+              </div>
+            </Card>
+            <Card className="p-4">
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-green-100 rounded-lg">
+                  <Target className="h-5 w-5 text-green-600" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Avg Score</p>
+                  <p className="text-xl font-bold">{practiceStats.averageScore.toFixed(0)}%</p>
+                </div>
+              </div>
+            </Card>
+            <Card className="p-4">
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-purple-100 rounded-lg">
+                  <Brain className="h-5 w-5 text-purple-600" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Accuracy</p>
+                  <p className="text-xl font-bold">{practiceStats.accuracy.toFixed(0)}%</p>
+                </div>
+              </div>
+            </Card>
+            <Card className="p-4">
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-orange-100 rounded-lg">
+                  <TrendingUp className="h-5 w-5 text-orange-600" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Questions</p>
+                  <p className="text-xl font-bold">{practiceStats.totalQuestions}</p>
+                </div>
+              </div>
+            </Card>
           </div>
-        </Card>
+        )}
 
-        {/* Joined Rooms */}
-        <Card className="p-6">
-          <div className="flex items-center justify-between mb-4">
-            <h3 className="text-lg font-semibold">Rooms You've Joined</h3>
-            <div className="flex items-center gap-2">
-              <Badge variant="secondary">{joinedRooms.length}</Badge>
-              <Users className="h-5 w-5 text-muted-foreground" />
-            </div>
-          </div>
+        {/* Main Content Tabs */}
+        <Tabs value={activeTab} onValueChange={setActiveTab}>
+          <TabsList className="grid w-full grid-cols-3">
+            <TabsTrigger value="overview">Overview</TabsTrigger>
+            <TabsTrigger value="analytics">Analytics</TabsTrigger>
+            <TabsTrigger value="rooms">Rooms</TabsTrigger>
+          </TabsList>
+
+          <TabsContent value="overview" className="space-y-6 mt-6">
+
+            {/* User Info */}
+            <Card className="p-6">
+              <h3 className="text-lg font-semibold mb-4">Your Information</h3>
+              <div className="space-y-2">
+                <p className="text-sm">
+                  <span className="font-medium">Name:</span> {user.name || 'Not provided'}
+                </p>
+                <p className="text-sm">
+                  <span className="font-medium">Email:</span> {user.email || 'Not provided'}
+                </p>
+                {user.title && (
+                  <p className="text-sm">
+                    <span className="font-medium">Title:</span> {user.title}
+                  </p>
+                )}
+                {user.college && (
+                  <p className="text-sm">
+                    <span className="font-medium">Education:</span> {user.college}
+                  </p>
+                )}
+              </div>
+              <div className="mt-4">
+                <Button asChild variant="outline" size="sm">
+                  <Link to="/profile">
+                    Edit Profile
+                  </Link>
+                </Button>
+              </div>
+            </Card>
+
+          </TabsContent>
+
+          <TabsContent value="analytics" className="mt-6">
+            <PracticeAnalytics timeframe="month" />
+          </TabsContent>
+
+          <TabsContent value="rooms" className="mt-6">
+            {/* Joined Rooms */}
+            <Card className="p-6">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-lg font-semibold">Rooms You've Joined</h3>
+                <div className="flex items-center gap-2">
+                  <Badge variant="secondary">{joinedRooms.length}</Badge>
+                  <Users className="h-5 w-5 text-muted-foreground" />
+                </div>
+              </div>
           {joinedRooms.length > 0 ? (
             <div className="space-y-3">
               {joinedRooms.map((room) => (
@@ -110,9 +244,11 @@ export default function DashboardPage() {
                   Browse Rooms
                 </Link>
               </Button>
-            </div>
-          )}
-        </Card>
+              </div>
+            )}
+            </Card>
+          </TabsContent>
+        </Tabs>
       </div>
     </DashboardLayout>
   );

@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useUser } from '@/context/UserContext';
 import { useToast } from '@/components/ui/use-toast';
+import { useNavigate } from 'react-router-dom';
 import {
   Brain,
   Calculator,
@@ -14,7 +15,6 @@ import {
   ArrowRight,
   CheckCircle,
   Clock,
-  RefreshCw,
 } from 'lucide-react';
 
 // Import the services
@@ -23,7 +23,15 @@ import { practiceDataService } from '@/lib/practice-data-service';
 
 export default function PracticePage() {
   const { user, firebaseUser, loading } = useUser();
+  const navigate = useNavigate();
   const { toast } = useToast();
+
+  // Authentication guard
+  useEffect(() => {
+    if (!loading && !firebaseUser) {
+      navigate('/auth');
+    }
+  }, [firebaseUser, loading, navigate]);
 
   // State management
   const [subjects, setSubjects] = useState<AptitudeSubject[]>([]);
@@ -104,40 +112,6 @@ export default function PracticePage() {
     setView('results');
   };
 
-  // Refresh practice data
-  const refreshPracticeData = async () => {
-    try {
-      setIsLoading(true);
-      setError(null);
-
-      console.log('🔄 Refreshing practice data...');
-      const loadedSubjects = await practiceDataService.reloadData();
-
-      setSubjects(loadedSubjects);
-
-      const totalQuestions = loadedSubjects.reduce((sum, subject) =>
-        sum + subject.lessons.reduce((lessonSum, lesson) =>
-          lessonSum + (lesson.questions?.length || 0), 0
-        ), 0
-      );
-
-      toast({
-        title: "Data Refreshed!",
-        description: `Successfully refreshed ${totalQuestions} questions across ${loadedSubjects.length} subjects.`
-      });
-    } catch (error) {
-      console.error('❌ Error refreshing practice data:', error);
-      const errorMessage = error instanceof Error ? error.message : 'Failed to refresh practice data';
-      setError(errorMessage);
-      toast({
-        variant: "destructive",
-        title: "Refresh Failed",
-        description: errorMessage
-      });
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   // Handle answer selection
   const handleAnswerSelect = (questionId: string, answer: string) => {
@@ -253,26 +227,6 @@ export default function PracticePage() {
             Practice with Quantitative Aptitude, Logical Reasoning, and Verbal Ability questions.
           </p>
         </div>
-        <div className="flex gap-2">
-          <Button
-            onClick={refreshPracticeData}
-            disabled={isLoading}
-            variant="outline"
-            size="sm"
-          >
-            {isLoading ? (
-              <>
-                <div className="animate-spin h-4 w-4 mr-2 border-2 border-primary border-t-transparent rounded-full"></div>
-                Loading...
-              </>
-            ) : (
-              <>
-                <RefreshCw className="h-4 w-4 mr-2" />
-                Refresh Data
-              </>
-            )}
-          </Button>
-        </div>
       </div>
 
       {/* Error State */}
@@ -286,10 +240,6 @@ export default function PracticePage() {
             <p className="text-red-700 max-w-2xl mx-auto mb-4">
               {error}
             </p>
-            <Button onClick={refreshPracticeData} disabled={isLoading}>
-              <RefreshCw className="h-4 w-4 mr-2" />
-              Try Again
-            </Button>
           </div>
         </Card>
       )}
@@ -354,12 +304,8 @@ export default function PracticePage() {
             <Brain className="h-16 w-16 mx-auto mb-4 text-muted-foreground" />
             <h3 className="text-xl font-semibold mb-3">No Practice Content Found</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-4">
-              No valid practice questions were found. Please check your JSON files and try refreshing.
+              No valid practice questions were found. Please check your JSON files.
             </p>
-            <Button onClick={refreshPracticeData}>
-              <RefreshCw className="h-4 w-4 mr-2" />
-              Refresh Data
-            </Button>
           </div>
         </Card>
       )}
@@ -491,6 +437,16 @@ export default function PracticePage() {
               <h2 className="text-xl font-semibold leading-relaxed">
                 {currentQuestion.question}
               </h2>
+              
+              {/* Passage for reading comprehension */}
+              {currentQuestion.passage && (
+                <div className="mt-6 p-4 bg-muted/30 border-l-4 border-primary rounded-r-lg">
+                  <h3 className="font-semibold text-lg mb-3 text-primary">Reading Passage:</h3>
+                  <div className="prose prose-sm max-w-none text-gray-700 leading-relaxed whitespace-pre-line">
+                    {currentQuestion.passage.replace(/\[cite_start\].*?\[cite: \d+(, \d+)*\]/g, '').replace(/\r\n/g, '\n')}
+                  </div>
+                </div>
+              )}
             </div>
 
 
@@ -757,6 +713,21 @@ export default function PracticePage() {
       </div>
     );
   };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-muted-foreground">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!firebaseUser) {
+    return null;
+  }
 
   // Main render
   return (

@@ -8,11 +8,12 @@ import { AptitudeSubject } from './firebase-services';
 interface RawQuestion {
   id: string;
   question: string;
-  options: string[];
+  options: string[] | { [key: string]: string };
   answer: string;
   correctOption: string;
   difficulty?: string;
   explanation?: string;
+  passage?: string; // For reading comprehension questions
 }
 
 interface ProcessedQuestion extends RawQuestion {
@@ -94,34 +95,205 @@ class PracticeDataService {
    */
   private processSubjectData(rawData: any, category: string): AptitudeSubject | null {
     try {
-      if (!rawData || !rawData.lessons || !Array.isArray(rawData.lessons) || rawData.lessons.length === 0) {
-        console.error('❌ Invalid data structure');
+      // Handle different JSON formats
+      let subjectName = '';
+      let description = '';
+      let questionsData: any[] = [];
+
+      if (rawData.quantitativeAptitude) {
+        // Handle quantitative aptitude format - create lessons by topic
+        subjectName = 'Quantitative Aptitude';
+        description = 'Quantitative aptitude questions covering various mathematical concepts';
+        
+        const processedLessons: any[] = [];
+        let lessonOrder = 0;
+
+        Object.keys(rawData.quantitativeAptitude).forEach(topic => {
+          const topicQuestions = rawData.quantitativeAptitude[topic];
+          if (Array.isArray(topicQuestions) && topicQuestions.length > 0) {
+            const questionsData = topicQuestions.map(q => ({
+              id: `${topic}_${q.id}`,
+              question: q.question,
+              options: Object.entries(q.options).map(([key, value]) => `${key}) ${value}`),
+              answer: q.options[q.correctOption],
+              correctOption: q.correctOption,
+              difficulty: 'Medium',
+              explanation: q.explanation
+            }));
+
+            const cleanedQuestions = this.cleanQuestions(questionsData);
+            
+            if (cleanedQuestions.length > 0) {
+              processedLessons.push({
+                id: `lesson-${topic}`,
+                title: topic.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase()),
+                description: `Practice questions for ${topic.replace(/([A-Z])/g, ' $1').toLowerCase()}`,
+                content: '',
+                order: lessonOrder++,
+                questions: cleanedQuestions
+              });
+            }
+          }
+        });
+
+        // Map category to expected type
+        let mappedCategory: 'quantitative' | 'logical' | 'verbal' = 'quantitative';
+
+        const subject: AptitudeSubject = {
+          id: category,
+          name: subjectName,
+          category: mappedCategory,
+          description: description,
+          lessons: processedLessons,
+          createdBy: 'admin',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        };
+
+        return subject;
+      } else if (rawData.logicalReasoning) {
+        // Handle logical reasoning format - create lessons by topic
+        subjectName = 'Logical Reasoning';
+        description = 'Logical reasoning questions covering various analytical concepts';
+        
+        const processedLessons: any[] = [];
+        let lessonOrder = 0;
+
+        Object.keys(rawData.logicalReasoning).forEach(topic => {
+          const topicQuestions = rawData.logicalReasoning[topic];
+          if (Array.isArray(topicQuestions) && topicQuestions.length > 0) {
+            const questionsData = topicQuestions.map(q => ({
+              id: `${topic}_${q.id}`,
+              question: q.question,
+              options: Object.entries(q.options).map(([key, value]) => `${key}) ${value}`),
+              answer: q.options[q.correctOption],
+              correctOption: q.correctOption,
+              difficulty: 'Medium',
+              explanation: q.explanation
+            }));
+
+            const cleanedQuestions = this.cleanQuestions(questionsData);
+            
+            if (cleanedQuestions.length > 0) {
+              processedLessons.push({
+                id: `lesson-${topic}`,
+                title: topic.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase()),
+                description: `Practice questions for ${topic.replace(/([A-Z])/g, ' $1').toLowerCase()}`,
+                content: '',
+                order: lessonOrder++,
+                questions: cleanedQuestions
+              });
+            }
+          }
+        });
+
+        // Map category to expected type
+        let mappedCategory: 'quantitative' | 'logical' | 'verbal' = 'logical';
+
+        const subject: AptitudeSubject = {
+          id: category,
+          name: subjectName,
+          category: mappedCategory,
+          description: description,
+          lessons: processedLessons,
+          createdBy: 'admin',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        };
+
+        return subject;
+      } else if (rawData.verbalAbility) {
+        // Handle verbal ability format - create lessons by topic
+        subjectName = 'Verbal Ability';
+        description = 'Verbal ability questions covering various language concepts';
+        
+        const processedLessons: any[] = [];
+        let lessonOrder = 0;
+
+        Object.keys(rawData.verbalAbility).forEach(topic => {
+          const topicQuestions = rawData.verbalAbility[topic];
+          if (Array.isArray(topicQuestions) && topicQuestions.length > 0) {
+            const questionsData = topicQuestions.map(q => ({
+              id: `${topic}_${q.id}`,
+              question: q.question,
+              options: Object.entries(q.options).map(([key, value]) => `${key}) ${value}`),
+              answer: q.options[q.correctOption],
+              correctOption: q.correctOption,
+              difficulty: 'Medium',
+              explanation: q.explanation,
+              passage: q.passage // Preserve passage for reading comprehension
+            }));
+
+            const cleanedQuestions = this.cleanQuestions(questionsData);
+            
+            if (cleanedQuestions.length > 0) {
+              processedLessons.push({
+                id: `lesson-${topic}`,
+                title: topic.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase()),
+                description: `Practice questions for ${topic.replace(/([A-Z])/g, ' $1').toLowerCase()}`,
+                content: '',
+                order: lessonOrder++,
+                questions: cleanedQuestions
+              });
+            }
+          }
+        });
+
+        // Map category to expected type
+        let mappedCategory: 'quantitative' | 'logical' | 'verbal' = 'verbal';
+
+        const subject: AptitudeSubject = {
+          id: category,
+          name: subjectName,
+          category: mappedCategory,
+          description: description,
+          lessons: processedLessons,
+          createdBy: 'admin',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        };
+
+        return subject;
+      } else if (rawData.lessons && Array.isArray(rawData.lessons)) {
+        // Handle standard format (logical reasoning, verbal ability)
+        subjectName = rawData.name;
+        description = rawData.description || `Practice questions for ${rawData.name}`;
+        
+        // Process all lessons and preserve their original structure
+        const processedLessons = rawData.lessons.map((lesson: any) => {
+          const cleanedQuestions = this.cleanQuestions(lesson.questions || []);
+          return {
+            id: lesson.id,
+            title: lesson.title,
+            description: lesson.description,
+            content: lesson.content || '',
+            order: lesson.order || 0,
+            questions: cleanedQuestions
+          };
+        }).filter((lesson: any) => lesson.questions.length > 0);
+
+        // Map category to expected type
+        let mappedCategory: 'quantitative' | 'logical' | 'verbal';
+        if (category === 'quantitative-aptitude') mappedCategory = 'quantitative';
+        else if (category === 'logical-reasoning') mappedCategory = 'logical';
+        else mappedCategory = 'verbal';
+
+        const subject: AptitudeSubject = {
+          id: category,
+          name: subjectName,
+          category: mappedCategory,
+          description: description,
+          lessons: processedLessons,
+          createdBy: 'admin',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        };
+
+        return subject;
+      } else {
+        console.error('❌ Invalid data structure - no recognized format');
         return null;
       }
-
-      const rawQuestions = rawData.lessons[0].questions || [];
-      const cleanedQuestions = this.cleanQuestions(rawQuestions);
-      
-      if (cleanedQuestions.length === 0) {
-        console.error('❌ No valid questions found');
-        return null;
-      }
-
-      // Organize questions into lessons based on content type
-      const lessons = this.organizeIntoLessons(cleanedQuestions, rawData.name);
-
-      const subject: AptitudeSubject = {
-        id: category,
-        name: rawData.name,
-        category: category,
-        description: rawData.description || `Practice questions for ${rawData.name}`,
-        lessons: lessons,
-        createdBy: 'admin',
-        createdAt: new Date(),
-        updatedAt: new Date()
-      };
-
-      return subject;
     } catch (error) {
       console.error('❌ Error processing subject data:', error);
       return null;
@@ -136,19 +308,29 @@ class PracticeDataService {
 
     rawQuestions.forEach((question, index) => {
       try {
-        // Clean options - remove empty ones and fix formatting
-        const validOptions = question.options
-          .filter(opt => opt && opt.trim() && !opt.match(/^[A-D]\)\s*$/))
-          .map(opt => opt.trim());
+        // Handle different option formats
+        let validOptions: string[] = [];
+        
+        if (Array.isArray(question.options)) {
+          // Array format (like logical reasoning)
+          validOptions = question.options
+            .filter(opt => opt && opt.trim() && !opt.match(/^[A-D]\)\s*$/))
+            .map(opt => opt.trim());
+        } else if (typeof question.options === 'object') {
+          // Object format (like quantitative aptitude)
+          validOptions = Object.entries(question.options)
+            .map(([key, value]) => `${key}) ${value}`)
+            .filter(opt => opt && opt.trim());
+        }
 
-        // Skip questions with less than 4 options
-        if (validOptions.length < 4) {
+        // Skip questions with less than 2 options (allow for true/false type questions)
+        if (validOptions.length < 2) {
           console.log(`⚠️  Skipping Q${index + 1}: Only ${validOptions.length} valid options`);
           return;
         }
 
-        // Ensure we have exactly 4 options with proper A), B), C), D) format
-        const formattedOptions = validOptions.slice(0, 4).map((opt, i) => {
+        // Ensure proper A), B), C), D) format for options
+        const formattedOptions = validOptions.map((opt, i) => {
           const letter = String.fromCharCode(65 + i); // A, B, C, D
           if (opt.match(/^[A-D]\)/)) {
             return opt;
@@ -196,7 +378,8 @@ class PracticeDataService {
           answer: answer,
           correctOption: correctOption,
           difficulty: question.difficulty || 'Medium',
-          explanation: explanation
+          explanation: explanation,
+          passage: question.passage // Preserve passage for reading comprehension
         };
 
         cleanedQuestions.push(cleanedQuestion);

@@ -6,6 +6,7 @@ import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import { useUser } from '@/context/UserContext';
 import { useToast } from '@/components/ui/use-toast';
+import { useNavigate } from 'react-router-dom';
 import { resumeService, templateService, ResumeData, ResumeTemplate } from '@/lib/firebase-services';
 import { ResumeEditor } from '@/components/ResumeEditor';
 import { TemplatePreviewDialog } from '@/components/TemplatePreviewDialog';
@@ -31,14 +32,22 @@ import {
 } from 'lucide-react';
 
 export default function ResumePage() {
-  const { user, firebaseUser } = useUser();
+  const { user, firebaseUser, loading } = useUser();
+  const navigate = useNavigate();
   const { toast } = useToast();
   const [view, setView] = useState<'list' | 'templates' | 'editor'>('list');
   const [selectedTemplate, setSelectedTemplate] = useState<string>('');
   const [editingResumeId, setEditingResumeId] = useState<string>('');
   const [userResumes, setUserResumes] = useState<ResumeData[]>([]);
+
+  // Authentication guard
+  useEffect(() => {
+    if (!loading && !firebaseUser) {
+      navigate('/auth');
+    }
+  }, [firebaseUser, loading, navigate]);
   const [templates, setTemplates] = useState<ResumeTemplate[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [updating, setUpdating] = useState(false);
 
   // Subscribe to user's resumes and templates
   useEffect(() => {
@@ -58,26 +67,11 @@ export default function ResumePage() {
     };
   }, [firebaseUser]);
 
-  // Add default templates if none exist
-  const addDefaultTemplates = async () => {
-    if (templates.length === 0) {
-      setLoading(true);
-      try {
-        await templateService.addDefaultTemplates();
-        toast({
-          title: "Success",
-          description: "Default templates added successfully!"
-        });
-      } catch (error) {
-        toast({
-          variant: "destructive",
-          title: "Error",
-          description: "Failed to add default templates."
-        });
-      } finally {
-        setLoading(false);
-      }
-    }
+  // Check if we have the correct templates
+  const hasCorrectTemplates = () => {
+    const expectedTemplates = ['Structured Professional', 'Modern Clean', 'Business Professional', 'Aditya Vardhan', 'Experience Focused'];
+    return templates.length === 5 &&
+           expectedTemplates.every(name => templates.some(t => t.name === name));
   };
 
   const handleCreateResume = (templateId: string) => {
@@ -188,6 +182,21 @@ export default function ResumePage() {
     );
   }
 
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-muted-foreground">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!firebaseUser) {
+    return null;
+  }
+
   return (
     <DashboardLayout>
       <div className="p-6 space-y-6">
@@ -197,6 +206,11 @@ export default function ResumePage() {
             <p className="text-muted-foreground mt-2">
               Create and manage your professional resumes with real-time templates.
             </p>
+            {templates.length > 0 && !hasCorrectTemplates() && (
+              <p className="text-red-600 mt-2 font-medium">
+                ⚠️ Wrong templates detected! Click "Fix Templates" to load the correct 3 templates.
+              </p>
+            )}
           </div>
           <div className="flex gap-3">
             <Button
@@ -206,28 +220,24 @@ export default function ResumePage() {
               <Plus className="h-4 w-4 mr-2" />
               Create Resume
             </Button>
-            {templates.length === 0 && (
-              <Button onClick={addDefaultTemplates} disabled={loading}>
-                <Plus className="h-4 w-4 mr-2" />
-                {loading ? 'Adding...' : 'Add Templates'}
-              </Button>
-            )}
           </div>
         </div>
 
         {/* Show Templates View */}
         {view === 'templates' && (
           <>
-            <div className="flex items-center gap-3 mb-6">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => setView('list')}
-              >
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Back
-              </Button>
-              <h2 className="text-xl font-semibold">Choose a Template</h2>
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center gap-3">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setView('list')}
+                >
+                  <ArrowLeft className="h-4 w-4 mr-2" />
+                  Back
+                </Button>
+                <h2 className="text-xl font-semibold">Choose a Template</h2>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -238,41 +248,10 @@ export default function ResumePage() {
                       <div className="w-full h-40 bg-muted rounded border flex items-center justify-center group-hover:bg-muted/80 transition-colors">
                         <FileText className="h-12 w-12 text-muted-foreground" />
                       </div>
-                      <div className="absolute top-2 left-2 flex gap-1">
-                        {template.atsScore >= 90 && (
-                          <Badge className="text-xs bg-green-600">
-                            <Star className="h-3 w-3 mr-1" />
-                            Recommended
-                          </Badge>
-                        )}
-                      </div>
-                      <div className="absolute top-2 right-2">
-                        <Badge variant="outline" className="text-xs">
-                          ATS: {template.atsScore}%
-                        </Badge>
-                      </div>
                     </div>
                     <div>
                       <h3 className="font-medium">{template.name}</h3>
                       <p className="text-sm text-muted-foreground">{template.description}</p>
-                      <div className="flex items-center gap-2 mt-2">
-                        <div className="flex-1 bg-muted rounded-full h-2 relative overflow-hidden">
-                          <div
-                            className={`h-2 rounded-full absolute left-0 top-0 ${
-                              template.atsScore >= 90 ? 'bg-green-600' :
-                              template.atsScore >= 80 ? 'bg-yellow-600' : 'bg-red-600'
-                            } ${
-                              template.atsScore >= 95 ? 'w-full' :
-                              template.atsScore >= 90 ? 'w-11/12' :
-                              template.atsScore >= 85 ? 'w-5/6' :
-                              template.atsScore >= 80 ? 'w-4/5' :
-                              template.atsScore >= 75 ? 'w-3/4' :
-                              template.atsScore >= 60 ? 'w-3/5' : 'w-1/2'
-                            }`}
-                          />
-                        </div>
-                        <span className="text-xs text-muted-foreground">{template.atsScore}%</span>
-                      </div>
                     </div>
                     <div className="flex gap-2">
                       <TemplatePreviewDialog
